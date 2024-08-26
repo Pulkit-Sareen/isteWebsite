@@ -128,7 +128,7 @@ button {
   background-color: #05060F;
   margin-left: 2px;
   color: #ACB8CB;
-  width: 10%;
+  width: fit-content;
   height: 2rem;
   border-color: #efeaea;
   border-style: solid;
