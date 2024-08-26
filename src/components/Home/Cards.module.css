@@ -328,9 +328,15 @@ button {
   cursor: pointer;
   transform: scale(1.03);
 }
-#new2,
+
 #new1{
  margin-left: 2.7rem;
+ padding: 0 0.5rem;
+}
+
+#new2{
+  margin-left: 1.7rem;
+  padding: 0 0.5rem;
 }
 /* Media Queries */
 @media (min-width:110px) and (max-width:1441px) {
@@ -343,10 +349,7 @@ button {
     height: 150rem;
   }
   
-  #new2,
-#new1{
- margin-left: auto;
-}
+
   .buttoncontainer2 button {
     margin-left: 2.7rem;
   }
@@ -582,6 +585,10 @@ button {
 
 @media (max-width: 768px) {
 
+  #new2,
+#new1{
+ margin-left: auto;
+}
   .buttoncontainer,
   .buttoncontainer2 {
     text-align: center;
