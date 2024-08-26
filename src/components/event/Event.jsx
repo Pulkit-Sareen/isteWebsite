@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Event.css";
 import EventList from "./EventList";
 import EventDetail from "./EventDetail";
+import { sample } from "../../assets/images/index.js";
 
 const events = [
 	{
@@ -12,19 +13,19 @@ const events = [
 				ev1: "Sub Event 1.1",
 				detail1: "Short heading 1.1",
 				detail2: "Loreum 1.1",
-				img1: "#",
+				img1: sample,
 			},
 			{
 				ev1: "Sub Event 1.2",
 				detail1: "Short heading 1.1",
 				detail2: "Loreum 1.1",
-				img1: "#",
+				img1: sample,
 			},
 			{
 				ev1: "Sub Event 1.3",
 				detail1: "Short heading 1.1",
 				detail2: "Loreum 1.1",
-				img1: "#",
+				img1: sample,
 			},
 		],
 	},
@@ -36,67 +37,67 @@ const events = [
 				ev1: "Sub Event 1.1",
 				detail1: "Short heading 1.1",
 				detail2: "Loreum 1.1",
-				img1: "#",
+				img1: sample,
 			},
 			{
 				ev1: "Sub Event 1.2",
 				detail1: "Short heading 1.1",
 				detail2: "Loreum 1.1",
-				img1: "#",
+				img1: sample,
 			},
 			{
 				ev1: "Sub Event 1.3",
 				detail1: "Short heading 1.1",
 				detail2: "Loreum 1.1",
-				img1: "#",
+				img1: sample,
 			},
 		],
 	},
 	{
 		name: "Omega",
-		intro: "Relive the excitement of Omega, the ultimate competitive programming event hosted by ISTE! This electrifying competition spanned two intense rounds, where participants demonstrated their exceptional coding skills, creativity, and problem-solving abilities. Omega was a thrilling journey of innovation and excellence, highlighting the remarkable talents of our community.",
+		intro: "Relive the excitement of Omega, the ultimate competitive programming event hosted by ISTE! This electrifying competition spanned two intense rounds, where participants demonstrated their exceptional coding skills, creativity, and problem-solving abilities. Omega was a thrilling journey of innovation and excellence, highlighting the remarkable talents of our community.",
 		subEvents: [
 			{
 				ev1: "Sub Event 1.1",
 				detail1: "Short heading 1.1",
 				detail2: "Loreum 1.1",
-				img1: "#",
+				img1: sample,
 			},
 			{
 				ev1: "Sub Event 1.2",
 				detail1: "Short heading 1.1",
 				detail2: "Loreum 1.1",
-				img1: "#",
+				img1: sample,
 			},
 			{
 				ev1: "Sub Event 1.3",
 				detail1: "Short heading 1.1",
 				detail2: "Loreum 1.1",
-				img1: "#",
+				img1: sample,
 			},
 		],
 	},
 	{
 		name: "Colloquium",
-		intro: "Colloquium, the flagship event of our technical society, was a much-awaited and an excitement-loaded four-day celebration of innovation and intellect.It featured unique sub-events that tested participants skills in coding without sight, creative electronic project building, strategic problem-solving in a competitive setting, and quick-witted knowledge battles.",
+		intro: "Colloquium, the flagship event of our technical society, was a much-awaited and an excitement-loaded four-day celebration of innovation and intellect.It featured unique sub-events that tested participants skills in coding without sight, creative electronic project building, strategic problem-solving in a competitive setting, and quick-witted knowledge battles.",
 		subEvents: [
 			{
 				ev1: "Sub Event 1.1",
 				detail1: "Short heading 1.1",
 				detail2: "Loreum 1.1",
-				img1: "#",
+				img1: sample,
 			},
 			{
 				ev1: "Sub Event 1.2",
 				detail1: "Short heading 1.1",
 				detail2: "Loreum 1.1",
-				img1: "#",
+				img1: sample,
 			},
 			{
 				ev1: "Sub Event 1.3",
 				detail1: "Short heading 1.1",
 				detail2: "Loreum 1.1",
-				img1: "#",
+				img1: sample,
 			},
 		],
 	},

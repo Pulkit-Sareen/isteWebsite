@@ -40,8 +40,9 @@ const EventDetail = ({ event }) => {
 							<p className="event_context">{subEvent.detail2}</p>
 							<img
 								src={subEvent.img1}
-								alt="event photo"
+								alt="eventPhoto"
 								className="event-img"
+								style={{ width: "20rem", aspectRatio: "1/1" }} //  remove or change this if image size is not squarish.
 							/>
 							<button>Photos</button>
 						</motion.li>
