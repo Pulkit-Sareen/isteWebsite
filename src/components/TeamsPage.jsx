@@ -385,6 +385,7 @@ function TeamsPage() {
   }, []);
 
   return (
+    <div className="main">
     <DetailsProvider value={details}>
       {/* <div id="teamPage"> */}
         {/* <Navbar /> */}
@@ -395,6 +396,7 @@ function TeamsPage() {
         <CorePage />
       {/* </div> */}
     </DetailsProvider>
+    </div>
   );
 }
 

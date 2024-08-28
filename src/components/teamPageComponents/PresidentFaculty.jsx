@@ -11,7 +11,7 @@ function PresidentFaculty() {
   return (
     <div id={'president'} className='president_eb_ec'>
       <div className="title opacity-0 flex flex-col items-left justify-center w-full gap-y-4">
-          <div className="text-[#ACB8CB] font-semibold text-left">
+          <div className="text-[#ACB8CB] font-semibold text-2xl text-left">
             ISTE
           </div>
           <div className="flex flex-col gap-y-6">

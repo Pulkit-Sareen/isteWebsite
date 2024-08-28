@@ -8,6 +8,15 @@
     src: url(/isteWebsite/src/assets/fonts/Roboto/Roboto-Regular.ttf);
   }
 } */
+ /* .main{
+    width: 130vw;
+ } */
+.logo {
+    width: 13rem;
+    margin: auto;
+    margin-bottom: 2rem;
+    margin-top: -8rem;
+}
 
 html::-webkit-scrollbar {
     width: 0;
@@ -70,9 +79,9 @@ html {
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    padding: 7rem 4rem;
+    padding: 2rem 1rem;
     column-gap: 5rem;
-    width: clamp(48rem, 100%, 100vw);
+    /* width: clamp(48rem, 100%, 100vw); */
     text-align: justify;
     margin: 0;
     /* height: 100vh; */
@@ -96,7 +105,7 @@ html {
     border-bottom-right-radius: 1rem;
 }
 
-@media (width <=768px) {
+@media (max-width:768px) {
     .president_card {
         flex-direction: column;
     }
@@ -118,11 +127,35 @@ html {
     column-gap: 2rem;
 }
 
-@media (width <=1300px) {
+@media  (max-width:768px) {
+    
+}
+
+
+@media (max-width:1300px) {
     .president__cards {
         flex-direction: column;
         row-gap: 5rem;
     }
 }
 
+@media (min-width: 1024px) {
+    .lg\:text-5xl {
+      font-size: 3rem /* 48px */;
+      line-height: 1;
+    }
+  }
+  @media (min-width: 768px) {
+    .md\:text-4xl {
+      font-size: 2.25rem /* 36px */;
+      line-height: 2.5rem /* 40px */;
+    }
+  }
+  @media (min-width: 640px) {
+    .sm\:text-3xl {
+      font-size: 1.875rem /* 30px */;
+      line-height: 2.25rem /* 36px */;
+    }
+  }
+  
 /* flex justify-center bg-black flex-col gap-y-20 items-center  py-28 px-16 mt-[500px] lg:mt-[150px] */

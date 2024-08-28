@@ -1,5 +1,6 @@
 /* src/App.css */
 .app-container {
+    
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -15,33 +16,102 @@
   }
   
   .event-detail-container {
-    width: 80%;
-    padding: 10px;
+    width: 50%;
+    padding: 0px;
     box-sizing: border-box;
-    background-color: rgb(18, 18, 18);
+    background-color: #121111;
+    margin: 1.85rem 0rem;
   }
   
-  @media (max-width: 600px) {
+  @media (max-width: 680px) {
     .app-container {
       flex-direction: column;
+      flex-wrap: wrap;
     }
   
     .event-list-container,
     .event-detail-container {
-      width: 100%;
+      width: 98%;
       border-right: none;
       border-bottom: 1px solid #ccc;
     }
   }
   
   @media (max-width: 400px) {
-    .hide-on-small-screen {
-      display: none;
+    .app-container {
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      padding: 0;
+      margin: 0;
+    }
+  
+    .event-list-container,
+    .event-detail-container {
+      width: 90%;
+      padding: 8px;
+      margin: 0.75rem 0;
+    }
+  
+    .event-list-container {
+      margin-bottom: 1rem; /* Separate the list from details for better readability */
     }
   
     .event-detail-container {
-      width: 100%;
-      padding: 10px;
+      margin-top: 0; /* Adjust margin to prevent extra spacing */
     }
   }
   
+  @media (max-width: 480px) {
+    .app-container {
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      margin-top: 5rem;
+    }
+  
+    .event-list-container,
+    .event-detail-container {
+      padding: 5px;
+      margin: 1rem 0;
+    }
+  
+    .event-detail-container {
+      margin: 1rem 0;
+    }
+  }
+  @media (max-width: 330px) {
+    .app-container {
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+      margin: 8rem 0;
+    }
+  
+    .event-list-container,
+    .event-detail-container {
+      width: 95%; /* Further reduce width for very small screens */
+      padding: 5px; /* Further reduce padding for space optimization */
+      margin: 0.5rem 0; /* Adjust margin for tight spacing */
+    }
+  
+    .event-list-container {
+      margin-bottom: 0.75rem; /* Ensure separation between the list and details */
+    }
+  
+    .event-detail-container {
+      margin-top: 0; /* Align margin to avoid extra spacing */
+    }
+  }
+  
+  /* @media (max-width: 320px) {
+    .app-container {
+      padding: 0;
+    }
+  
+    .event-list-container,
+    .event-detail-container {
+      padding: 2px;
+      margin: 0.5rem 0;
+    }
+  } */

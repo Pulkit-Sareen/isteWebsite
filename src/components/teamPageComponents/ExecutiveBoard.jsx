@@ -19,7 +19,7 @@ function ExecutiveBoard() {
             ISTE
           </div>
           <div className="flex flex-col gap-y-6">
-            <div className="text-[#6C90C2] font-bold text-5xl leading-[3.6rem] text-center w-[48rem] h-[3.625rem]">
+            <div className="text-[#6C90C2] font-bold lg:text-5xl md:text-4xl sm:text-3xl text-3xl leading-[3.6rem] text-center w-[48rem] h-[3.625rem]">
               EXECUTIVE BOARD
             </div>
           </div>

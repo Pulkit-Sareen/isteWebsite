@@ -42,14 +42,15 @@
 
 .eventstext h3 {
   position: relative;
-  font-size: 1rem;
+  font-size: 1.3rem;
   padding-top: 10.5%;
   padding-left: 7.5%;
+  font-family: Roboto-Bold;
 }
 
 .eventstext h2 {
   position: relative;
-  font-size: 40px;
+  font-size: 1rem;
   padding-left: 7.5%;
   text-transform: uppercase;
   margin-top: 0.5rem;
@@ -216,9 +217,10 @@
 
 .textcontainer h3 {
   position: relative;
-  font-size: 1rem;
+  font-size: 1.3rem;
   padding-top: 7.5%;
   padding-left: 7.5%;
+  font-family: Roboto-Bold;
 }
 
 .textcontainer h2 {
@@ -226,6 +228,7 @@
   padding-left: 7.5%;
   text-transform: uppercase;
   margin-top: 0.3rem;
+  font-size: 1rem;
   font-family: Roboto-Bold;
 }
 
@@ -281,12 +284,19 @@ button {
 
 .pastprojects h2 {
   position: relative;
-  font-size: 40px;
+  font-size: 1rem;
   margin-top: 0.5rem;
   font-family: Roboto-Bold;
   text-transform: uppercase;
 }
 
+.pastprojects h3 {
+  position: relative;
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+  font-family: Roboto-Bold;
+  text-transform: uppercase;
+}
 .pastprojects p {
   line-height: 1.5rem;
   margin-top: 1rem;
@@ -330,12 +340,12 @@ button {
 }
 
 #new1{
- margin-left: 2.7rem;
+ margin-left: 2.8rem;
  padding: 0 0.5rem;
 }
 
 #new2{
-  margin-left: 1.7rem;
+  margin-left: 1.4rem;
   padding: 0 0.5rem;
 }
 /* Media Queries */
@@ -345,6 +355,7 @@ button {
     align-items: center;
     margin-top: -210px;
     position: static;
+    width: 100%;
     /* overflow: auto; */
     height: 150rem;
   }
@@ -441,14 +452,15 @@ button {
 
   .eventstext h3,
   .textcontainer h3 {
-    font-size: 1rem;
+    font-size: 2rem;
     margin: 0.5rem 0;
+    font-weight: 900;
+    font-family: Roboto-Bold;
     /* Add margin for spacing */
   }
 
   .eventstext h2,
   .textcontainer h2 {
-    font-size: 40px;
     text-transform: uppercase;
     margin-top: 0.5rem;
     font-family: Roboto-Bold;
@@ -622,12 +634,12 @@ button {
 
   .eventstext h2,
   .textcontainer h2 {
-    font-size: 1.8rem;
+    font-size: 0.9rem;
   }
 
   .eventstext h3,
   .textcontainer h3 {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
   }
 
   .events p,
@@ -672,13 +684,15 @@ button {
 
   .eventstext h2,
   .pastprojects h2 {
-    font-size: 1.5rem;
+    font-size: 0.9rem;
+    font-family: Roboto-Bold;
     /* Reduce font size for small screens */
   }
 
   .eventstext h3,
   .pastprojectstext h3 {
-    font-size: 0.8rem;
+    font-size: 1.1rem;
+    font-family: Roboto-Bold;
     /* Adjust font size for better readability */
   }
 
