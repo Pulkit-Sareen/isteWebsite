@@ -8,7 +8,7 @@
     src: url(/isteWebsite/src/assets/fonts/Roboto/Roboto-Regular.ttf);
   }
 } */
- /* .main{
+/* .main{
     width: 130vw;
  } */
 .logo {
@@ -81,7 +81,7 @@ html {
     align-items: center;
     padding: 2rem 1rem;
     column-gap: 5rem;
-    /* width: clamp(48rem, 100%, 100vw); */
+    width: clamp(48rem, 100%, 100vw);
     text-align: justify;
     margin: 0;
     /* height: 100vh; */
@@ -127,9 +127,7 @@ html {
     column-gap: 2rem;
 }
 
-@media  (max-width:768px) {
-    
-}
+@media (max-width:768px) {}
 
 
 @media (max-width:1300px) {
@@ -141,21 +139,33 @@ html {
 
 @media (min-width: 1024px) {
     .lg\:text-5xl {
-      font-size: 3rem /* 48px */;
-      line-height: 1;
+        font-size: 3rem
+            /* 48px */
+        ;
+        line-height: 1;
     }
-  }
-  @media (min-width: 768px) {
+}
+
+@media (min-width: 768px) {
     .md\:text-4xl {
-      font-size: 2.25rem /* 36px */;
-      line-height: 2.5rem /* 40px */;
+        font-size: 2.25rem
+            /* 36px */
+        ;
+        line-height: 2.5rem
+            /* 40px */
+        ;
     }
-  }
-  @media (min-width: 640px) {
+}
+
+@media (min-width: 640px) {
     .sm\:text-3xl {
-      font-size: 1.875rem /* 30px */;
-      line-height: 2.25rem /* 36px */;
+        font-size: 1.875rem
+            /* 30px */
+        ;
+        line-height: 2.25rem
+            /* 36px */
+        ;
     }
-  }
-  
+}
+
 /* flex justify-center bg-black flex-col gap-y-20 items-center  py-28 px-16 mt-[500px] lg:mt-[150px] */

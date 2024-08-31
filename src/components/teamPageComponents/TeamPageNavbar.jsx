@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./Navbar.module.css";
 import { Link } from "react-router-dom";
-export const Navbar = () => {
+export const TeamPageNavbar = () => {
 	const [showOptions, setShowOptions] = useState(false);
 
 	const toggleMenu = () => {
@@ -45,4 +45,4 @@ export const Navbar = () => {
 	);
 };
 
-export default Navbar;
+export default TeamPageNavbar;
