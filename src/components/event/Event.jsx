@@ -53,7 +53,6 @@ const events = [
 				img1: sample4,
 			},
 			{
-
 				// detail1: "Short heading 1.1",
 				// detail2: "Loreum 1.1",
 				img1: sample5,
@@ -76,7 +75,6 @@ const events = [
 				img1: sample7,
 			},
 			{
-
 				// detail1: "Short heading 1.1",
 				// detail2: "Loreum 1.1",
 				img1: sample8,
@@ -115,9 +113,7 @@ const Event = () => {
 
 	return (
 		<div className="app-container">
-			<div
-				className={`event-list-container `}
-			>
+			<div className={`event-list-container `}>
 				<EventList
 					events={events}
 					onSelectEvent={handleSelectEvent}
@@ -125,6 +121,7 @@ const Event = () => {
 			</div>
 			<div
 				className={`event-detail-container `}
+				onContextMenu={(e) => e.preventDefault()}
 			>
 				<EventDetail event={selectedEvent} />
 			</div>
