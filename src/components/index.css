@@ -82,7 +82,7 @@ html {
     align-items: center;
     padding: 2rem 1rem;
     column-gap: 5rem;
-    /* width: clamp(48rem, 100%, 100vw); */
+    width: clamp(48rem, 100%, 100vw);
     text-align: justify;
     margin: 0;
     /* height: 100vh; */

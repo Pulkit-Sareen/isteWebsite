@@ -32,14 +32,14 @@ const router = createBrowserRouter([
 				element: <Event />,
 			},
 			{
-				path: "/team",
-				element: <TeamPage />,
-			},
-			{
 				path: "/contact",
 				element: <ContactUs />,
 			},
 		],
+	},
+	{
+		path: "/team",
+		element: <TeamPage />,
 	},
 ]);
 
