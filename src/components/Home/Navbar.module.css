@@ -1,4 +1,5 @@
 .NavPage {
+  margin: 1px;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -7,7 +8,7 @@
   width: 100%;
 }
 
-.logo{
+.logo {
   width: 7rem;
   margin: auto 0.2rem;
   /* margin-bottom: 2rem;
@@ -75,29 +76,31 @@ a:hover {
 }
 
 @media (min-width:434px) and(max-width: 768px) {
-.contact {
-  /* padding: auto auto; */
-  width: 95%;
-  text-align: center;
-  margin:1rem auto;
-}
+  .contact {
+    /* padding: auto auto; */
+    width: 95%;
+    text-align: center;
+    margin: 1rem auto;
+  }
 }
 
-@media (max-width:550px){
-  .Options{
+@media (max-width:550px) {
+  .Options {
     gap: 2.2rem;
   }
 }
+
 @media (max-width:435px) {
+
   /* .contact{
   padding: auto auto;
     width: 100%;
     text-align: center;
     margin: 1rem auto;
 } */
-.Options{
-  gap:1rem;
-}
+  .Options {
+    gap: 1rem;
+  }
 }
 
 /* Responsive design */
@@ -234,7 +237,7 @@ a:hover {
 /* .contact {
   display: none;
   } */
-  /* @media only screen and (max-width: 250px) {
+/* @media only screen and (max-width: 250px) {
 
   .Header {
     position: relative;
