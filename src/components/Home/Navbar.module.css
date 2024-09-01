@@ -5,8 +5,6 @@
   color: black;
   height: 1;
   width: 100%;
-
-  overflow: hidden;
 }
 
 .logo{
@@ -162,12 +160,6 @@ a:hover {
   }
 } */
 
-@media (width >=645px) {
-  .NavPage {
-    width: 100vw;
-
-  }
-}
 
 @media only screen and (max-width: 400px) {
   .hamburger {

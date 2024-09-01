@@ -43,7 +43,6 @@ const EventDetail = ({ event }) => {
 								alt="eventPhoto"
 								className="event-img"
 								style={{ width: "20rem", aspectRatio: "5/3" }} //  remove or change this if image size is not squarish.
-								draggable={false}
 							/>
 							{/* <button>Photos</button> */}
 						</motion.li>

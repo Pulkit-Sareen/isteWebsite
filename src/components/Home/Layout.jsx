@@ -6,11 +6,11 @@ import styles from "./Layout.module.css";
 // import '../App.css'
 function Layout() {
 	return (
-		<>
+		<div className={styles.outer}>
 			<Navbar />
 			<Outlet />
 			<Footer />
-		</>
+		</div>
 	);
 }
 
