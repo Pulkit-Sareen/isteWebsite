@@ -14,7 +14,7 @@ const EventDetail = ({ event }) => {
 	if (!event) {
 		return (
 			<div style={{ width: "70%", padding: "1px" }}>
-				{/* Select an event to see details */}
+				Select an event to see details
 			</div>
 		);
 	}
@@ -42,9 +42,9 @@ const EventDetail = ({ event }) => {
 								src={subEvent.img1}
 								alt="eventPhoto"
 								className="event-img"
-								style={{ width: "20rem", aspectRatio: "5/3" }} //  remove or change this if image size is not squarish.
+								style={{ width: "20rem", aspectRatio: "1/1" }} //  remove or change this if image size is not squarish.
 							/>
-							{/* <button>Photos</button> */}
+							<button>Photos</button>
 						</motion.li>
 					))}
 				</AnimatePresence>
