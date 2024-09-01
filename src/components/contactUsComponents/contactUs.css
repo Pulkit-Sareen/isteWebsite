@@ -5,11 +5,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
+
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: #000;
-  color: #090909;
+  color: #fff;
 }
 
 .contact-container {
@@ -20,9 +20,9 @@
   max-width: 1000px;
   margin: 0 auto;
   background-color: black;
-  /* border: 2px solid #61dafb; */
+  border: 2px solid #61dafb;
   padding: 20px;
-  /* border-radius: calc(20px + 10px); */
+  border-radius: calc(20px + 10px);
 }
 
 .left-column {
@@ -32,7 +32,7 @@
 
 .right-column {
   padding: 20px;
-  border: 2px solid hsl(215, 53%, 78%);
+  border: 2px solid #61dafb;
   border-radius: 10px;
 }
 
@@ -47,9 +47,9 @@
 }
 
 .contact-h2 {
-  font-size: 1.7rem;
-  margin-bottom: 1rem;
-  color: hsl(215, 53%, 78%);
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #61dafb;
 }
 
 .contact-p {
@@ -80,7 +80,7 @@
 }
 
 .contact-submit-btn {
-  background-color: hsl(215, 53%, 78%);
+  background-color: #61dafb;
   color: #000;
   border: none;
   padding: 0 1rem;
@@ -92,7 +92,7 @@
 }
 
 .contact-submit-btn:hover {
-  background-color: #6c90c2;
+  background-color: #21a1f1;
 }
 
 @media (max-width: 1024px) {
@@ -103,7 +103,6 @@
   .left-column,
   .right-column {
     margin-bottom: 20px;
-    width: 75vw;
   }
 
   .form-group:first-of-type {
@@ -117,7 +116,7 @@
   }
 
   .contact-h2 {
-    font-size: 1.4rem;
+    font-size: 1.25em;
   }
 
   .form-group input,
@@ -144,7 +143,7 @@
   }
 
   .contact-h2 {
-    font-size: 1.3rem;
+    font-size: 1.1em;
   }
 
   .contact-p {

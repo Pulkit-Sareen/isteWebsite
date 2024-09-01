@@ -16,9 +16,9 @@ const Footer = () => {
             </div>
             <center className="footer-links">
               <Link to="/">Home</Link>
+              <Link to="/contact">Contact us</Link>
               <Link to="/team">Team</Link>
               <Link to="/events">Event</Link>
-              <Link to="/contact">Contact us</Link>
               {/* <Link href="/link5">Link Five</Link> */}
             </center>
             <div className="footer-social">

@@ -2,20 +2,20 @@
 .container {
     display: flex;
     flex-direction: column;
-    margin: 1.1rem;
+    margin: 20px;
+    
     
     background-color: rgb(18, 17, 17);
   }
   .my-4{
     color:#6C90C2;
-    margin-left: 2rem;
-    font-size: 2.5rem;
+    margin-top: 0px;
   }
   
   .row {
     display: flex;
     flex-direction: column;
-    width: 95%;
+    width: 100%;
   }
   
   .mb-4 {
@@ -29,7 +29,7 @@
     overflow: hidden;
     animation: fadeInUp 0.5s ease-in-out forwards;
     opacity: 0; /* Initially hide the card for the animation */
-    width: 95%;
+    width: 100%;
     max-width: 600px; /* Optional: set a max width for better readability */
     margin: 0 auto; /* Center the card horizontally */
   }
@@ -64,28 +64,15 @@
     border-color: #efeaea;
     border-style: solid;
     border-width: 1px;
-    padding: 0.5rem;
+    
     cursor: pointer;
     text-align: left;
-    margin-left: 0.4rem;
   }
   
   .btn-primary:hover {
     background-color: #0056b3;
   }
-  @media (max-width:1024px){
-    .container{
-      margin:4.5%;
-      width: 97%;
-    }
-  }
   
-  @media (max-width:550px){
-    .container{
-      margin: 3%;
-      width: 97%;
-    }
-  }
   /* Animation Keyframes */
   @keyframes fadeInUp {
     from {
@@ -97,49 +84,4 @@
       transform: translateY(0);
     }
   }
-  @media (max-width: 400px) {
-    .container {
-      margin: 2%;
-      width: 96%;
-    }
-  
-    .my-4 {
-      font-size: 2rem; /* Reduce font size for better fit */
-      margin-left: 1.5rem;
-    }
-  
-    .card {
-      width: 100%; /* Ensure the card takes full width */
-      max-width: 100%; /* Remove max-width for smaller screens */
-    }
-  
-    .btn-primary {
-      width: 100%; /* Make the button take full width */
-      text-align: center; /* Center the button text */
-    }
-  }
-  
-  @media (max-width: 330px) {
-    .container {
-      margin: 1%;
-      width: 95%;
-    }
-  
-    .my-4 {
-      font-size: 1.8rem; /* Further reduce font size for very small screens */
-      margin-left: 1rem;
-    }
-  
-    .card {
-      width: 100%; /* Ensure the card takes full width */
-      max-width: 100%; /* Remove max-width */
-    }
-  
-    .btn-primary {
-      width: 100%; /* Ensure the button takes full width */
-      text-align: center; /* Center the button text */
-      font-size: 1rem; /* Adjust font size for smaller buttons */
-    }
-  }
-  
   

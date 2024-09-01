@@ -114,7 +114,7 @@ export const Cards = () => {
 								boundless potential of Technology.
 							</p>
 							<div className={styles.buttoncontainer2}>
-								<Link to="/team">
+								<Link to="/team"></Link>
 								<button id={styles.new2}
 								// style={{padding: "0 0.75rem"}}
 								>
@@ -125,7 +125,6 @@ export const Cards = () => {
 										id={styles.right}
 									/>
 								</button>
-									</Link>
 							</div>
 						</div>
 					</div>

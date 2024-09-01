@@ -21,7 +21,8 @@ const ContactPage = () => {
 							className="contact-p"
 							style={{ textAlign: "center" }}
 						>
-						
+							Reach out and let the magic of collaboration illuminate our
+							skies.
 						</p>
 						<div className="form-group">
 							<input

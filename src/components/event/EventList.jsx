@@ -2,22 +2,22 @@ import React, { useState, useEffect } from "react";
 import "./EventList.css";
 
 const EventList = ({ events, onSelectEvent }) => {
-	// const [isMobile, setIsMobile] = useState(window.innerWidth <= 400);
+	const [isMobile, setIsMobile] = useState(window.innerWidth <= 400);
 
-	// const handleResize = () => {
-	// 	setIsMobile(window.innerWidth <= 400);
-	// };
+	const handleResize = () => {
+		setIsMobile(window.innerWidth <= 400);
+	};
 
-	// useEffect(() => {
-	// 	window.addEventListener("resize", handleResize);
-	// 	return () => {
-	// 		window.removeEventListener("resize", handleResize);
-	// 	};
-	// }, []);
+	useEffect(() => {
+		window.addEventListener("resize", handleResize);
+		return () => {
+			window.removeEventListener("resize", handleResize);
+		};
+	}, []);
 
-	// if (isMobile) {
-	// 	return null;
-	// }
+	if (isMobile) {
+		return null;
+	}
 
 	return (
 		<div className="container">
@@ -36,7 +36,7 @@ const EventList = ({ events, onSelectEvent }) => {
 									onClick={() => onSelectEvent(event)}
 									className="btn btn-primary"
 								>
-									Photos
+									Show Sub-Events
 								</button>
 							</div>
 						</div>

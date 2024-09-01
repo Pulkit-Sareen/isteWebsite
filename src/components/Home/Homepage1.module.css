@@ -7,8 +7,8 @@
 .logo {
     width: 16rem;
     margin: auto;
-    margin-bottom: 2rem;
-    margin-top: -8rem;
+    margin-bottom: 4rem;
+    margin-top: -6rem;
 }
 
 .container {
@@ -106,19 +106,5 @@
     .subsection h1 {
         font-size: 1.5em;
         /* Adjusted for smaller screens */
-    }
-}
-
-@media (max-width:560px)
-{
-    .subsection h1{
-        width: 20rem;
-    }
-}
-
-@media (max-width:330px)
-{
-    .subsection h1{
-        width: 15rem;
     }
 }
