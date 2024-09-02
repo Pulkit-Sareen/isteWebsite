@@ -403,7 +403,7 @@ function TeamsPage() {
 				{/* <div id="teamPage"> */}
 				{/* <Navbar /> */}
 				<TeamFrontPage />
-				<PresidentFaculty />
+				{/* <PresidentFaculty /> */}
 				<ExecutiveBoard />
 				<ExecutiveCommitee />
 				<CorePage />

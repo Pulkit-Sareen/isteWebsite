@@ -169,4 +169,10 @@ html {
     }
 }
 
+@media(max-width: 768px){
+    .eb{
+        display: grid;
+        justify-content: start;
+    }
+}
 /* flex justify-center bg-black flex-col gap-y-20 items-center  py-28 px-16 mt-[500px] lg:mt-[150px] */
