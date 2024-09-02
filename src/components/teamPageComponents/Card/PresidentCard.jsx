@@ -14,7 +14,7 @@ function PresidentCard({ details }) {
             <div className="font-semibold text-[#6C90C2] text-xl">{details.name}</div>
             <div className="font-normal text-lg">{details.title}</div>
           </div>
-          <div className="text-base font-normal pr-2 ">{details.info}</div>
+          {/* <div className="text-base font-normal pr-2 ">{details.info}</div> */}
         </div>
         <img className="aspect-square h-5 cursor-pointer" onClick={handleGoogleClick} src={google}></img>
       </div>

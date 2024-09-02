@@ -401,9 +401,8 @@ function TeamsPage() {
 		<div className="main">
 			<DetailsProvider value={details}>
 				{/* <div id="teamPage"> */}
-				{/* <Navbar /> */}
 				<TeamFrontPage />
-				{/* <PresidentFaculty /> */}
+				<PresidentFaculty />
 				<ExecutiveBoard />
 				<ExecutiveCommitee />
 				<CorePage />
