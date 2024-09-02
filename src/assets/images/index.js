@@ -10,6 +10,7 @@ import sample8 from "./om3.jpg";
 import sample9 from "./1.jpg";
 import sample10 from "./2.jpg";
 import sample11 from "./3.jpg";
+import logo from "./ISTE Thapar Chapter Logo blue.png"
 export { sample };
 export { sample1 };
 export { sample2 };
@@ -22,3 +23,4 @@ export { sample8 };
 export { sample9 };
 export { sample10 };
 export { sample11 };
+export { logo };

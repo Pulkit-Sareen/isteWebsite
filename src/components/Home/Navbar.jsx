@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "./Navbar.module.css";
 import { Link } from "react-router-dom";
+
 export const Navbar = () => {
 	const [showOptions, setShowOptions] = useState(false);
 
@@ -13,7 +14,7 @@ export const Navbar = () => {
       <div className={styles.Header}>
 				<div className={styles.logo}>
 					<img
-						src="./src/assets/images/ISTE Thapar Chapter Logo blue.png"
+						src="../src/assets/images/ISTE Thapar Chapter Logo blue.png"
 						alt="logo"
 					/>
 				</div>
