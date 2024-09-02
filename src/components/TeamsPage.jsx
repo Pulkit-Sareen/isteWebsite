@@ -7,7 +7,6 @@ import PresidentFaculty from "./teamPageComponents/PresidentFaculty";
 import TeamFrontPage from "./teamPageComponents/TeamFrontPage";
 import CorePage from "./teamPageComponents/CorePage";
 import profile from "./teamPageComponents/indexImages";
-import TeamPageNavbar from "./teamPageComponents/TeamPageNavbar.jsx";
 
 const details = [
 	{
@@ -403,7 +402,6 @@ function TeamsPage() {
 			<DetailsProvider value={details}>
 				{/* <div id="teamPage"> */}
 				{/* <Navbar /> */}
-				<TeamPageNavbar />
 				<TeamFrontPage />
 				<PresidentFaculty />
 				<ExecutiveBoard />
