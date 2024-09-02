@@ -38,7 +38,7 @@ const events = [
 		],
 	},
 	{
-		name: "Expedition",
+		name: "Xpedition",
 		intro: "Experience the thrill of Xpedition, a distinguished treasure hunt event hosted by ISTE. From the challenge of unraveling cryptic clues to the suspense of navigating intricate bomb puzzles, this event was filled with unforgettable experiences. XPEDITION combined adventure, wit, and excitement, creating adrenaline-filled moments that participants will never forget.",
 		subEvents: [
 			{
