@@ -1,6 +1,7 @@
 import React from 'react';
 import './Footer.css';
 import { Link } from 'react-router-dom';
+import { finalLogo } from '../../assets/images';
 const Footer = () => {
   return (
     <>
@@ -12,7 +13,7 @@ const Footer = () => {
         <div className="footer-container">
           <div className="footer-sections">
             <div className="footer-logo">
-              <img src="src/assets/images/logo.png" alt="ISTE Logo" />
+              <img src={finalLogo} alt="ISTE Logo" />
             </div>
             <center className="footer-links">
               <Link to="/">Home</Link>
