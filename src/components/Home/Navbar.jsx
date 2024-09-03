@@ -14,10 +14,12 @@ export const Navbar = () => {
 		<div className={styles.NavPage}>
 			<div className={styles.Header}>
 				<div className={styles.logo}>
-					<img
+					<a href="/">
+						<img
 						src={finalLogo}
 						alt="logo"
-					/>
+						/>
+					</a>
 				</div>
 				<div className={styles.hamburger} onClick={toggleMenu}>
 					&#9776;
