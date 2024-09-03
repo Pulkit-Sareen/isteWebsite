@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import styles from "./Homepage1.module.css";
 import Cards from "./Cards";
 import { gsap } from "gsap";
+import {whiteLogo} from "../../assets/images/index.js"
 function Homepage1() {
   const logoRef = useRef(null);
   const introRef = useRef(null);
@@ -33,7 +34,7 @@ function Homepage1() {
   return (
     <>
       <div className={styles.container} id="home">
-        <img ref={logoRef} src="./src/assets/images/logo.png" alt="Logo" className={styles.logo} />
+        <img ref={logoRef} src={whiteLogo} alt="Logo" className={styles.logo} />
         <div ref={introRef} className={styles.intro}>
           {/* <h3>Introducing</h3> */}
           {/* <h1>ISTE</h1> */}
