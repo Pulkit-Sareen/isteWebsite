@@ -320,7 +320,7 @@ const details = [
 		dp: profile.saarthi,
 		name: "Saarthi Arora",
 		title: "Core Member",
-		info: "Sarthi a truly essential member of the content department is known for his undying creativity and innovative approach is an intrinsic member of the society. ",
+		info: "Saarthi a truly essential member of the content department is known for his undying creativity and innovative approach is an intrinsic member of the society. ",
 		linkdin:
 			"https://www.linkedin.com/in/saarthi-arora-849656243?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
 	},
