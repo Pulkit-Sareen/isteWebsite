@@ -28,7 +28,9 @@ import arsh from "../../assets/Core images/ArshChatrath.jpg"
 import ayush from "../../assets/Core images/AYUSHGARG.jpg"
 import ayushm from "../../assets/Core images/AyushMishra.jpg"
 import bhavik from "../../assets/Core images/BHAVIKJAIN.jpg"
+import bhavika from "../../assets/Core images/Bhavika.jpg"
 import bhavya from "../../assets/Core images/Bhavya.jpg"
+import diya from "../../assets/Core images/Diya.jpg"
 import hariyank from "../../assets/Core images/HARYIANKKUMRA.jpg"
 import himanish from "../../assets/Core images/HimanishPuri.jpg"
 import ishaan from "../../assets/Core images/IshaanSharma.jpg"
@@ -37,6 +39,7 @@ import kaushik from "../../assets/Core images/KaushikArora.jpg"
 import lakshita from "../../assets/Core images/LakshitaGupta.jpg"
 import meenal from "../../assets/Core images/Meenal.jpg"
 import pranav from "../../assets/Core images/PranavVaishPhoto3.jpg"
+import ritigya from "../../assets/Core images/RitigyaSingh.jpg"
 import saarthi from "../../assets/Core images/SAARTHIARORA.jpg"
 import sakshat from "../../assets/Core images/SakshatJain.jpg"
 import srijapi from "../../assets/Core images/SriJapjiKaur.jpg"
@@ -50,6 +53,6 @@ import rajesh from "../../assets/president and faculty images/sir.jpg"
 
 
 
-const profile = {suman, rajesh, nutan, akshara, jahnvi, aakash, naman, anushka, khushi, manya, rohit, shreyaS, shreyaSi, sarthak, shreyansh, prarthana,aabharan,abhinav,abhyuday,khushpreet,jini,rohitd,vivek,yashb,aarushi,abhivinesh,ajinkya,ansh,arsh,ayush,ayushm,bhavik,bhavya,hariyank,himanish,ishaan,ishita,kaushik,lakshita,meenal,pranav,saarthi,sakshat,srijapi,tanishq,udita,vinayak,yash,yashita}
+const profile = {suman, rajesh, nutan, akshara, jahnvi, aakash, naman, anushka, khushi, manya, rohit, shreyaS, shreyaSi, sarthak, shreyansh, prarthana,aabharan,abhinav,abhyuday,khushpreet,jini,rohitd,vivek,yashb,aarushi,abhivinesh,ajinkya,ansh,arsh,ayush,ayushm,bhavik,bhavika,bhavya,diya,hariyank,himanish,ishaan,ishita,kaushik,lakshita,meenal,pranav,ritigya,saarthi,sakshat,srijapi,tanishq,udita,vinayak,yash,yashita}
 
 export default profile;

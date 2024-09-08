@@ -200,20 +200,6 @@ const details = [
 		linkdin: "",
 	},
 	{
-		dp: profile.ajinkya,
-		name: "Ajinkya Hon",
-		title: "Core Member",
-		info: "Ajinkya shines in the media team, embodying creativity, resourcefulness, and innovation in all endeavors.",
-		linkdin: "https://www.linkedin.com/in/ajinkya-hon-032253280/",
-	},
-	{
-		dp: profile.ansh,
-		name: "Ansh Bajaj",
-		title: "Core Member",
-		info: "Ansh is a vital member of the marketing team, recognized for his creative campaigns and strategic thinking.",
-		linkdin: "https://www.linkedin.com/in/anshbajaj2611/",
-	},
-	{
 		dp: profile.arsh,
 		name: "Arsh Chatrath",
 		title: "Core Member",
@@ -240,7 +226,14 @@ const details = [
 		name: "Bhavik Jain",
 		title: "Core Member",
 		info: "Bhavik is an essential technical team member, admired for his inventive strategies and cooperative nature.",
-		linkdin: "",
+		linkdin: "https://www.linkedin.com/company/iste-thapar/",
+	},
+	{
+		dp: profile.bhavika,
+		name: "Bhavika",
+		title: "Core Member",
+		info: "Bhavika's cheerful personality brings liveliness to the media department, while her creativity and visual skills make her exceptional at creating captivating pieces that elevate our image.",
+		linkdin: "https://www.linkedin.com/company/iste-thapar/",
 	},
 	{
 		dp: profile.bhavya,
@@ -249,6 +242,14 @@ const details = [
 		info: "Bhavya is a champ in the technical and media team, demonstrating resourcefulness, innovation, and attention to detail in all tasks.",
 		linkdin:
 			"https://www.linkedin.com/in/bhavya-agarwal-3a2a14289?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+	},
+	{
+		dp: profile.diya,
+		name: "Diya",
+		title: "Core Member",
+		info: "Diya is the creative spark of our society, known for her fresh ideas and unique approach to everything she works on. Her contributions to content always bring something exciting and new.",
+		linkdin:
+			"https://www.linkedin.com/company/iste-thapar/",
 	},
 	{
 		dp: profile.hariyank,
@@ -309,6 +310,13 @@ const details = [
 		linkdin: "https://www.linkedin.com/in/pranavvaish20",
 	},
 	{
+		dp: profile.ritigya,
+		name: "Ritigya Singh",
+		title: "Core Member",
+		info: "Ritigya is a vital member of the design team known for her elegant and breathtaking visual arts. Her contemporary and vibrant aesthetics breath lives in our designs.",
+		linkdin: "https://www.linkedin.com/company/iste-thapar/",
+	},
+	{
 		dp: profile.saarthi,
 		name: "Saarthi Arora",
 		title: "Core Member",
@@ -322,13 +330,6 @@ const details = [
 		title: "Core Member",
 		info: "A meticulous fellow, sakshat, has never failed to put forth his many qualities like attention to detail, inclusive collaboration and fastidious dedication into any project he undertakes.",
 		linkdin: "https://www.linkedin.com/in/sakshatjain/",
-	},
-	{
-		dp: profile.srijapi,
-		name: "Sri Japji Kuar Dardi",
-		title: "Core Member",
-		info: "Japji, A truly integral pillar of the ISTE family who has reflected unwavering enthusiasm, amazing coherence and unique insight in any project she has been a part of.",
-		linkdin: "https://www.linkedin.com/in/sri-japji-kaur-dardi-288357291",
 	},
 	{
 		dp: profile.tanishq,
@@ -351,13 +352,6 @@ const details = [
 		info: "A true tech enthusiast Vinayak is a harmonious and fastidious member of the club who never fails to present a pragmatic approach to any project he undertakes.",
 		linkdin:
 			"https://www.linkedin.com/in/vinayak-jain-21b493298?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-	},
-	{
-		dp: profile.yash,
-		name: "Yash Agarwal",
-		title: "Core Member",
-		info: "The embodiment of coherence and confidence Yash is a requisite member of the society who never backs out from a challenge, and whose industriousness is an honor to witness.",
-		linkdin: "",
 	},
 	{
 		dp: profile.yashita,
