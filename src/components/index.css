@@ -13,170 +13,225 @@
  } */
 
 .logo {
-    width: 13rem;
-    margin: auto;
-    margin-bottom: 2rem;
-    margin-top: -8rem;
+  width: 13rem;
+  margin: auto;
+  margin-bottom: 2rem;
+  margin-top: -8rem;
 }
 
 html::-webkit-scrollbar {
-    width: 0;
+  width: 0;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
-    background-color: black;
+  background-color: black;
+  font-size: 16px;
 }
 
 @keyframes fadeInLeft {
-    from {
-        transform: translateX(-2%);
-    }
+  from {
+    transform: translateX(-2%);
+  }
 
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 @keyframes fadeInRight {
-    from {
-        transform: translateX(2%);
-    }
+  from {
+    transform: translateX(2%);
+  }
 
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 @keyframes fadeIn {
-    to {
-        opacity: 1;
-    }
+  to {
+    opacity: 1;
+  }
 }
 
 .fadeInLeftAnimation {
-    animation: fadeInLeft 0.5s forwards;
+  animation: fadeInLeft 0.5s forwards;
 }
 
 .fadeInRightAnimation {
-    animation: fadeInRight 0.5s forwards;
+  animation: fadeInRight 0.5s forwards;
 }
 
 .fadeInAnimation {
-    animation: fadeIn 0.55s forwards;
+  animation: fadeIn 0.55s forwards;
 }
 
 .president_eb_ec {
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    flex: 1 0 max-content;
-    aspect-ratio: 21/9;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem 1rem;
-    column-gap: 5rem;
-    width: clamp(48rem, 100%, 100vw);
-    text-align: justify;
-    margin: 0;
-    /* height: 100vh; */
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 max-content;
+  aspect-ratio: 21/9;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+  /* margin: 2rem; */
+  column-gap: 5rem;
+  /* width: clamp(48rem, 100vw, 100%); */
+  width: 100vw;
+  text-align: justify;
+  /* height: 100vh; */
 }
 
 .president_card {
-    background-color: black;
-    width: 100%;
-    color: white;
-
-    display: flex;
-    column-gap: 2rem;
-
-    transition-duration: 300ms;
+  background-color: black;
+  width: 100vw;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 2rem;
+  padding: 10px;
+  transition-duration: 300ms;
 }
 
 .president_card:hover {
-    background-color: rgb(55 65 81 / 0.2);
-    transform: scale(1.05);
-    border-top-right-radius: 1rem;
-    border-bottom-right-radius: 1rem;
+  background-color: rgb(55 65 81 / 0.2);
+  transform: scale(1.05);
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
 }
 
-@media (max-width:768px) {
-    .president_card {
-        flex-direction: column;
-    }
+@media (max-width: 768px) {
+  .president_card {
+    flex-direction: column;
+    padding: 1rem;
+    margin: 0;
+  }
 }
 
 .president_image {
-    aspect-ratio: 1;
-    width: 100%;
-    object-fit: contain;
-    max-height: 18rem;
+  /* aspect-ratio: 1; */
+  width: 100%;
+  object-fit: contain;
+}
+.president_image {
+  max-height: 24rem;
+  align-self: flex-start;
 }
 
-.president__cards {
-    background-color: black;
-    column-gap: 4rem;
-    width: 100%;
-
-    display: flex;
-    column-gap: 2rem;
+/* .president__cards {
+  background-color: black;
+  column-gap: 4rem;
+  width: 100%;
+  display: flex;
+  column-gap: 2rem;
 }
 
-@media (max-width:768px) {}
-
-
-@media (max-width:1300px) {
-    .president__cards {
-        flex-direction: column;
-        row-gap: 5rem;
-    }
-}
+@media (max-width: 1300px) {
+  .president__cards {
+    flex-direction: column;
+    row-gap: 5rem;
+  }
+} */
 
 @media (min-width: 1024px) {
-    .lg\:text-5xl {
-        font-size: 3rem
-            /* 48px */
-        ;
-        line-height: 1;
-    }
+  .lg\:text-5xl {
+    font-size: 3rem /* 48px */;
+    line-height: 1;
+  }
 }
 
 @media (min-width: 768px) {
-    .md\:text-4xl {
-        font-size: 2.25rem
-            /* 36px */
-        ;
-        line-height: 2.5rem
-            /* 40px */
-        ;
-    }
+  .md\:text-4xl {
+    font-size: 2.25rem /* 36px */;
+    line-height: 2.5rem /* 40px */;
+  }
+  .president_image {
+    align-self: center;
+  }
 }
 
 @media (min-width: 640px) {
-    .sm\:text-3xl {
-        font-size: 1.875rem
-            /* 30px */
-        ;
-        line-height: 2.25rem
-            /* 36px */
-        ;
-    }
+  .sm\:text-3xl {
+    font-size: 1.875rem /* 30px */;
+    line-height: 2.25rem /* 36px */;
+  }
 }
 
-@media(max-width: 768px){
-    .eb{
-        display: grid;
-        justify-content: start;
-    }
-    .president_image{
-        position: relative;
-        left: -200px;
-    }
+@media (max-width: 768px) {
+  .eb {
+    display: grid;
+    justify-content: center;
+  }
+  /* .president_image {
+    position: relative;
+    left: -250px;
+  } */
 }
 /* flex justify-center bg-black flex-col gap-y-20 items-center  py-28 px-16 mt-[500px] lg:mt-[150px] */
+
+.president_card_info {
+  max-width: 70%;
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+  row-gap: 4px;
+}
+.no_scroll {
+  overflow-x: hidden;
+}
+.card_info {
+  font-size: 0.78rem;
+  line-height: 1.4;
+}
+@media (max-width: 768px) {
+  .president_eb_ec {
+    margin: 0px;
+  }
+  .president_card_info {
+    max-width: 100%;
+    padding: 0px;
+    padding-right: 16px;
+    align-items: center;
+  }
+  .card_info {
+    font-size: 16px;
+    padding: 0px;
+    text-align: start;
+    padding-left: 20px;
+    line-height: normal;
+  }
+  .text-align-center {
+    text-align: center;
+  }
+  .align_items_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.eb_ec_class {
+  width: 10rem;
+}
+@media (max-width: 1200px) {
+  .lg_flexrow {
+    flex-direction: column;
+  }
+  .card_info {
+    line-height: normal;
+    font-size: 1rem;
+  }
+  .president_card_info {
+    row-gap: 10px;
+  }
+}
