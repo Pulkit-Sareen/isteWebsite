@@ -284,7 +284,7 @@ const details = [
   },
   {
     dp: profile.kashvi,
-    name: "Kashvi Bansal",
+    name: "Kashvi Sharma",
     title: "Core Member",
     info: "Driven by a remarkable work ethic, Kashvi is like a breath of fresh air. Her relentless efforts and vibrant demeanor, make her a crucial member of the content department.",
     email: "iste@thapar.edu",
@@ -354,7 +354,7 @@ const details = [
     dp: profile.sakshat,
     name: "Sakshat Jain",
     title: "Core Member",
-    info: "A meticulous fellow, sakshat, has never failed to put forth his many qualities like attention to detail, inclusive collaboration and fastidious dedication into any project he undertakes.",
+    info: "A meticulous fellow, Sakshat, has never failed to put forth his many qualities like attention to detail, inclusive collaboration and fastidious dedication into any project he undertakes.",
     email: "iste@thapar.edu",
     linkdin: "https://www.linkedin.com/in/sakshatjain/",
   },
