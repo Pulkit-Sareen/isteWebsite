@@ -20,6 +20,13 @@ function AlumniPage() {
       company: "Optum, Axxela",
     },
     {
+      dp: profile.pranav,
+      name: "Pranav Modgil",
+      position: "Finance Secretary",
+      year: "2023-2024",
+      company: "IBM",
+    },
+    {
       dp: profile.awantika,
       name: "Awantika Awasthi",
       position: "Joint Secretary",
@@ -30,7 +37,7 @@ function AlumniPage() {
       dp: profile.bhoomika,
       name: "Bhoomika Vrati",
       position: "Joint Secretary",
-      year: "2024",
+      year: "2023-2024",
       company: "Fastenal, Optum",
     },
     {
@@ -48,27 +55,14 @@ function AlumniPage() {
       company: "NuvertOS",
     },
     {
-      dp: profile.anushka,
-      name: "Anushka Dewangan",
-      position: "Finance Secretary",
-      year: "2020-2023",
-      company: "NVIDIA",
-    },
-    {
-      dp: profile.pranav,
-      name: "Pranav Modgil",
-      position: "Finance Secretary",
-      year: "2023-2024",
-      company: "IBM",
-    },
-
-    {
       dp: profile.avirat,
       name: "Avirat Sharma",
       position: "Technical Secretary",
       year: "2023-2024",
       company: "ION group",
     },
+    
+    
 
     {
       dp: profile.vishnu,
@@ -85,13 +79,22 @@ function AlumniPage() {
       year: "2023-2024",
       company: "Blackrock",
     },
+    
     {
       dp: profile.aadil,
       name: "Aadil Garg",
       position: "Media Convenor",
-      year: "2022-2024",
+      year: "2023-2024",
       company: "Findr",
     },
+    {
+      dp: profile.anushka,
+      name: "Anushka Dewangan",
+      position: "Finance Secretary",
+      year: "2022-2023",
+      company: "NVIDIA",
+    },  
+
     {
       dp: profile.gurmehar,
       name: "Gurmehar Kaur Sibal",

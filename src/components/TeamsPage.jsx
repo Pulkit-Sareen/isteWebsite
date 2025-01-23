@@ -248,14 +248,7 @@ const details = [
     email: "iste@thapar.edu",
     linkdin: "https://www.linkedin.com/in/himanish-puri-b47468321/",
   },
-  {
-    dp: profile.ishaanP,
-    name: "Ishaan Pathak",
-    title: "Core Member",
-    info: "With a knack for problem-solving, Ishaan consistently delivers innovative solutions that elevate our technical projects to new heights. His passion for technology and dedication make him an invaluable asset to our team.",
-    email: "iste@thapar.edu",
-    linkdin: "https://www.linkedin.com/in/ishan-pathak-022604291/",
-  },
+  
   {
     dp: profile.ishaan,
     name: "Ishaan Sharma",
@@ -264,6 +257,14 @@ const details = [
     email: "iste@thapar.edu",
     linkdin:
       "https://www.linkedin.com/in/ishaan-sharma-6062bb291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+  },
+  {
+    dp: profile.ishaanP,
+    name: "Ishan Pathak",
+    title: "Core Member",
+    info: "With a knack for problem-solving, Ishaan consistently delivers innovative solutions that elevate our technical projects to new heights. His passion for technology and dedication make him an invaluable asset to our team.",
+    email: "iste@thapar.edu",
+    linkdin: "https://www.linkedin.com/in/ishan-pathak-022604291/",
   },
   {
     dp: profile.ishita,
@@ -383,15 +384,7 @@ const details = [
     linkdin:
       "https://www.linkedin.com/in/vaaris-sidhu-b84722321?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
   },
-  {
-    dp: profile.vinayak,
-    name: "Vinayak Jain",
-    title: "Core Member",
-    info: "A true tech enthusiast Vinayak is a harmonious and fastidious member of the club who never fails to present a pragmatic approach to any project he undertakes.",
-    email: "iste@thapar.edu",
-    linkdin:
-      "https://www.linkedin.com/in/vinayak-jain-21b493298?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-  },
+  
   {
     dp: profile.yashita,
     name: "Yashita Gupta",
