@@ -31,7 +31,7 @@ function AlumniPage() {
       name: "Awantika Awasthi",
       position: "Joint Secretary",
       year: "2023-2024",
-      company: "Optum",
+      company: "Apple, Optum",
     },
     {
       dp: profile.bhoomika,
