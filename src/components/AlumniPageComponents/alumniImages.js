@@ -11,6 +11,7 @@ import pranav from "../../assets/Alumni images/Pranav Modgil.jpg";
 import vedant from "../../assets/Alumni images/Vedant Pramod Gadodia.jpeg";
 import vishnu from "../../assets/Alumni images/VISHNU BATRA.jpeg";
 import tanmay from "../../assets/Alumni images/Tanmay Deshkar.jpg";
+import jigya from "../../assets/Alumni images/JIGYA MUNJAL.jpg";
 
 const profile = {
   aadil,
@@ -26,6 +27,7 @@ const profile = {
   vedant,
   vishnu,
   tanmay,
+  jigya,
 };
 
 export default profile;

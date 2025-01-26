@@ -41,6 +41,14 @@ function AlumniPage() {
       company: "Fastenal, Optum",
     },
     {
+      dp: profile.jigya,
+      name: "Jigya Munjal",
+      position: "Joint Secretary",
+      year: "2023-2024",
+      company: "Wayfair, Optum",
+    },
+
+    {
       dp: profile.naman,
       name: "Naman Soni",
       position: "Joint Secretary",
@@ -101,7 +109,7 @@ function AlumniPage() {
       position: "Public Relations Executive",
       year: "2022-2023",
       company: "ZS ASSOCIATES",
-    },
+    },    
   ]);
 
   return (
