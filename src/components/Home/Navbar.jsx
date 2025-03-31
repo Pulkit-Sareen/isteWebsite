@@ -22,6 +22,11 @@ export const Navbar = () => {
           &#9776;
         </div>
         <div className={`${styles.Options} ${showOptions ? styles.show : ""}`}>
+        <h1>
+        <a href="https://colloquium11.vercel.app/" target="_blank" rel="noopener noreferrer">
+          Colloquium
+        </a>
+      </h1>
           <h1>
             <Link to="/">Home</Link>
           </h1>
