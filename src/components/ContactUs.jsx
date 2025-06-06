@@ -17,7 +17,7 @@ const ContactPage = () => {
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		try {
-			const response = await fetch("https://backendkalink/api/contact", {
+			const response = await fetch("https://iste-backend.vercel.app/", {
 				method: "POST",
 				headers: { "Content-Type": "application/json" },
 				body: JSON.stringify(formData),
