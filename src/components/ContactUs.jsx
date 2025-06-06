@@ -1,67 +1,55 @@
+import React, { useState } from "react";
 import "./contactUsComponents/contactUs.css";
 
-/**
- * ContactPage component.
- * Renders a contact form for users to get in touch.
- * @returns {JSX.Element} The rendered ContactPage component.
- */
 const ContactPage = () => {
+	const [formData, setFormData] = useState({
+		firstName: "",
+		lastName: "",
+		email: "",
+		phone: "",
+		message: "",
+	});
+
+	const handleChange = (e) => {
+		setFormData({ ...formData, [e.target.name]: e.target.value });
+	};
+
+	const handleSubmit = async (e) => {
+		e.preventDefault();
+		try {
+			const response = await fetch("https://backendkalink/api/contact", {
+				method: "POST",
+				headers: { "Content-Type": "application/json" },
+				body: JSON.stringify(formData),
+			});
+			const result = await response.json();
+			alert(result.message || "Message sent!");
+		} catch (err) {
+			alert("Error sending message.");
+			console.error(err);
+		}
+	};
+
 	return (
 		<div className="contact-page">
-			{/* <h1 className="contact-h1">Get in touch</h1> */}
 			<div className="contact-container">
-				{/* <div className="left-column"></div> */}
 				<div className="right-column">
-					<form
-						className="contact-form"
-						onSubmit={(e) => e.preventDefault()}
-					>
-						<h2 className="contact-h2">Let&apos;s connect</h2>
-						<p
-							className="contact-p"
-							style={{ textAlign: "center" }}
-						>
-						
-						</p>
+					<form className="contact-form" onSubmit={handleSubmit}>
+						<h2 className="contact-h2">Let's connect</h2>
 						<div className="form-group">
-							<input
-								type="text"
-								placeholder="First Name"
-								required
-							/>
-							<input
-								type="text"
-								placeholder="Last Name"
-								required
-							/>
+							<input type="text" name="firstName" placeholder="First Name" onChange={handleChange} required />
+							<input type="text" name="lastName" placeholder="Last Name" onChange={handleChange} required />
 						</div>
 						<div className="form-group">
-							<input
-								type="email"
-								placeholder="Email"
-								required
-							/>
+							<input type="email" name="email" placeholder="Email" onChange={handleChange} required />
 						</div>
 						<div className="form-group">
-							<input
-								type="tel"
-								placeholder="Phone Number"
-								required
-							/>
+							<input type="tel" name="phone" placeholder="Phone Number" onChange={handleChange} required />
 						</div>
 						<div className="form-group">
-							<textarea
-								placeholder="Message"
-								rows={4}
-								required
-							></textarea>
+							<textarea name="message" placeholder="Message" rows={4} onChange={handleChange} required />
 						</div>
-						<button
-							className="contact-submit-btn"
-							type="submit"
-						>
-							Submit
-						</button>
+						<button className="contact-submit-btn" type="submit">Submit</button>
 					</form>
 				</div>
 			</div>
