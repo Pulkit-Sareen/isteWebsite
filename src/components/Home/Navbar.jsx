@@ -1,49 +1,74 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./Navbar.module.css";
 import { Link } from "react-router-dom";
-import { finalLogo } from "../../assets/images/index.js";
+import { whiteLogo } from "../../assets/images";
+import { FaCode, FaCalendarAlt, FaUsers, FaCube, FaFolder, FaPhone } from "react-icons/fa";
 
 export const Navbar = () => {
   const [showOptions, setShowOptions] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 800);
 
   const toggleMenu = () => {
     setShowOptions(!showOptions);
   };
 
+  const handleResize = () => {
+    const isNowMobile = window.innerWidth <= 870;
+    setIsMobile(isNowMobile);
+    if (!isNowMobile) setShowOptions(false);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <div className={styles.NavPage}>
-      <div className={styles.Header}>
+      <header className={styles.Header}>
         <div className={styles.logo}>
-          <a href="/">
-            <img src={finalLogo} alt="logo" />
-          </a>
+          <Link to="/">
+            <img src={whiteLogo} alt="logo" />
+          </Link>
         </div>
-        <div className={styles.hamburger} onClick={toggleMenu}>
-          &#9776;
-        </div>
-        <div className={`${styles.Options} ${showOptions ? styles.show : ""}`}>
-        <h1>
-        <a href="https://colloquium11.vercel.app/" target="_blank" rel="noopener noreferrer">
-          Colloquium
-        </a>
-      </h1>
-          <h1>
-            <Link to="/">Home</Link>
-          </h1>
-          <h1>
-            <Link to="/events">Event</Link>
-          </h1>
-          <h1>
-            <Link to="/team">Team</Link>
-          </h1>
-          <h1>
-            <Link to="/alumni">Alumni</Link>
-          </h1>
-          <h1>
-            <Link to="/contact">Contact</Link>
-          </h1>
-        </div>
-      </div>
+
+        {isMobile && (
+          <div className={styles.hamburger} onClick={toggleMenu}>
+            &#9776;
+          </div>
+        )}
+
+        {!isMobile && (
+          <nav className={styles.Options}>
+            <Link to="/" className={styles.menuItem}><FaCode /> Home</Link>
+            <Link to="/events" className={styles.menuItem}><FaCalendarAlt />Event</Link>
+            <Link to="/team" className={styles.menuItem}><FaUsers />Team</Link>
+            <Link to="/sponsor" className={styles.menuItem}><FaCube />Sponsor</Link>
+            <Link to="/projects" className={styles.menuItem}><FaFolder />Project</Link>
+            <Link to="/contact" className={styles.menuItem}><FaPhone />Contact</Link>
+          </nav>
+        )}
+
+        {!isMobile && (
+          <div className={styles.joinButtonDesktop}>
+            <Link to="/join" className={styles.joinButton}>
+              JOIN US
+            </Link>
+          </div>
+        )}
+      </header>
+
+      {isMobile && (
+        <nav className={`${styles.OptionsMobile} ${showOptions ? styles.show : ""}`}>
+          <Link to="/" className={styles.menuItem}><FaCode /> Home</Link>
+          <Link to="/events" className={styles.menuItem}><FaCalendarAlt />Event</Link>
+          <Link to="/team" className={styles.menuItem}><FaUsers />Team</Link>
+          <Link to="/sponsor" className={styles.menuItem}><FaCube />Sponsor</Link>
+          <Link to="/projects" className={styles.menuItem}><FaFolder />Project</Link>
+          <Link to="/contact" className={styles.menuItem}><FaPhone />Contact</Link>
+          <Link to="/join" className={styles.joinButton}>JOIN US</Link>
+        </nav>
+      )}
     </div>
   );
 };

@@ -1,30 +1,136 @@
-/* *{
-    background-image: url('src/bg_image.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-  } */
-.logo {
-    width: 16rem;
-    margin: auto;
-    margin-bottom: 2rem;
-    margin-top: -8rem;
+/* .heroContainer {
+    width: 100%;
+    overflow-x: hidden;
+    
 }
 
-.container {
+.logoSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding-top: 2rem;
+    color: white;
+}
+
+.logo {
+    width: 14rem;
+    transition: transform 0.5s ease;
+}
+
+.fullForm {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1.5rem;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+}
+
+.heroContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 4rem 8%;
+    color: white;
+    min-height: 100vh;
+    gap: 2rem;
+}
+.heroImage{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.leftText {
+    flex: 1;
+}
+
+.leftText h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.leftText p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    width: 90%;
+}
+
+.heroJoinButton {
+    padding: 0.6rem 1.8rem;
+    border-radius: 36px;
+    font-size: 1rem;
+    font-weight: 600;
+    background-image: linear-gradient(90deg, #1066C8, #670C80);
+    transition: all 0.3s ease;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.heroJoinButton:hover {
+    scale: 1.05;
+    box-shadow: 0 0 20px #670C80;
+}
+
+.rightImage {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightImage img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .heroContent {
+        flex-direction: column;
+        padding: 3rem 5%;
+        text-align: center;
+    }
+
+    .leftText p {
+        width: 100%;
+    }
+
+    .rightImage {
+        margin-top: 2rem;
+    }
+
+    .fullForm {
+        font-size: 1.3rem;
+    }
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.logo {
+    width: 16rem;
+    margin-bottom: 2rem;
+    margin-top: 5rem;
+}
+
+.heroContainer {
     margin-top: 0;
     padding-top: 1px;
     box-sizing: border-box;
-    height: 100vh;
-    font-family: Roboto;
-    /* Ensure the container takes full viewport height */
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgb(24, 38, 69);
-    background: radial-gradient(circle, rgba(24, 38, 69, 1) 0%, rgba(24, 38, 69, 1) 5%, rgba(0, 0, 0, 0.9585084033613446) 78%);
+    padding: 4rem 0;
 }
 
 .intro {
@@ -32,48 +138,59 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: #FFFFFF;
 }
 
-.intro h3 {
-    color: #c5cfe0;
-    margin: 0;
-}
 
 .intro h1 {
-    font-size: 1.7rem;
-    /* Adjusted for better responsiveness */
-    color: #cad5e9;
-    margin: 0.6rem 0;
-    /* Adjust margins for better spacing */
-}
-
-.intro h2,
-.intro span h2 {
-    font-size: 1.5rem;
-    /* Adjusted font-size */
-    color: #6d94cb;
-    margin: 0.5em 0;
-    /* Adjust margins for better spacing */
+    font-size: 2.2rem;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    margin: 0.6rem 0.6rem;
+    
 }
 
 .subsection {
     text-align: center;
     margin-top: 2em;
-    clear: both;
-}
-
-.subsection h3 {
-    color: #ACB8CB;
-    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #FFFFFF;
+    gap: 24px;
+    margin: 5rem 0;
 }
 
 .subsection h1 {
-    color: #6C90C2;
-    font-weight: 700;
-    font-size: 2.2rem;
-    /* Adjusted for better readability */
-    margin: 0.5em 0;
-    descent-override: none;
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+    word-spacing: 0.1rem;
+    font-size: xx-large;
+}
+
+.subsection h2 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin: 0.3em 0;
+    width: 80%;
+}
+
+.heroJoinButton {
+    width: 7.5rem;
+    padding: 0.2rem;
+    border-radius: 24px;
+    font-size: 1rem;
+    background-image: linear-gradient(90deg, #1066C8, #670C80);
+    padding: 0.5rem 1.5rem;
+    border-radius: 36px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.heroJoinButton:hover {
+    scale: 1.05;
+    box-shadow: 0px 0px 38px 0px #670C80;
 }
 
 @media (min-width: 768px) and (max-width: 1025px) {
@@ -81,44 +198,108 @@
     .intro h2,
     .intro span h2 {
         font-size: 1.25em;
-        /* Adjusted font-size */
     }
 
     .subsection h1 {
         font-size: 1.75em;
-        /* Adjusted for smaller screens */
+        
     }
 }
 
 @media (max-width: 767px) {
     .intro h1 {
         font-size: 1.4rem;
-        margin: 0rem 0;
-        /* Further reduced for small screens */
-    }
-
-    .intro h2,
-    .intro span h2 {
-        font-size: 1.2em;
-        /* Adjusted for small screens */
     }
 
     .subsection h1 {
         font-size: 1.5em;
-        /* Adjusted for smaller screens */
+       
     }
 }
 
-@media (max-width:560px)
-{
-    .subsection h1{
-        width: 20rem;
+@media (max-width:560px) {
+    .subsection h2 {
+        width: 100%;
+        padding: 0 2rem;
     }
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.app {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
 }
 
-@media (max-width:330px)
-{
-    .subsection h1{
-        width: 15rem;
-    }
+.app {
+    overflow: hidden;
+    touch-action: pan-up;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    text-shadow: 0 0 5px #ffffff, 0 0 20px #000, 0 0 30px #000;
+    position: sticky;
+    top: 0;
+
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 15rem;
+}
+
+.hero h1 {
+    --fontSize: 60px;
+    --lineHeight: 80px;
+    width: auto;
+    height: calc(2 * var(--lineHeight));
+    line-height: var(--lineHeight);
+    margin: calc(50vh - var(--lineHeight)) auto 0;
+    font-size: var(--fontSize);
+    text-transform: uppercase;
+}
+
+.hero a {
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+}
+
+canvas {
+    display: block;
+    position: fixed;
+    z-index: -1;
+    top: 0;
 }

@@ -1,16 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* @layer base {
-  @font-face {
-    font-family: 'Roboto';
-    src: url(/isteWebsite/src/assets/fonts/Roboto/Roboto-Regular.ttf);
-  }
-} */
-/* .main{
-    width: 130vw;
- } */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 .logo {
   width: 13rem;
@@ -25,11 +16,18 @@ html::-webkit-scrollbar {
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-  background-color: black;
+  background-image: linear-gradient(135deg, #0F2946, #000000, #2F1345);
   font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  color: #FFFFFF;
 }
 
 @keyframes fadeInLeft {
@@ -122,6 +120,7 @@ html {
   width: 100%;
   object-fit: contain;
 }
+
 .president_image {
   max-height: 24rem;
   align-self: flex-start;
@@ -141,18 +140,34 @@ html {
     row-gap: 5rem;
   }
 } */
+html {
+  font-size: 100%;
+}
 
+@media (max-width:768px) {
+  html {
+    font-size: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+/* 
 @media (min-width: 1024px) {
   .lg\:text-5xl {
-    font-size: 3rem /* 48px */;
+    font-size: 3rem; 48px
     line-height: 1;
   }
 }
 
 @media (min-width: 768px) {
   .md\:text-4xl {
-    font-size: 2.25rem /* 36px */;
-    line-height: 2.5rem /* 40px */;
+    font-size: 2.25rem;36px
+    line-height: 2.5rem;40px
   }
   .president_image {
     align-self: center;
@@ -161,21 +176,23 @@ html {
 
 @media (min-width: 640px) {
   .sm\:text-3xl {
-    font-size: 1.875rem /* 30px */;
-    line-height: 2.25rem /* 36px */;
+    font-size: 1.875rem;30px
+    line-height: 2.25rem;36px
   }
-}
+} */
 
 @media (max-width: 768px) {
   .eb {
     display: grid;
     justify-content: center;
   }
+
   /* .president_image {
     position: relative;
     left: -250px;
   } */
 }
+
 /* flex justify-center bg-black flex-col gap-y-20 items-center  py-28 px-16 mt-[500px] lg:mt-[150px] */
 
 .president_card_info {
@@ -187,23 +204,28 @@ html {
   align-items: start;
   row-gap: 4px;
 }
+
 .no_scroll {
   overflow-x: hidden;
 }
+
 .card_info {
   font-size: 0.78rem;
   line-height: 1.4;
 }
+
 @media (max-width: 768px) {
   .president_eb_ec {
     margin: 0px;
   }
+
   .president_card_info {
     max-width: 100%;
     padding: 0px;
     padding-right: 16px;
     align-items: center;
   }
+
   .card_info {
     font-size: 16px;
     padding: 0px;
@@ -211,26 +233,32 @@ html {
     padding-left: 20px;
     line-height: normal;
   }
+
   .text-align-center {
     text-align: center;
   }
+
   .align_items_center {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 }
+
 .eb_ec_class {
   width: 10rem;
 }
+
 @media (max-width: 1200px) {
   .lg_flexrow {
     flex-direction: column;
   }
+
   .card_info {
     line-height: normal;
     font-size: 1rem;
   }
+
   .president_card_info {
     row-gap: 10px;
   }

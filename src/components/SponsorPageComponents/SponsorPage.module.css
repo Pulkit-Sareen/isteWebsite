@@ -1,0 +1,240 @@
+.sponsorSection {
+    margin-top: 4rem;
+    padding: 4rem 1rem;
+    text-align: LEFT;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-image: (147deg, rgba(15, 41, 70, 0.9) 5%, rgba(0, 0, 0, 0.9) 58%, rgba(47, 19, 69, 0.9) 116%);
+    position: relative;
+    z-index: 1;
+    backdrop-filter: blur(10px);
+}
+
+.heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    position: relative;
+    width: fit-content;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+}
+
+.heading::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 3px;
+    width: 0;
+    opacity: 0;
+    background: linear-gradient(to right, #1066C8, #670C80);
+    border-radius: 2px;
+    transition: width 1s ease-out, opacity 0.3s ease;
+}
+
+.underlineAnimate::after {
+    width: 100%;
+    opacity: 1;
+    animation: underlineExpand 1s ease-out forwards;
+}
+
+@keyframes underlineExpand {
+    from {
+        width: 0;
+        opacity: 0;
+    }
+
+    to {
+        width: 100%;
+        opacity: 1;
+    }
+}
+
+.description {
+    font-size: 1.3rem;
+    color: #FFFFFF;
+    width: 80%;
+    margin: 0 auto 2.5rem auto;
+    padding: 1rem 1.5rem;
+    text-align: center;
+}
+
+.sponsorCardsGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+    .sponsorCardsGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .description {
+        width: 90%;
+    }
+}
+
+.sponsorCard {
+    position: relative;
+    border-radius: 1.2rem;
+    z-index: 1;
+    border: 1px solid transparent;
+    background-clip: padding-box;
+    overflow: visible;
+    padding: 0;
+    /* Remove padding from outer card */
+}
+
+.sponsorCardInner {
+    background: #081829;
+    border-radius: 1.1rem;
+    /* slightly less than .sponsorCard for border to show */
+    color: #FFFFFF;
+    box-shadow: 0 8px 32px 0 rgba(16, 102, 200, 0.18), 0 1.5px 8px 0 #1066C833;
+    padding: 0rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 0;
+    min-height: 260px;
+    width: 100%;
+    height: 100%;
+}
+
+.sponsorCard::before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    z-index: -1;
+    border-radius: 1.3rem;
+    background: linear-gradient(270deg, #1066C8, #000000, #670C80);
+    background-size: 400% 400%;
+    animation: sponsorCardBorderMove 5s linear infinite;
+    pointer-events: none;
+}
+
+@keyframes sponsorCardBorderMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.sponsorCard.visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.7s cubic-bezier(.4, 2, .6, 1), transform 0.7s cubic-bezier(.4, 2, .6, 1);
+}
+
+.sponsorCard.hide {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.sponsorCardContent {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    width: 100%;
+}
+
+.sponsorCardImg {
+    width: 150px;
+    height: 200px;
+    border-radius: 12px;
+    object-fit: cover;
+    background: #1066C822;
+    border: 2px solid #1066C8;
+    box-shadow: 0 2px 8px #1066C833;
+}
+
+.sponsorCardText {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
+}
+
+.sponsorCardSubheading {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 0.2rem;
+    position: relative;
+    width: fit-content;
+}
+
+.sponsorCardSubheading::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    height: 3px;
+    width: 0;
+    background: linear-gradient(to right, #1066C8, #670C80);
+    border-radius: 2px;
+    opacity: 0;
+    transition: width 0.8s ease-out, opacity 0.3s ease;
+}
+
+.sponsorCardSubheading.underlineAnimate::after {
+    width: 100%;
+    opacity: 1;
+    animation: underlineExpand 0.8s ease-out forwards;
+}
+
+.sponsorCardSpan {
+    color: #FFFFFF;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+.sponsorCardDesc {
+    margin-top: 0.5rem;
+    color: #FFFFFF;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+    .sponsorCard {
+        padding: 0.3rem;
+    }
+
+    .sponsorCardContent {
+        gap: 0.7rem;
+    }
+
+    .sponsorCardImg {
+        width: 48px;
+        height: 48px;
+    }
+
+    .description {
+        font-size: 1rem;
+        padding: 0.7rem 0.5rem;
+    }
+}

@@ -13,6 +13,12 @@ import ErrorPage from "./components/ErrorPage.jsx";
 import ContactUs from "./components/ContactUs.jsx";
 import Event from "./components/event/Event.jsx";
 import AlumniPage from "./components/AlumniPageComponents/AlumniPage.jsx";
+import ProjectComponent from "./components/ProjectPageComponent/ProjectComponent.jsx";
+import SponsorPage from "./components/SponsorPageComponents/SponsorPage.jsx";
+import './index.css'
+
+
+
 
 const router = createBrowserRouter([
   {
@@ -43,6 +49,14 @@ const router = createBrowserRouter([
       {
         path: "/alumni",
         element: <AlumniPage />,
+      },
+      {
+        path: "/projects",
+        element: <ProjectComponent />,
+      },
+      {
+        path: "/sponsor",
+        element: <SponsorPage />,
       },
     ],
   },

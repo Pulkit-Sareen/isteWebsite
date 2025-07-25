@@ -1,136 +1,294 @@
-import React from "react";
-import styles from "./Cards.module.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCube, faChevronRight } from "@fortawesome/free-solid-svg-icons";
-import about from "../../assets/images/team.jpg";
+// import React, { useEffect, useRef, useState } from "react";
+// import { Link } from "react-router-dom";
+// import styles from "./Cards.module.css";
+// import about from "../../assets/images/team.jpg";
+
+// export const Cards = () => {
+//   const eventHeadingRef = useRef(null);
+//   const eventDescRef = useRef(null);
+//   const eventCardRef = useRef(null);
+//   const projectHeadingRef = useRef(null);
+//   const projectDescRef = useRef(null);
+//   const projectCardsRef = useRef([]);
+
+//   const [eventVisible, setEventVisible] = useState(false);
+//   const [eventDescVisible, setEventDescVisible] = useState(false);
+//   const [eventCardVisible, setEventCardVisible] = useState(false);
+//   const [projectVisible, setProjectVisible] = useState(false);
+//   const [projectDescVisible, setProjectDescVisible] = useState(false);
+//   const [projectCardsVisible, setProjectCardsVisible] = useState(false);
+
+//   useEffect(() => {
+//     const handleScroll = () => {
+//       const triggerPoint = window.innerHeight * 0.8;
+
+//       if (eventHeadingRef.current && !eventVisible) {
+//         const top = eventHeadingRef.current.getBoundingClientRect().top;
+//         if (top <= triggerPoint) setEventVisible(true);
+//       }
+
+//       if (eventDescRef.current && !eventDescVisible) {
+//         const top = eventDescRef.current.getBoundingClientRect().top;
+//         if (top <= triggerPoint) setEventDescVisible(true);
+//       }
+
+//       if (eventCardRef.current && !eventCardVisible) {
+//         const top = eventCardRef.current.getBoundingClientRect().top;
+//         if (top <= triggerPoint) setEventCardVisible(true);
+//       }
+
+//       if (projectHeadingRef.current && !projectVisible) {
+//         const top = projectHeadingRef.current.getBoundingClientRect().top;
+//         if (top <= triggerPoint) setProjectVisible(true);
+//       }
+
+//       if (projectDescRef.current && !projectDescVisible) {
+//         const top = projectDescRef.current.getBoundingClientRect().top;
+//         if (top <= triggerPoint) setProjectDescVisible(true);
+//       }
+
+//       if (!projectCardsVisible && projectCardsRef.current.length > 0) {
+//         const top = projectCardsRef.current[0].getBoundingClientRect().top;
+//         if (top <= triggerPoint) setProjectCardsVisible(true);
+//       }
+//     };
+
+//     window.addEventListener("scroll", handleScroll);
+//     return () => window.removeEventListener("scroll", handleScroll);
+//   }, [eventVisible, eventDescVisible, eventCardVisible, projectVisible, projectDescVisible, projectCardsVisible]);
+
+//   return (
+//     <>
+//     <section className={styles.cards}>
+//       <div className={styles.eventCardSection}>
+//         <h2
+//           ref={eventHeadingRef}
+//           className={`${styles.cardHeading} ${eventVisible ? styles.underlineAnimate : ""}`}
+//         >
+//           Upcoming Events
+//         </h2>
+//         <p
+//           ref={eventDescRef}
+//           className={`${styles.description} ${eventDescVisible ? styles.fadeOutRight : ""}`}
+//         >
+//           Join our exciting events designed to enhance your technical skills, expand your network, and provide hands-on experience with the latest technologies
+//         </p>
+
+//         <div
+//           ref={eventCardRef}
+//           className={`${styles.eventCard} ${eventCardVisible ? styles.fadeUp : ""}`}
+//         >
+//           <img src={about} alt="Event" className={styles.eventCardImage} />
+//           <div className={styles.eventCardContent}>
+//             <h3 className={`${styles.eventCardTitle} ${eventVisible ? styles.cardunderlineAnimate : ""}`}>ORIENTATION 2025</h3>
+//             <p className={styles.eventCardText}>
+//               Welcome to the ISTE community! During the orientation, new members were introduced to our dynamic organization, delved into exciting projects, and embarked on their tech journeys. They joined us to learn, connect, and innovate, forming valuable connections along the way. Together, we anticipated advancing technology and shaping the future through everyone s unique contributions.
+//             </p>
+//             <div className={styles.eventDetails}>
+//               <p>24 August 2025</p>
+//               <p>LT-101</p>
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+
+//       <div className={styles.projectSection}>
+//         <h2
+//           ref={projectHeadingRef}
+//           className={`${styles.cardHeading} ${projectVisible ? styles.underlineAnimate : ""}`}
+//         >
+//           Our Projects
+//         </h2>
+//         <p
+//           ref={projectDescRef}
+//           className={`${styles.description} ${projectDescVisible ? styles.fadeOutRight : ""}`}
+//         >
+//           We, as a technical community aim to innovate and solve problems faced by people. Our passionate team of tech enthusiasts come up with innovative real life solutions to tackle such problems.
+//         </p>
+
+//         <div className={styles.projectCardSection}>
+//           {[0, 1, 2].map((_, index) => (
+//             <div
+//               key={index}
+//               ref={(el) => (projectCardsRef.current[index] = el)}
+//               className={`${styles.projectCard} ${projectCardsVisible
+//                   ? index === 0
+//                     ? styles.fadeRight
+//                     : index === 1
+//                       ? styles.fadeUp
+//                       : styles.fadeLeft
+//                   : ""
+//                 }`}
+//             >
+//               <img src={about} alt="" className={styles.projectImg} />
+//               <h3>Web Development</h3>
+//               <h2>Smart Campus System</h2>
+//               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+//             </div>
+//           ))}
+//         </div>
+
+//         <button className={styles.projectButton}>
+//           View More
+//         </button>
+//       </div>
+//       </section>
+//     </>
+//   );
+// };
+
+// export default Cards;
+
+
+
+
+import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
+import styles from "./Cards.module.css";
+import about from "../../assets/images/team.jpg";
+import { FaArrowRight } from "react-icons/fa";
 
 export const Cards = () => {
+  const eventHeadingRef = useRef(null);
+  const eventDescRef = useRef(null);
+  const eventCardRef = useRef(null);
+  const projectHeadingRef = useRef(null);
+  const projectDescRef = useRef(null);
+
+  const [eventVisible, setEventVisible] = useState(false);
+  const [eventDescVisible, setEventDescVisible] = useState(false);
+  const [eventCardVisible, setEventCardVisible] = useState(false);
+  const [projectVisible, setProjectVisible] = useState(false);
+  const [projectDescVisible, setProjectDescVisible] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const triggerPoint = window.innerHeight * 0.8;
+
+      if (eventHeadingRef.current && !eventVisible) {
+        const top = eventHeadingRef.current.getBoundingClientRect().top;
+        if (top <= triggerPoint) setEventVisible(true);
+      }
+
+      if (eventDescRef.current && !eventDescVisible) {
+        const top = eventDescRef.current.getBoundingClientRect().top;
+        if (top <= triggerPoint) setEventDescVisible(true);
+      }
+
+      if (eventCardRef.current && !eventCardVisible) {
+        const top = eventCardRef.current.getBoundingClientRect().top;
+        if (top <= triggerPoint) setEventCardVisible(true);
+      }
+
+      if (projectHeadingRef.current && !projectVisible) {
+        const top = projectHeadingRef.current.getBoundingClientRect().top;
+        if (top <= triggerPoint) setProjectVisible(true);
+      }
+
+      if (projectDescRef.current && !projectDescVisible) {
+        const top = projectDescRef.current.getBoundingClientRect().top;
+        if (top <= triggerPoint) setProjectDescVisible(true);
+      }
+
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [eventVisible, eventDescVisible, eventCardVisible, projectVisible, projectDescVisible]);
+
   return (
-    <div className={styles.container}>
-      <div className={styles.column1}>
-        <div className={styles.events} id="card">
-          <div className={styles.eventstext}>
-            <h3>ISTE</h3>
-            <h2>Events</h2>
-            <p>
-              Delve into this section to relive our past events, such as
-              hackathons, coding challenges, and guest lectures. Explore the
-              highlights of these occasions to gain valuable insights and see
-              how our community has evolved over time.
-            </p>
-            <div className={styles.buttoncontainer2}>
-              <Link to="/events">
-                <button
-                  id={styles.new1}
-                  // style={{padding: "0 0.75rem"}}
-                >
-                  {" "}
-                  View More
-                  <FontAwesomeIcon icon={faChevronRight} id={styles.right} />
-                </button>
-              </Link>
+    <>
+      <section className={styles.cards}>
+        <div className={styles.eventCardSection}>
+          <h2
+            ref={eventHeadingRef}
+            className={`${styles.cardHeading} ${eventVisible ? styles.underlineAnimate : ""}`}
+          >
+            Upcoming Events
+          </h2>
+          <p
+            ref={eventDescRef}
+            className={`${styles.description} ${eventDescVisible ? styles.fadeOutRight : ""}`}
+          >
+            Join our exciting events designed to enhance your technical skills, expand your network, and provide hands-on experience with the latest technologies
+          </p>
+
+          <div
+            ref={eventCardRef}
+            className={`${styles.eventCard} ${eventCardVisible ? styles.fadeUp : ""}`}
+          >
+            <img src={about} alt="Event" className={styles.eventCardImage} />
+            <div className={styles.eventCardContent}>
+              <h3 className={`${styles.eventCardTitle} ${eventVisible ? styles.cardunderlineAnimate : ""}`}>ORIENTATION 2025</h3>
+              <p className={styles.eventCardText}>
+                Welcome to the ISTE community! During the orientation, new members were introduced to our dynamic organization, delved into exciting projects, and embarked on their tech journeys. They joined us to learn, connect, and innovate, forming valuable connections along the way. Together, we anticipated advancing technology and shaping the future through everyone s unique contributions.
+              </p>
+              <div className={styles.eventDetails}>
+                <p>24 August 2025</p>
+                <p>LT-101</p>
+              </div>
             </div>
           </div>
-          <div className={styles.eventsimg}></div>
         </div>
 
-        <div className={styles.bottomcards}>
-          <div className={styles.team} id="card">
-            <div className={styles.icon}>
-              <FontAwesomeIcon icon={faCube} />
+        <div className={styles.projectSection}>
+          <h2
+            ref={projectHeadingRef}
+            className={`${styles.cardHeading} ${projectVisible ? styles.underlineAnimate : ""}`}
+          >
+            Our Projects
+          </h2>
+          <p
+            ref={projectDescRef}
+            className={`${styles.description} ${projectDescVisible ? styles.fadeOutRight : ""}`}
+          >
+            We, as a technical community aim to innovate and solve problems faced by people. Our passionate team of tech enthusiasts come up with innovative real life solutions to tackle such problems.
+          </p>
+
+          <div className={styles.projectCardSection}>
+            <div className={styles.projectCard}>
+
+
+              <div className={styles.projectCardContent}>
+                <h2>Smart Campus System</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam autem veniam est ab dolorem error.</p>
+
+              </div>
+              <FaArrowRight className={styles.projectIcon} />
             </div>
-            <h1>TEAM</h1>
-            <p>
-              &quot;The strength of the team is each individual member. The
-              strength of each member is the team.&quot; Our dedicated team of
-              enthusiastic learners is committed to advancing our society’s
-              goals. Each member brings unique skills and expertise, working
-              together to positively impact the tech community.
-            </p>
-            <div className={styles.buttoncontainer}>
-              <Link to="/team">
-                <button style={{ padding: "0 0.75rem" }}>
-                  {" "}
-                  View More
-                  <FontAwesomeIcon icon={faChevronRight} id={styles.right} />
-                </button>
-              </Link>
+
+            <div className={styles.projectCard}>
+              <div className={styles.projectCardContent}>
+                <h2>Smart Campus System</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam autem veniam est ab dolorem error.</p>
+
+              </div>
+              <FaArrowRight className={styles.projectIcon} />
+            </div>
+            <div className={styles.projectCard}>
+              <div className={styles.projectCardContent}>
+                <h2>Smart Campus System</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam autem veniam est ab dolorem error.</p>
+
+              </div>
+              <FaArrowRight className={styles.projectIcon} />
+            </div>
+            <div className={styles.projectCard}>
+              <div className={styles.projectCardContent}>
+                <h2>Smart Campus System</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam autem veniam est ab dolorem error.</p>
+
+              </div>
+              <FaArrowRight className={styles.projectIcon} />
             </div>
           </div>
 
-          <div className={`${styles.alumni} `} id="card">
-            <div className={styles.icon}>
-              <FontAwesomeIcon icon={faCube} />
-            </div>
-            <h1>Alumni</h1>
-            <p>
-              Our alumni are the trailblazers who have shaped the legacy of our
-              society. Their contributions and success stories continuously
-              motivate us to pursue excellence
-            </p>
-            <div className={styles.buttoncontainer}>
-              <Link to="/alumni">
-                <button style={{ padding: "0 0.75rem" }}>
-                  {" "}
-                  View More
-                  <FontAwesomeIcon icon={faChevronRight} id={styles.right} />
-                </button>
-              </Link>
-            </div>
-          </div>
+          <button className={styles.projectButton}>
+            View More
+          </button>
         </div>
-      </div>
-      <div className={styles.column2}>
-        <div className={styles.about} id="card">
-          <div className={styles.image}>
-            <img src={about} />
-          </div>
-          <div className={styles.textcontainer}>
-            <h3>ISTE</h3>
-            <h2>About Us</h2>
-            <p>
-              ISTE is home to a dedicated and enthusiastic tech community that
-              envisions real solutions to complex problems , looking to educate
-              , innovate and create a better world with the boundless potential
-              of Technology.
-            </p>
-            <div className={styles.buttoncontainer2}>
-              <Link to="/team">
-                <button
-                  id={styles.new2}
-                  // style={{padding: "0 0.75rem"}}
-                >
-                  {" "}
-                  View More
-                  <FontAwesomeIcon icon={faChevronRight} id={styles.right} />
-                </button>
-              </Link>
-            </div>
-          </div>
-        </div>
-        <div className={styles.pastprojects} id="card">
-          <div className={styles.pastprojectstext}>
-            <h3>ISTE</h3>
-            <h2>Past Projects</h2>
-            <p>
-              We, as a technical community aim to innovate and solve problems
-              faced by people. Our passionate team of tech enthusiasts come up
-              with innovative real life solutions to tackle such problems.
-            </p>
-            <div className={styles.buttoncontainer}>
-              <Link to="/projects"></Link>
-              <button style={{ padding: "0 0.75rem" }}>
-                {" "}
-                View More
-                <FontAwesomeIcon icon={faChevronRight} id={styles.right} />
-              </button>
-            </div>
-          </div>
-          <div className={styles.pastprojectsimg}></div>
-        </div>
-      </div>
-    </div>
+      </section>
+    </>
   );
 };
 

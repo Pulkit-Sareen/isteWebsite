@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import "./index.css";
 import { DetailsProvider } from "./teamPageComponents/context/Context";
 import ExecutiveCommitee from "./teamPageComponents/ExcecutiveCommitee";
 import ExecutiveBoard from "./teamPageComponents/ExecutiveBoard";

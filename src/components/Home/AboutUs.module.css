@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.aboutSection {
+    padding: 4rem 1rem;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        background-image: linear-gradient(-107deg,rgba(47, 19, 69, 0.9), rgba(0, 0, 0, 0.9));
+        position: relative;
+        z-index: 1;
+        backdrop-filter: blur(10px);
+}
+
+.heading {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+    color: #FFFFFF;
+    position: relative;
+}
+
+
+.imageWrapper {
+    position: relative;
+    width: 70%;
+    max-width: 1200px;
+    height: 600px;
+    scale: 0.8;
+}
+
+/* Main Image - scaled */
+.mainImage {
+    width: 100%;
+    /* border-radius: 12px; */
+    height: 85%;
+    display: block;
+    transform: scale(0.9);
+    transform-origin: center center;
+    z-index: 1;
+    opacity: 0;
+    margin: auto;
+}
+
+/* Top-Left Overlapping Image */
+.topLeftImage {
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    width: 35%;
+    /* border-radius: 10px; */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    z-index: 2;
+    opacity: 0;
+}
+
+/* Right-Center Overlapping Image */
+.rightCenterImage {
+    position: absolute;
+    top: 40%;
+    right: -10%;
+    transform: translateY(-50%);
+    width: 30%;
+    /* border-radius: 10px; */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    z-index: 2;
+    opacity: 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .imageWrapper {
+        width: 80%;
+    }
+
+    .mainImage {
+        max-height: 500px;
+    }
+
+    .topLeftImage {
+        width: 40%;
+    }
+
+    .rightCenterImage {
+        width: 35%;
+    }
+}
+
+@media (max-width: 768px) {
+    .imageWrapper {
+        width: 80%;
+    }
+
+    .mainImage {
+        max-height: 450px;
+    }
+
+    .topLeftImage {
+        width: 45%;
+    }
+
+    .rightCenterImage {
+        width: 38%;
+    }
+}
+
+@media (max-width: 576px) {
+    .mainImage {
+        max-height: 400px;
+    }
+
+    .topLeftImage {
+        width: 50%;
+    }
+
+    .rightCenterImage {
+        width: 40%;
+    }
+}
+
+@media (max-width: 400px) {
+    .mainImage {
+        max-height: 350px;
+    }
+}
+
+@keyframes revealTopDown {
+    0% {
+        transform: scaleY(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInScale {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.revealMain {
+    animation: revealTopDown 0.5s ease-out forwards;
+    transform-origin: top center;
+    opacity: 0;
+}
+
+.revealLeft {
+    animation: fadeInScale 0.8s ease-out forwards;
+    animation-delay: 1s;
+    opacity: 0;
+}
+
+.revealRight {
+    animation: fadeInScale 0.8s ease-out forwards;
+    animation-delay: 1.6s;
+    opacity: 0;
+}
+
+/* Underline Animation for Heading */
+.heading::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    height: 3px;
+    width: 0;
+    background: linear-gradient(to right, #1066C8, #670C80);
+    border-radius: 2px;
+    opacity: 0;
+    transition: width 1s ease-out, opacity 0.3s ease;
+}
+
+.underlineAnimate::after {
+    width: 100%;
+    opacity: 1;
+}
+
+.descriptionBox {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 2rem 2.5rem;
+    width: 70%;
+    color: #fff;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+    opacity: 0;
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: none;
+    overflow: hidden;
+    text-align: left;
+}
+
+.descriptionBox h3 {
+    color: #FFFFFF;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.descriptionBox h3 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    position: relative;
+    width: fit-content;
+}
+.descriptionBox h3::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 3.5px;
+    width: 100%;
+    opacity: 1;
+    background: linear-gradient(to right, #1066C8, #670C80);
+    border-radius: 2px;
+}
+
+.descriptionBox .highlight {
+    color: #FFD600;
+    font-weight: bold;
+}
+
+@keyframes expandRight {
+    0% {
+        opacity: 0;
+        transform: scaleX(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scaleX(1);
+    }
+}
+
+.descAnimate {
+    animation: expandRight 1s cubic-bezier(0.6, 0.2, 0.2, 1) forwards;
+    animation-delay: 0.5s;
+}
+
+/* New About Highlights Section */
+.aboutHighlights {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* Use 100% of parent, not vw */
+    max-width: 1200px;
+    margin: 3.5rem auto 0 auto;
+    gap: 2.5%;
+    /* Responsive gap */
+    position: relative;
+    min-height: 200px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    box-sizing: border-box;
+    padding: 1rem;
+}
+
+.highlightBox {
+    background: linear-gradient(90deg, #1066C8, #670C80);
+    color: #fff;
+    border-radius: 1.2rem;
+    box-shadow: 0 4px 18px 0 rgba(16, 102, 200, 0.18);
+    flex: 1 1 0;
+    width: 30%;
+    min-width: 140px;
+    padding: 18px 10px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.08rem;
+    letter-spacing: 1px;
+    position: relative;
+    z-index: 1;
+    animation: floatForever 3.5s ease-in-out infinite;
+    gap: 0.7rem;
+    box-sizing: border-box;
+    margin-bottom: 0;
+    transform: scale(0.96);
+}
+
+.highlightIcon {
+    font-size: 2.2rem;
+    margin-bottom: 0;
+    margin-right: 0.7rem;
+    color: #fff;
+    vertical-align: middle;
+}
+
+.floatLeft {
+    animation-delay: 0s;
+    top: 0;
+}
+
+.floatMiddle {
+    animation-delay: 1.2s;
+    top: 24px;
+}
+
+.floatRight {
+    animation-delay: 2.1s;
+    top: 0;
+}
+
+@keyframes floatForever {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-18px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* Tablet: scale down boxes and decrease gap */
+@media (max-width: 900px) {
+    .aboutHighlights {
+        flex-wrap: nowrap;
+        height: 100px;
+    }
+
+    .highlightBox {
+        min-width: 110px;
+        max-width: 250px;
+        font-size: 0.92rem;
+        height: 70px;
+        transform: scale(0.88);
+    }
+
+    .highlightIcon {
+        font-size: 1.3rem;
+        margin-right: 0.5rem;
+    }
+
+    .floatMiddle {
+        top: 8px;
+    }
+}
+
+/* Mobile: scale down further and decrease gap */
+@media (max-width: 600px) {
+    .highlightBox {
+        min-width: 80px;
+        max-width: 162px;
+        font-size: 0.7rem;
+        height: 48px;
+        transform: scale(0.75);
+        gap: 0.05rem;
+    }
+
+    .highlightIcon {
+        font-size: 1rem;
+        margin-right: 0.1rem;
+    }
+
+    .aboutHighlights {
+        margin-top: 0;
+        padding: 0.5rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .aboutHighlights {
+        width: 100%;
+        gap: 4rem;
+    }
+
+    .highlightBox {
+        width: 30%;
+        min-width: 200px;
+        font-size: 1.12rem;
+    }
+}

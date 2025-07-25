@@ -12,6 +12,8 @@ import sample10 from "./2.jpg";
 import sample11 from "./3.jpg";
 import finalLogo from "./ISTE Thapar Chapter Logo blue.png"
 import whiteLogo from "./logo.png"
+import Collage1 from "./Collage_Image_1.png"
+import Collage2 from "./Collage_Image_2.png"
 export { sample };
 export { sample1 };
 export { sample2 };
@@ -25,4 +27,6 @@ export { sample9 };
 export { sample10 };
 export { sample11 };
 export { finalLogo };
-export {whiteLogo};
+export { whiteLogo };
+export { Collage1 }
+export { Collage2 }
