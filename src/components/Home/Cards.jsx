@@ -284,7 +284,7 @@ export const Cards = () => {
           </div>
 
           <button className={styles.projectButton}>
-            View More
+            <Link to="/projects">View More</Link>
           </button>
         </div>
       </section>

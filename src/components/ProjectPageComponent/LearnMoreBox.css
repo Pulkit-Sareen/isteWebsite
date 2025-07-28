@@ -114,3 +114,37 @@
   opacity: 1;
   z-index: 1;
 }
+@media (max-width:880px){
+  .learnmore .box {
+    height: 60vh;
+    width: 60vw;
+  }
+  .box h2{
+    font-size: 1.2rem;
+  }
+  .box p {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 660px) {
+  .learnmore .box {
+    width: 70vw;
+  }
+  .box h2 {
+    font-size: 1.1rem;
+  }
+  .box p {
+    font-size: 0.85rem;
+  }
+}
+@media (max-width: 530px) {
+  .learnmore .box {
+    width: 80vw;
+  }
+  .box h2 {
+    font-size: 1rem;
+  }
+  .box p {
+    font-size: 0.8rem;
+  }
+}

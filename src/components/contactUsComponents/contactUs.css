@@ -1,15 +1,20 @@
 .contact-page {
   text-align: center;
-  padding: 20px;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
+  background-image: linear-gradient(134deg, rgba(15, 41, 70, 0.9), rgba(0, 0, 0, 0.9), rgba(47, 19, 69, 0.9));
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #000;
   color: #090909;
+}
+
+.contact-image {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  height: 100vh;
 }
 
 .contact-container {
@@ -19,21 +24,15 @@
   gap: 10px;
   max-width: 1000px;
   margin: 0 auto;
-  background-color: black;
   /* border: 2px solid #61dafb; */
   padding: 20px;
   /* border-radius: calc(20px + 10px); */
 }
 
-.left-column {
-  background-color: #000;
-  border-radius: 10px;
-}
-
 .right-column {
   padding: 20px;
-  border: 2px solid hsl(215, 53%, 78%);
-  border-radius: 10px;
+  border: 3px solid;
+  border-image: linear-gradient(134deg, rgba(15, 41, 70, 0.9), rgba(0, 0, 0, 0.9), rgba(47, 19, 69, 1)) 1;
 }
 
 .contact-form {
@@ -49,7 +48,7 @@
 .contact-h2 {
   font-size: 1.7rem;
   margin-bottom: 1rem;
-  color: hsl(215, 53%, 78%);
+  color: #98C8FF;
 }
 
 .contact-p {
@@ -60,6 +59,7 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 15px;
+  color: black;
 }
 
 .form-group input,
@@ -79,20 +79,16 @@
   gap: 10px;
 }
 
-.contact-submit-btn {
-  background-color: hsl(215, 53%, 78%);
-  color: #000;
-  border: none;
-  padding: 0 1rem;
-  border-radius: 0.25rem;
+.contact-submit-btn{
+  background-image: linear-gradient(90deg, #1066C8, #670C80);
   font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  width: fit-content;
+  padding: 0.5rem 0.5rem;
+  width: 100px;
+  border-radius: 24px;
+  transition: all 0.3s ease;
 }
-
-.contact-submit-btn:hover {
-  background-color: #6c90c2;
+.contact-submit-btn:hover{
+  box-shadow: 0 0 29px 1px #670C80;
 }
 
 @media (max-width: 1024px) {
@@ -112,9 +108,6 @@
 }
 
 @media (max-width: 768px) {
-  .contact-h1 {
-    font-size: 2em;
-  }
 
   .contact-h2 {
     font-size: 1.4rem;
