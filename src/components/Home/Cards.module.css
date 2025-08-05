@@ -244,10 +244,9 @@
   /* 2 columns */
   grid-template-rows: 0.5fr 0.5fr;
   gap: 2rem;
-  width: 100%;
+  width: 85%;
   margin-top: 2rem;
   padding: 0 1rem;
-  max-width: 1200px;
   margin-inline: auto;
 }
 
@@ -288,11 +287,11 @@
   0% {
     background-position: 0% 50%;
   }
-
+  
   50% {
     background-position: 100% 50%;
   }
-
+  
   100% {
     background-position: 0% 50%;
   }
@@ -344,18 +343,31 @@
   color: rgb(203 213 225);
   z-index: 3;
   transition: all 0.5s ease;
-
+  
 }
 
 .projectCardContent:hover+.projectIcon {
   transform: rotateZ(-45deg);
   color: #FFFFFF;
 }
-
-@media (max-width:1200px) {
-  .projectCardSection {
-    gap: 5rem;
+@media (max-width:1200px){
+  .projectCardSection{
+    width: 100%;
   }
+}
+@media (max-width:988px) {
+  .projectCard h2{
+    font-size: 1.2rem;
+  }
+  .projectCard p{
+    font-size: 0.8rem;
+  }
+  .projectCardSection{
+    width: 100%;
+  }
+  /* .projectCardContent{
+    padding: 0.5rem 0.8rem;
+    } */
 }
 
 @media (max-width: 768px) {
@@ -364,13 +376,16 @@
     align-items: center;
     padding: 0;
   }
-
-  .projectCard {
-    width: 90%;
-    max-width: none;
+  .projectButton{
+    width: 9rem;
   }
 }
-
+@media (max-width:712px){
+  .projectCardSection{
+     grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-columns: 1fr;
+   }
+}
 @media (max-width: 550px) {
   .eventCard {
     width: 100%;

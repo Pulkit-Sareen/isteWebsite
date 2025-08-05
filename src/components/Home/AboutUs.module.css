@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 .aboutSection {
-    padding: 4rem 1rem;
+    padding: 4rem 1rem 1rem 1rem;
     text-align: center;
     position: relative;
     display: flex;
@@ -24,7 +24,7 @@
 
 .imageWrapper {
     position: relative;
-    width: 70%;
+    width: 75%;
     max-width: 1200px;
     height: 600px;
     scale: 0.8;
@@ -34,7 +34,7 @@
 .mainImage {
     width: 100%;
     /* border-radius: 12px; */
-    height: 85%;
+    height: 100%;
     display: block;
     transform: scale(0.9);
     transform-origin: center center;
@@ -46,9 +46,9 @@
 /* Top-Left Overlapping Image */
 .topLeftImage {
     position: absolute;
-    top: -10%;
-    left: -10%;
-    width: 35%;
+    top: -15%;
+    left: -15%;
+    width: 45%;
     /* border-radius: 10px; */
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
     z-index: 2;
@@ -59,7 +59,7 @@
 .rightCenterImage {
     position: absolute;
     top: 40%;
-    right: -10%;
+    right: -15%;
     transform: translateY(-50%);
     width: 30%;
     /* border-radius: 10px; */
@@ -69,9 +69,24 @@
 }
 
 /* Responsive Adjustments */
+@media (max-width:1200px){
+    .mainImage{
+        width: 90%;
+        height: 85%;
+    }
+    .topLeftImage{
+        width: 40%;
+        top: -10%;
+        left: -10%;
+    }
+    .rightCenterImage{
+        right: -10%;
+    }
+}
 @media (max-width: 992px) {
     .imageWrapper {
         width: 80%;
+        height: fit-content;
     }
 
     .mainImage {
@@ -190,7 +205,7 @@
     background: rgba(255, 255, 255, 0.08);
     border-radius: 12px;
     padding: 2rem 2.5rem;
-    width: 70%;
+    width: 90%;
     color: #fff;
     box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
     opacity: 0;
@@ -203,14 +218,9 @@
 
 .descriptionBox h3 {
     color: #FFFFFF;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     font-size: 1.5rem;
     font-weight: 500;
-}
-.descriptionBox h3 {
-    font-size: 2.2rem;
-    font-weight: bold;
-    margin-bottom: 2rem;
     position: relative;
     width: fit-content;
 }
@@ -226,11 +236,26 @@
     border-radius: 2px;
 }
 
-.descriptionBox .highlight {
-    color: #FFD600;
-    font-weight: bold;
+.teamButton {
+    width: 10rem;
+    border-radius: 24px;
+    font-size: 0.5rem;
+    background-image: linear-gradient(90deg, #1066C8, #670C80);
+    padding: 0.5rem 0.5rem;
+    border-radius: 36px;
+    font-weight: 600;
+    transition: all 0.3s;
+    margin-top: 1.5rem;
+    color: #FFFFFF;
+    /* border: 2px solid #FFD600; */
 }
-
+.teamButton a{
+    font-size: 1rem;
+}
+.teamButton:hover {
+    scale: 1.05;
+    box-shadow: 0px 0px 29px 1px #670C80;
+}
 @keyframes expandRight {
     0% {
         opacity: 0;
@@ -287,7 +312,7 @@
     letter-spacing: 1px;
     position: relative;
     z-index: 1;
-    animation: floatForever 3.5s ease-in-out infinite;
+    animation: floatForever 2.5s ease-in-out infinite;
     gap: 0.7rem;
     box-sizing: border-box;
     margin-bottom: 0;
@@ -309,7 +334,7 @@
 
 .floatMiddle {
     animation-delay: 1.2s;
-    top: 24px;
+    top: 32px;
 }
 
 .floatRight {
@@ -323,7 +348,7 @@
     }
 
     50% {
-        transform: translateY(-18px);
+        transform: translateY(-32px);
     }
 
     100% {

@@ -21,7 +21,7 @@ import rohitd from "../../assets/EB EC Images/RohitDeepchandani.jpg";
 import vivek from "../../assets/EB EC Images/VivekArora.jpg";
 import yashb from "../../assets/EB EC Images/YashBhargava.jpg";
 import aarushi from "../../assets/Core images/AARUSHIRAWAL.jpg";
-import abhivinesh from "../../assets/Core images/AbhivineshSharma.jpg";
+import abhinivesh from "../../assets/Core images/AbhivineshSharma.jpg";
 import ajinkya from "../../assets/Core images/AjinkyaHon.jpg";
 import ansh from "../../assets/Core images/AnshBajaj.jpg";
 import arsh from "../../assets/Core images/ArshChatrath.jpg";
@@ -58,6 +58,7 @@ import kashvi from "../../assets/Core images/kaashvi.jpg";
 import janya from "../../assets/Core images/janya.jpg";
 import ishaanP from "../../assets/Core images/ishaanP.jpg";
 import paras from "../../assets/Core images/paras.jpg";
+// import dixant from "../../assets/Core images/dixant.jpg";
 const profile = {
   suman,
   rajesh,
@@ -84,7 +85,7 @@ const profile = {
   vivek,
   yashb,
   aarushi,
-  abhivinesh,
+  abhinivesh,
   ajinkya,
   ansh,
   arsh,

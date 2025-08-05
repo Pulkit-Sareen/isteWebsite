@@ -2,20 +2,18 @@
 // import Card from "./Card/Card";
 // import useDetails from "./context/Context";
 
-// function ExecutiveBoard() {
+// function ExecutiveCommitee() {
 //   const details = useDetails();
 
 //   return (
 //     <>
-//       <div
-//         id={"executiveBoard"}
-//         className="president_eb_ec font-['Roboto'] mx-auto w-full "
-//       >
+//       <div className="president_eb_ec core__page font-['Roboto']">
 //         <div className="eb flex flex-col items-center justify-center gap-y-6 w-full max-w-[48rem]">
 //           <div className="text-[#6C90C2] text-3xl sm:text-4xl md:text-5xl font-bold">
-//             EXECUTIVE BOARD
+//             EXECUTIVE COMMITTEE
 //           </div>
 //         </div>
+
 //         <div className="flex flex-col gap-y-8 items-center justify-center mt-12 sm:mt-16 md:mt-24">
 //           <div
 //             data-aos="fade-up"
@@ -24,9 +22,9 @@
 //             onContextMenu={(e) => e.preventDefault()}
 //           >
 //             {details
-//               .filter((_, i) => i >= 2 && i <= 12)
+//               .filter((_, i) => i >= 13 && i <= 23)
 //               .map((val, i) => (
-//                 <div key={i + 3} className="align_items_center">
+//                 <div key={i + 13} className="align_items_center">
 //                   <Card details={val} />
 //                 </div>
 //               ))}
@@ -37,11 +35,7 @@
 //   );
 // }
 
-// export default ExecutiveBoard;
-
-
-
-
+// export default ExecutiveCommitee;
 
 
 
@@ -60,34 +54,30 @@ import profile from './indexImages';
 import styles from "./TeamPage.module.css";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
-const ExecutiveBoard = () => {
-  const title = 'EXECUTIVE BOARD';
+const ExecutiveCommittee = () => {
+  const title = 'EXECUTIVE COMMITTEE';
   const description =
-    'Student leaders driving strategic initiatives and fostering innovation across our tech community';
+    'Dedicated organizers creating engaging events, workshops, and community building activities.';
 
   const members = [
-    { name: 'Lakshita Gupta', role: 'General Secretary', image: profile.lakshita },
-    { name: 'Kaushik Arora', role: 'General Secretary', image: profile.kaushik },
-    { name: 'Bhavya', role: 'Finance Secretary', image: profile.bhavya },
-    { name: 'Ishita Singh Oberoi', role: 'Joint Secretary', image: profile.ishita },
-    { name: 'Sakshat Jain', role: 'Joint Secretary', image: profile.sakshat },
-    { name: 'Abhinivesh Sharma', role: 'General Secretary', image: profile.abhinivesh },
-    { name: 'Hariyank Kumra', role: 'External Secretary', image: profile.hariyank },
-    { name: 'Ishaan Sharma', role: 'Convener', image: profile.ishaan },
-    { name: 'Ishan Pathak', role: 'Technical Secretary', image: profile.ishanp },
+    { name: 'Saarthi Arora', role: 'Content Executive', image: profile.saarthi },
+    { name: 'Ayush Garg', role: 'Design Executive', image: profile.ayush },
+    { name: 'Tanishq Soni', role: 'Software Executive', image: profile.tanishq },
+    { name: 'Dixant', role: 'External Secretary', image: profile.dixant },
+    { name: 'Rishabh Garg', role: 'Media Executive', image: profile.rishabh },
+    { name: 'Garv Chopra', role: 'Technical Executive', image: profile.garv },
   ];
 
   return (
-    <section id="executive-board" className={styles.section}>
+    <section id="executive-committee" className={styles.section}>
       <h2 className={styles.sectionTitle}>{title}</h2>
       <p className={styles.sectionDescription}>{description}</p>
-      <div className={styles.ebGrid}>
+      <div className={styles.ecGrid}>
         {members.map((member, idx) => (
-          <div key={idx} className={styles.ebCard}>
-            <img src={member.image} alt={member.name} className={styles.ebImage} />
-            <h4 className={styles.ebName}>{member.name}</h4>
-            <p className={styles.ebRole}>{member.role}</p>
-
+          <div key={idx} className={styles.ecCard}>
+            <img src={member.image} alt={member.name} className={styles.ecImage}/>
+            <h4 className={styles.ecName}>{member.name}</h4>
+            <p className={styles.ecRole}>{member.role}</p>
             <div className={styles.socials}>
               <a href={member.github} target="_blank" rel="noopener noreferrer">
                 <FaGithub className={styles.icon} />
@@ -97,11 +87,10 @@ const ExecutiveBoard = () => {
               </a>
             </div>
           </div>
-          
         ))}
       </div>
     </section>
   );
 };
 
-export default ExecutiveBoard;
+export default ExecutiveCommittee;

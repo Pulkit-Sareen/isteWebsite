@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import styles from "./AboutUs.module.css";
+import {Link} from "react-router-dom"
 import image1 from "../../assets/images/Collage_Image_2.png";
 import image2 from "../../assets/images/Collage_Image_2.png";
 import image3 from "../../assets/images/Collage_Image_2.png";
@@ -91,6 +92,9 @@ const AboutUs = () => {
                 <p>
                     ISTE is a vibrant student chapter dedicated to fostering innovation, collaboration, and technical excellence. Our mission is to empower students through workshops, events, and hands-on projects, building a strong community of future leaders in technology.
                 </p>
+                <button className={styles.teamButton}>
+                    <Link to="/team">Meet Our Team</Link>
+                </button>
             </div>
             <div className={styles.aboutHighlights}>
                 <div className={`${styles.highlightBox} ${styles.floatLeft}`}>

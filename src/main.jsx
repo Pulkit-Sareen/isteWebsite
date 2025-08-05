@@ -8,10 +8,10 @@ import {
 import Layout from "./components/Home/Layout.jsx";
 import Homepage1 from "./components/Home/Homepage1.jsx";
 import Cards from "./components/Home/Cards.jsx";
-import TeamPage from "./components/TeamsPage.jsx";
+import TeamPage from "./components/TeamPageComponents/TeamPageMain.jsx";
 import ErrorPage from "./components/ErrorPage.jsx";
 import ContactUs from "./components/contactUsComponents/ContactUs.jsx";
-import Event from "./components/event/Event.jsx";
+import Event from "./components/event/EventPage.jsx";
 import AlumniPage from "./components/AlumniPageComponents/AlumniPage.jsx";
 import ProjectComponent from "./components/ProjectPageComponent/heading.jsx";
 import SponsorPage from "./components/SponsorPageComponents/SponsorPage.jsx";

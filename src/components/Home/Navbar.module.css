@@ -20,7 +20,7 @@
   -webkit-backdrop-filter: blur(5px);
   will-change: backdrop-filter;
   z-index: 1000;
-  padding: 0 5rem;
+  padding: 0 60px;
 }
 
 .logo img {
@@ -31,7 +31,7 @@
 .Options {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 a {
@@ -103,12 +103,20 @@ a {
 }
 @media (max-width: 1200px) {
   .Header {
-    padding: 0 3rem;
+    padding: 0 20px ;
   }
 }
 @media (max-width: 980px) {
   .Header{
     padding: 0 1rem;
+  }
+  .Options{
+    gap: 2rem;
+  }
+}
+@media (max-width:920px){
+  .Options{
+    gap: 1.5rem;
   }
 }
 @media only screen and (max-width: 870px) {
