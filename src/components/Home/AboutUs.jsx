@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
 import styles from "./AboutUs.module.css";
 import {Link} from "react-router-dom"
-import image1 from "../../assets/images/Collage_Image_2.png";
-import image2 from "../../assets/images/Collage_Image_2.png";
-import image3 from "../../assets/images/Collage_Image_2.png";
+import image1 from "../../assets/images/1.jpg";
+import image2 from "../../assets/images/2.jpg";
+import image3 from "../../assets/images/3.jpg";
 import { FaLightbulb, FaCode, FaUsers } from "react-icons/fa";
 
 const AboutUs = () => {

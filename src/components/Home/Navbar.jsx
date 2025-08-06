@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import styles from "./Navbar.module.css";
 import { Link } from "react-router-dom";
 import { whiteLogo } from "../../assets/images";
-import { FaCode, FaCalendarAlt, FaUsers, FaCube, FaFolder, FaPhone } from "react-icons/fa";
+import { FaCode, FaCalendarAlt, FaUsers, FaCube, FaFolder} from "react-icons/fa";
+import {MdPhone } from "react-icons/md";
 
 export const Navbar = () => {
   const [showOptions, setShowOptions] = useState(false);
@@ -45,7 +46,7 @@ export const Navbar = () => {
             <Link to="/team" className={styles.menuItem}><FaUsers />Team</Link>
             <Link to="/sponsor" className={styles.menuItem}><FaCube />Sponsor</Link>
             <Link to="/projects" className={styles.menuItem}><FaFolder />Project</Link>
-            <Link to="/contact" className={styles.menuItem}><FaPhone />Contact</Link>
+            <Link to="/contact" className={styles.menuItem}><MdPhone />Contact</Link>
           </nav>
         )}
 
@@ -65,7 +66,7 @@ export const Navbar = () => {
           <Link to="/team" className={styles.menuItem}><FaUsers />Team</Link>
           <Link to="/sponsor" className={styles.menuItem}><FaCube />Sponsor</Link>
           <Link to="/projects" className={styles.menuItem}><FaFolder />Project</Link>
-          <Link to="/contact" className={styles.menuItem}><FaPhone />Contact</Link>
+          <Link to="/contact" className={styles.menuItem}><MdPhone />Contact</Link>
           <Link to="/join" className={styles.joinButton}>JOIN US</Link>
         </nav>
       )}

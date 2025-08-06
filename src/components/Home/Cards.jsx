@@ -227,6 +227,7 @@ export const Cards = () => {
                 <p>24 August 2025</p>
                 <p>LT-101</p>
               </div>
+              <div className={styles.registerButton}><Link to="/">Register</Link></div>
             </div>
           </div>
         </div>
@@ -250,8 +251,8 @@ export const Cards = () => {
 
 
               <div className={styles.projectCardContent}>
-                <h2>Smart Campus System</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam autem veniam est ab dolorem error.</p>
+                <h2>Fairfare</h2>
+                <p>FairFare is a web platform that lets users compare real-time taxi fares across different cities and services to help choose the most economical and reliable option.</p>
 
               </div>
               <FaArrowRight className={styles.projectIcon} />
@@ -259,16 +260,16 @@ export const Cards = () => {
 
             <div className={styles.projectCard}>
               <div className={styles.projectCardContent}>
-                <h2>Smart Campus System</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam autem veniam est ab dolorem error.</p>
+                <h2>Time Capsule</h2>
+                <p>Time Capsule Messenger - Write messages to yourself or friends that only become viewable after X days or even next year.</p>
 
               </div>
               <FaArrowRight className={styles.projectIcon} />
             </div>
             <div className={styles.projectCard}>
               <div className={styles.projectCardContent}>
-                <h2>Smart Campus System</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam autem veniam est ab dolorem error.</p>
+                <h2>Society Sphere</h2>
+                <p>Society Sphere is a streamlined web-based platform designed to empower student societies by simplifying event management, announcements, task coordination, and resource sharing.</p>
 
               </div>
               <FaArrowRight className={styles.projectIcon} />

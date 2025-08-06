@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import styles from EventPage.module.css
+import React, { useState } from 'react';
+import styles from "./EventPage.module.css";
 
 const EventsPage = () => {
     const [selectedEvent, setSelectedEvent] = useState(null);
@@ -181,48 +181,48 @@ const EventsPage = () => {
         <main className={styles.eventSection}>
             <div className={styles.eventContainer}>
                 {/* Hero Section */}
-                <section className="hero-section">
-                    <div className="hero-content">
-                        <h1 className="hero-title" data-testid="hero-title">
+                <section className={styles.heroSection}>
+                    <div className={styles.heroContent}>
+                        <h1 className={styles.heroTitle} data-testid="hero-title">
                             ISTE Thapar Chapter Events
                         </h1>
-                        <p className="hero-subtitle" data-testid="hero-subtitle">
+                        <p className={styles.heroSubtitle} data-testid="hero-subtitle">
                             Explore the successful events organized by ISTE Thapar Chapter.
                             Our society has conducted numerous workshops, conferences, and competitions to foster technical excellence.
                         </p>
-                        <div className="hero-stats">
-                            <div className="stat">
-                                <span className="stat-number" data-testid="stat-events">15+</span>
-                                <span className="stat-label">Events This Year</span>
+                        <div className={styles.heroStats}>
+                            <div className={styles.stat}>
+                                <span className={styles.statNumber} data-testid="stat-events">15+</span>
+                                <span className={styles.statLabel}>Events This Year</span>
                             </div>
-                            <div className="stat">
-                                <span className="stat-number" data-testid="stat-participants">500+</span>
-                                <span className="stat-label">Participants</span>
+                            <div className={styles.stat}>
+                                <span className={styles.statNumber} data-testid="stat-participants">500+</span>
+                                <span className={styles.statLabel}>Participants</span>
                             </div>
-                            <div className="stat">
-                                <span className="stat-number" data-testid="stat-speakers">20+</span>
-                                <span className="stat-label">Speakers</span>
+                            <div className={styles.stat}>
+                                <span className={styles.statNumber} data-testid="stat-speakers">20+</span>
+                                <span className={styles.statLabel}>Speakers</span>
                             </div>
                         </div>
                     </div>
                 </section>
 
                 {/* Featured Events */}
-                <section className="featured-events">
-                    <h2 className="section-title" data-testid="featured-events-title">Past Events</h2>
-                    <div className="featured-grid">
+                <section className={styles.featuredEvents}>
+                    <h2 className={styles.sectionTitle} data-testid="featured-events-title">Past Events</h2>
+                    <div className={styles.featuredGrid}>
                         {featuredEvents.map((event) => (
-                            <div key={event.id} className="featured-card" data-testid={`featured-card-${event.id}`}>
-                                <div className="card-image">
+                            <div key={event.id} className={styles.featuredCard} data-testid={`featured-card-${event.id}`}>
+                                <div className={styles.cardImage}>
                                     <img
                                         src={event.photos[0]?.src || "https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400"}
                                         alt={event.title}
-                                        className="event-image"
+                                        className={styles.eventImage}
                                         data-testid={`event-image-${event.id}`}
                                     />
-                                    <div className="image-overlay">
+                                    <div className={styles.imageOverlay}>
                                         <div
-                                            className="event-category-badge"
+                                            className={styles.eventCategoryBadge}
                                             style={{ backgroundColor: getCategoryColor(event.category) }}
                                             data-testid={`event-category-${event.id}`}
                                         >
@@ -230,40 +230,40 @@ const EventsPage = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="card-header">
-                                    <div className="event-info">
-                                        <h3 className="event-title" data-testid={`event-title-${event.id}`}>
+                                <div className={styles.cardHeader}>
+                                    <div className={styles.eventInfo}>
+                                        <h3 className={styles.eventTitle} data-testid={`event-title-${event.id}`}>
                                             {event.title}
                                         </h3>
-                                        <div className="event-meta">
-                                            <span className="event-date" data-testid={`event-date-${event.id}`}>
+                                        <div className={styles.eventMeta}>
+                                            <span className={styles.eventDate} data-testid={`event-date-${event.id}`}>
                                                 📅 {event.date}
                                             </span>
-                                            <span className="event-time" data-testid={`event-time-${event.id}`}>
+                                            <span className={styles.eventTime} data-testid={`event-time-${event.id}`}>
                                                 ⏰ {event.time}
                                             </span>
-                                            <span className="event-location" data-testid={`event-location-${event.id}`}>
+                                            <span className={styles.eventLocation} data-testid={`event-location-${event.id}`}>
                                                 📍 {event.location}
                                             </span>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="card-body">
-                                    <p className="event-description" data-testid={`event-description-${event.id}`}>
+                                <div className={styles.cardBody}>
+                                    <p className={styles.eventDescription} data-testid={`event-description-${event.id}`}>
                                         {event.description}
                                     </p>
                                 </div>
-                                <div className="card-footer">
-                                    <div className="attendance-info">
-                                        <span className="attendance-text" data-testid={`attendance-text-${event.id}`}>
+                                <div className={styles.cardFooter}>
+                                    <div className={styles.attendanceInfo}>
+                                        <span className={styles.attendanceText} data-testid={`attendance-text-${event.id}`}>
                                             {event.attendees} participants attended
                                         </span>
-                                        <div className="event-date-held">
-                                            <span className="date-held-text">Event Date: {event.date_held}</span>
+                                        <div className={styles.eventDateHeld}>
+                                            <span className={styles.dateHeldText}>Event Date: {event.date_held}</span>
                                         </div>
                                     </div>
                                     <button
-                                        className="photos-btn"
+                                        className={styles.photosBtn}
                                         onClick={() => handleViewPhotos(event)}
                                         data-testid={`photos-btn-${event.id}`}
                                     >
@@ -278,23 +278,23 @@ const EventsPage = () => {
                 {/* Photo Gallery Modal */}
                 {isModalOpen && selectedEvent && (
                     <div
-                        className="modal-overlay"
+                        className={styles.modalOverlay}
                         onClick={closeModal}
                         onKeyDown={handleKeyDown}
                         tabIndex={0}
                         data-testid="photo-modal-overlay"
                     >
                         <div
-                            className="modal-content fade-in"
+                            className={`${styles.modalContent} ${styles.fadeIn}`}
                             onClick={(e) => e.stopPropagation()}
                             data-testid="photo-modal-content"
                         >
-                            <div className="modal-header">
-                                <h3 className="modal-title" data-testid="modal-title">
+                            <div className={styles.modalHeader}>
+                                <h3 className={styles.modalTitle} data-testid="modal-title">
                                     {selectedEvent.title} - Photo Gallery
                                 </h3>
                                 <button
-                                    className="close-btn"
+                                    className={styles.closeBtn}
                                     onClick={closeModal}
                                     data-testid="close-modal-btn"
                                     aria-label="Close photo gallery"
@@ -303,17 +303,17 @@ const EventsPage = () => {
                                 </button>
                             </div>
 
-                            <div className="modal-body">
-                                <div className="photo-grid" data-testid="photo-grid">
+                            <div className={styles.modalBody}>
+                                <div className={styles.photoGrid} data-testid="photo-grid">
                                     {selectedEvent.photos.map((photo, index) => (
-                                        <div key={index} className="photo-item" data-testid={`photo-item-${index}`}>
+                                        <div key={index} className={styles.photoItem} data-testid={`photo-item-${index}`}>
                                             <img
                                                 src={photo.src}
                                                 alt={photo.alt}
                                                 loading="lazy"
                                                 data-testid={`photo-${index}`}
                                             />
-                                            <div className="photo-caption" data-testid={`photo-caption-${index}`}>
+                                            <div className={styles.photoCaption} data-testid={`photo-caption-${index}`}>
                                                 {photo.alt}
                                             </div>
                                         </div>

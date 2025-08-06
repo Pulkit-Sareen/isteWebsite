@@ -2,7 +2,8 @@ import React from "react";
 import "./Footer.css";
 import { Link } from "react-router-dom";
 import { whiteLogo } from "../../assets/images";
-import { FaPhone, FaEnvelope, FaArrowRight } from "react-icons/fa";
+import {FaEnvelope, FaArrowRight } from "react-icons/fa";
+import { MdPhone} from "react-icons/md";
 
 const Footer = () => {
   return (
@@ -62,7 +63,7 @@ const Footer = () => {
             <h2>Contact</h2>
             <div className="contacts">
               <p><FaEnvelope />iste.thapar@gmail.com</p>
-              <p><FaPhone />(123)-456-789</p>
+              <p><MdPhone />(123)-456-789</p>
             </div>
           </div>
         </div>

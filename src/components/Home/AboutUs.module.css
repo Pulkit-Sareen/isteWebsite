@@ -33,7 +33,7 @@
 /* Main Image - scaled */
 .mainImage {
     width: 100%;
-    /* border-radius: 12px; */
+    border-radius: 12px;
     height: 100%;
     display: block;
     transform: scale(0.9);
@@ -41,18 +41,25 @@
     z-index: 1;
     opacity: 0;
     margin: auto;
+    transition: all 0.3s ease-in;
 }
-
+.mainImage:hover{
+    scale: 1.05;
+}
 /* Top-Left Overlapping Image */
 .topLeftImage {
     position: absolute;
     top: -15%;
     left: -15%;
     width: 45%;
-    /* border-radius: 10px; */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 1);
     z-index: 2;
     opacity: 0;
+    transition: all 0.3s ease-in;
+}
+.topLeftImage:hover{
+    scale: 1.1;
 }
 
 /* Right-Center Overlapping Image */
@@ -62,10 +69,14 @@
     right: -15%;
     transform: translateY(-50%);
     width: 30%;
-    /* border-radius: 10px; */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 1);
     z-index: 2;
     opacity: 0;
+    transition: all 0.3s ease-in;
+}
+.rightCenterImage:hover{
+    scale: 1.15;
 }
 
 /* Responsive Adjustments */

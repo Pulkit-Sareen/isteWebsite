@@ -129,8 +129,8 @@ function LearnMoreBox({ name, Moredesc, images, link, onClose }) {
 
   const modalContent = (
     <div className="learnmore">
-        <button className="button" onClick={onClose}>X</button>
       <div className="box">
+        <button className="button" onClick={onClose}>X</button>
         <div className="learnmore-carousel">
           {images.map((image, i) => (
             <img

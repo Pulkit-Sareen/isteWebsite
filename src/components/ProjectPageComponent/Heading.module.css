@@ -3,6 +3,9 @@
   font-family: "Open Sans", sans-serif;
 
 }
+body{
+  background-image: none;
+}
 .heading {
   display: flex;
   flex-direction: column;
