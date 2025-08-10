@@ -1,125 +1,90 @@
-import nutan from "../../assets/EB EC Images/Nutan.jpg";
-import akshara from "../../assets/EB EC Images/AksharaManocha.jpeg";
-import jahnvi from "../../assets/EB EC Images/JahnviRanjan.jpg";
-import aakash from "../../assets/EB EC Images/AakashArora.jpg";
-import naman from "../../assets/EB EC Images/NamanKumar.jpeg";
-import anushka from "../../assets/EB EC Images/AnushkaSharma.jpg";
-import khushi from "../../assets/EB EC Images/Khushi.jpg";
-import manya from "../../assets/EB EC Images/ManyaBansal.jpg";
-import rohit from "../../assets/EB EC Images/RohitArora.jpg";
-import shreyaS from "../../assets/EB EC Images/ShreyaSaini.jpg";
-import shreyaSi from "../../assets/EB EC Images/ShreyaSingh.jpg";
-import sarthak from "../../assets/EB EC Images/SarthakSrivastava.jpg";
-import shreyansh from "../../assets/EB EC Images/ShreyanshSrivastava.jpg";
-import prarthana from "../../assets/EB EC Images/PrarthanaAggarwal.jpg";
-import aabharan from "../../assets/EB EC Images/AabharanGupta.jpg";
-import abhinav from "../../assets/EB EC Images/AbhinavJain.jpg";
-import abhyuday from "../../assets/EB EC Images/AbhyudayVenkatesh.jpg";
-import jini from "../../assets/EB EC Images/JiniManchanda.jpg";
-import khushpreet from "../../assets/EB EC Images/KhushpreetSingh.jpg";
-import rohitd from "../../assets/EB EC Images/RohitDeepchandani.jpg";
-import vivek from "../../assets/EB EC Images/VivekArora.jpg";
-import yashb from "../../assets/EB EC Images/YashBhargava.jpg";
-import aarushi from "../../assets/Core images/AARUSHIRAWAL.jpg";
-import abhinivesh from "../../assets/Core images/AbhivineshSharma.jpg";
-import ajinkya from "../../assets/Core images/AjinkyaHon.jpg";
-import ansh from "../../assets/Core images/AnshBajaj.jpg";
-import arsh from "../../assets/Core images/ArshChatrath.jpg";
-import ayush from "../../assets/Core images/AYUSHGARG.jpg";
-import ayushm from "../../assets/Core images/AyushMishra.jpg";
-import bhavik from "../../assets/Core images/BHAVIKJAIN.jpg";
-import bhavika from "../../assets/Core images/Bhavika.jpg";
-import bhavya from "../../assets/Core images/Bhavya.jpg";
-import diya from "../../assets/Core images/Diya.jpg";
-import hariyank from "../../assets/Core images/HARYIANKKUMRA.jpg";
-import himanish from "../../assets/Core images/HimanishPuri.jpg";
-import ishaan from "../../assets/Core images/IshaanSharma.jpg";
-import ishita from "../../assets/Core images/IshitaOberoi.jpg";
-import kaushik from "../../assets/Core images/KaushikArora.jpg";
-import lakshita from "../../assets/Core images/LakshitaGupta.jpg";
-import meenal from "../../assets/Core images/Meenal.jpg";
-import pranav from "../../assets/Core images/PranavVaishPhoto3.jpg";
-import ritigya from "../../assets/Core images/RitigyaSingh.jpg";
-import saarthi from "../../assets/Core images/SAARTHIARORA.jpg";
-import sakshat from "../../assets/Core images/SakshatJain.jpg";
-import srijapi from "../../assets/Core images/SriJapjiKaur.jpg";
-import tanishq from "../../assets/Core images/TanishqSoni.jpg";
-import udita from "../../assets/Core images/UditaChutani.jpg";
-import vinayak from "../../assets/Core images/VINAYAKJAIN.jpg";
-import yash from "../../assets/Core images/YashAgarwal.jpg";
-import yashita from "../../assets/Core images/YashitaGupta.jpg";
 import suman from "../../assets/president and faculty images/suman.jpg";
-import rajesh from "../../assets/president and faculty images/sir.jpg";
-import garv from "../../assets/Core images/Garvchopra.jpg";
-import sneha from "../../assets/Core images/Sneha.jpg";
-import rishabh from "../../assets/Core images/rishabh.jpg";
-import vaaris from "../../assets/Core images/vaaris.jpg";
-import kashvi from "../../assets/Core images/kaashvi.jpg";
-import janya from "../../assets/Core images/janya.jpg";
-import ishaanP from "../../assets/Core images/ishaanP.jpg";
-import paras from "../../assets/Core images/paras.jpg";
-// import dixant from "../../assets/Core images/dixant.jpg";
+import rajesh from "../../assets/president and faculty images/sir.jpg"; 
+import abhinivesh from "../../assets/EB EC Images/AbhivineshSharma.jpg";
+import ayush from "../../assets/EB EC Images/AYUSHGARG.jpg";
+import bhavya from "../../assets/EB EC Images/Bhavya.jpg";
+import hariyank from "../../assets/EB EC Images/HARYIANKKUMRA.jpg";
+import ishaan from "../../assets/EB EC Images/IshaanSharma.jpg";
+import ishita from "../../assets/EB EC Images/IshitaOberoi.jpg";
+import kaushik from "../../assets/EB EC Images/KaushikArora.jpg";
+import lakshita from "../../assets/EB EC Images/LakshitaGupta.jpg";
+import saarthi from "../../assets/EB EC Images/SAARTHIARORA.jpg";
+import sakshat from "../../assets/EB EC Images/SakshatJain.jpg";
+import tanishq from "../../assets/EB EC Images/TanishqSoni.jpg";
+import garv from "../../assets/EB EC Images/Garvchopra.jpg";
+import rishabh from "../../assets/EB EC Images/rishabh.jpg";
+import ishaanP from "../../assets/EB EC Images/ishaanP.jpg";
+// import dixant from "../../assets/EB EC Images/dixant.jpg";
+
+import anshikaRathore from "../../assets/Core Images/anshika.jpg";
+import saanvi from "../../assets/Core Images/saanvi.jpg";
+import rudrakshChugh from "../../assets/Core Images/rudraksh.jpg";
+import aryanSharma from "../../assets/Core Images/aryan.jpg";
+import prishaAcharya from "../../assets/Core Images/prisha.jpg";
+import divyamMittal from "../../assets/Core Images/divyam.jpg";
+import devyanshArya from "../../assets/Core Images/Devyansh.jpg";
+import meharAhuja from "../../assets/Core Images/mehar.jpg";
+import marushika from "../../assets/Core Images/marushika.WEBP";
+import aryanPal from "../../assets/Core Images/ARYAN PAL.png";
+import arshia from "../../assets/Core Images/arshia.jpg";
+import arpit from "../../assets/Core Images/arpit.jpg";
+import manya from "../../assets/Core Images/manya.jpg";
+import geetikaParakh from "../../assets/Core Images/geetika.jpg";
+import pulkit from "../../assets/Core Images/pulkit.jpg";
+import navjot from "../../assets/Core Images/Navjot.png";
+import arjites from "../../assets/Core Images/arjites.jpg";
+import shainaGera from "../../assets/Core Images/shaina.jpg";
+import nishika from "../../assets/Core Images/nishika.jpg";
+import molika from "../../assets/Core Images/molika.jpg";
+import aditya from "../../assets/Core Images/aditya.jpg";
+import deepakKumar from "../../assets/Core Images/Deepak Kumar.png";
+import ashit from "../../assets/Core Images/ashit.jpg";
+import udhey from "../../assets/Core Images/udhey.jpg";
+import yuvraj from "../../assets/Core Images/yuvraj.png";
+
 const profile = {
   suman,
   rajesh,
-  nutan,
-  akshara,
-  jahnvi,
-  aakash,
-  naman,
-  anushka,
-  khushi,
-  manya,
-  rohit,
-  shreyaS,
-  shreyaSi,
-  sarthak,
-  shreyansh,
-  prarthana,
-  aabharan,
-  abhinav,
-  abhyuday,
-  khushpreet,
-  jini,
-  rohitd,
-  vivek,
-  yashb,
-  aarushi,
   abhinivesh,
-  ajinkya,
-  ansh,
-  arsh,
   ayush,
-  ayushm,
-  bhavik,
-  bhavika,
   bhavya,
-  diya,
   hariyank,
-  himanish,
   ishaan,
   ishita,
   kaushik,
   lakshita,
-  meenal,
-  pranav,
-  ritigya,
   saarthi,
   sakshat,
-  srijapi,
   tanishq,
-  udita,
-  vinayak,
-  yash,
-  yashita,
   garv,
-  sneha,
   rishabh,
-  vaaris,
-  kashvi,
-  janya,
   ishaanP,
-  paras,
+  
+  anshikaRathore,
+  saanvi,
+  rudrakshChugh,
+  aryanSharma,
+  prishaAcharya,
+  divyamMittal,
+  devyanshArya,
+  meharAhuja,
+  marushika,
+  aryanPal,
+  arshia,
+  arpit,
+  manya,
+  geetikaParakh,
+  pulkit,
+  navjot,
+  arjites,
+  shainaGera,
+  nishika,
+  molika,
+  aditya,
+  deepakKumar,
+  ashit,
+  udhey,
+  yuvraj,
 };
 
 export default profile;
