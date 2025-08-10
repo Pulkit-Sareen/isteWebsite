@@ -16,31 +16,31 @@ import rishabh from "../../assets/EB EC Images/rishabh.jpg";
 import ishaanP from "../../assets/EB EC Images/ishaanP.jpg";
 // import dixant from "../../assets/EB EC Images/dixant.jpg";
 
-import anshikaRathore from "../../assets/Core Images/anshika.jpg";
+import anshikaRathore from "../../assets/Core Images/Anshika.jpg";
 import saanvi from "../../assets/Core Images/saanvi.jpg";
-import rudrakshChugh from "../../assets/Core Images/rudraksh.jpg";
-import aryanSharma from "../../assets/Core Images/aryan.jpg";
-import prishaAcharya from "../../assets/Core Images/prisha.jpg";
+import rudrakshChugh from "../../assets/Core Images/Rudraksh.jpg";
+import aryanSharma from "../../assets/Core Images/Aryan.jpg";
+import prishaAcharya from "../../assets/Core Images/Prisha.jpg";
 import divyamMittal from "../../assets/Core Images/divyam.jpg";
 import devyanshArya from "../../assets/Core Images/Devyansh.jpg";
-import meharAhuja from "../../assets/Core Images/mehar.jpg";
-import marushika from "../../assets/Core Images/marushika.WEBP";
+import meharAhuja from "../../assets/Core Images/Mehar.jpg";
+import marushika from "../../assets/Core Images/Marushika.WEBP";
 import aryanPal from "../../assets/Core Images/ARYAN PAL.png";
-import arshia from "../../assets/Core Images/arshia.jpg";
-import arpit from "../../assets/Core Images/arpit.jpg";
-import manya from "../../assets/Core Images/manya.jpg";
+import arshia from "../../assets/Core Images/Arshia.jpg";
+import arpit from "../../assets/Core Images/Arpit.jpg";
+import manya from "../../assets/Core Images/Manya.jpg";
 import geetikaParakh from "../../assets/Core Images/geetika.jpg";
-import pulkit from "../../assets/Core Images/pulkit.jpg";
+import pulkit from "../../assets/Core Images/Pulkit.jpg";
 import navjot from "../../assets/Core Images/Navjot.png";
 import arjites from "../../assets/Core Images/arjites.jpg";
-import shainaGera from "../../assets/Core Images/shaina.jpg";
+import shainaGera from "../../assets/Core Images/Shaina.jpg";
 import nishika from "../../assets/Core Images/nishika.jpg";
 import molika from "../../assets/Core Images/molika.jpg";
-import aditya from "../../assets/Core Images/aditya.jpg";
+import aditya from "../../assets/Core Images/Aditya.jpg";
 import deepakKumar from "../../assets/Core Images/Deepak Kumar.png";
-import ashit from "../../assets/Core Images/ashit.jpg";
-import udhey from "../../assets/Core Images/udhey.jpg";
-import yuvraj from "../../assets/Core Images/yuvraj.png";
+import ashit from "../../assets/Core Images/Ashit.jpg";
+import udhey from "../../assets/Core Images/Udhey.jpg";
+import yuvraj from "../../assets/Core Images/Yuvraj.png";
 
 const profile = {
   suman,
