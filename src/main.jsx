@@ -13,7 +13,7 @@ import ErrorPage from "./components/ErrorPage.jsx";
 import ContactUs from "./components/contactUsComponents/ContactUs.jsx";
 import Event from "./components/event/EventPage.jsx";
 import AlumniPage from "./components/AlumniPageComponents/AlumniPage.jsx";
-import ProjectComponent from "./components/ProjectPageComponent/heading.jsx";
+import ProjectComponent from "./components/ProjectPageComponent/Heading.jsx";
 import SponsorPage from "./components/SponsorPageComponents/SponsorPage.jsx";
 import './index.css'
 
