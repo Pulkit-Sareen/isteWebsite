@@ -77,16 +77,24 @@
 }
 
 .team-section-heading{
-    width: 30%;
+    width: 20%;
     margin: auto;
-    font-size: 1.4rem;
-    font-weight: 500;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 0.25rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    padding:0 4rem ;
+}
+.team-section-heading h2{
+    margin: 0;
 }
 .team-sections {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 70%;  
+    width: 80%;  
     padding: 2rem 0; 
 }
 
@@ -99,6 +107,7 @@
     scroll-behavior: smooth;
     margin: 1rem 0;
     padding: 1rem 0;
+    width: 100%;
 }
 
 .team-section.active {
@@ -108,15 +117,18 @@
 /* Faculty Cards */
 .faculty-card {
     background: rgba(0, 0, 0, 0.5);
-    width: 300px;
+    width: 350px;
     border-radius: 24px;
+    height: 400px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    padding: 1rem;
+    padding: 1.5rem;
+    margin: auto;
+    border: 2px solid white;
 }
 
 .faculty-card img {
@@ -145,6 +157,7 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    border: 2px solid white;
 }
 
 .member-card img {
@@ -180,6 +193,7 @@
     padding: 1rem;
     gap: 10px;
     border-radius: 24px;
+    border: 2px solid white;
 }
 
 .core-card img {
@@ -188,16 +202,58 @@
     object-fit: cover;
     border-radius: 50%;
 }
+@media (max-width:1200px){
+    .team-section-heading{
+        padding: 2rem;
+    }
+}
 @media (max-width:856px){
     .team-section-heading{
-        font-size: 1.2rem;
+        font-size:2.5rem;
+    }
+    .button-group button{
+        margin:10px;
     }
 }
 @media (max-width:678px){
     .team-section-heading{
-        width: 40%;
+        width: 20%;
+        padding: 0rem;
     }
     .team-sections{
-        width: 60%;
+        width: 80%;
+    }
+}
+@media (max-width:564px){
+    .team-section-heading{
+       display: none;
+    }
+    .team{
+        justify-content: center;
+        padding: 0;
+    }
+    .team-page{
+        padding: 8rem 10px;
+    }
+    .button-group button{
+        margin: 0.5rem 0.25rem;
+        width: 170px;
+        padding: 10px 10px;
+    }
+    .team-sections{
+        width: 100%;
+    }
+    .faculty-card{
+        width: 300px;
+    }
+    .member-card, .core-card{
+        width: 150px;
+    }
+    .member-card img{
+        width: 100px;
+    }
+    .core-card img{
+        height: 100px;
+        width: 100px;
     }
 }

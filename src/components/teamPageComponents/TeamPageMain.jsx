@@ -97,7 +97,8 @@ export default function TeamPage() {
 
             <div className="team">
                 <h2 className="team-section-heading">
-                    {activeSection.charAt(0).toUpperCase() + activeSection.slice(1)}
+                    <h2>OUR</h2>
+                    <h2>Team</h2>
                 </h2>
                 <div className="team-sections">
                     {/* Faculty */}
