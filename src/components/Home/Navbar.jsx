@@ -42,10 +42,10 @@ export const Navbar = () => {
         {!isMobile && (
           <nav className={styles.Options}>
             <Link to="/" className={styles.menuItem}><FaCode /> Home</Link>
-            <Link to="/events" className={styles.menuItem}><FaCalendarAlt />Event</Link>
+            <Link to="/events" className={styles.menuItem}><FaCalendarAlt />Events</Link>
             <Link to="/team" className={styles.menuItem}><FaUsers />Team</Link>
-            <Link to="/sponsor" className={styles.menuItem}><FaCube />Sponsor</Link>
-            <Link to="/projects" className={styles.menuItem}><FaFolder />Project</Link>
+            <Link to="/sponsor" className={styles.menuItem}><FaCube />Sponsors</Link>
+            <Link to="/projects" className={styles.menuItem}><FaFolder />Projects</Link>
             <Link to="/contact" className={styles.menuItem}><MdPhone />Contact</Link>
           </nav>
         )}
@@ -62,10 +62,10 @@ export const Navbar = () => {
       {isMobile && (
         <nav className={`${styles.OptionsMobile} ${showOptions ? styles.show : ""}`}>
           <Link to="/" className={styles.menuItem}><FaCode /> Home</Link>
-          <Link to="/events" className={styles.menuItem}><FaCalendarAlt />Event</Link>
+          <Link to="/events" className={styles.menuItem}><FaCalendarAlt />Events</Link>
           <Link to="/team" className={styles.menuItem}><FaUsers />Team</Link>
-          <Link to="/sponsor" className={styles.menuItem}><FaCube />Sponsor</Link>
-          <Link to="/projects" className={styles.menuItem}><FaFolder />Project</Link>
+          <Link to="/sponsor" className={styles.menuItem}><FaCube />Sponsors</Link>
+          <Link to="/projects" className={styles.menuItem}><FaFolder />Projects</Link>
           <Link to="/contact" className={styles.menuItem}><MdPhone />Contact</Link>
           <Link to="/join" className={styles.joinButton}>JOIN US</Link>
         </nav>
