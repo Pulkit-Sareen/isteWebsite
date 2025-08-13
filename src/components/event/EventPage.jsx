@@ -8,136 +8,188 @@ const EventsPage = () => {
     const featuredEvents = [
         {
             id: 1,
-            title: "Tech Innovation Summit 2025",
-            date: "March 15-17, 2025",
-            time: "9:00 AM - 6:00 PM",
-            location: "Main Auditorium, Thapar University",
-            category: "Conference",
-            description: "A three-day summit featuring cutting-edge technology discussions, workshops, and networking opportunities with industry leaders. Successfully concluded with record attendance.",
-            date_held: "March 2024",
-            attendees: 285,
+            title: "Society Fair 2024",
+            date: "August 31, 2024",
+            time: "10:00 AM - 6:00 PM",
+            location: "Main Lawn, Thapar University",
+            category: "Fair",
+            description: "An engaging fair showcasing all university societies, clubs, and student groups. Students explored opportunities, interacted with members, and registered for activities.",
+            date_held: "August 2024",
+            attendees: 5000,
             photos: [
                 {
-                    src: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-                    alt: "Keynote speaker at Tech Innovation Summit"
+                    src: "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+                    alt: "Crowd exploring society stalls"
                 },
                 {
-                    src: "https://images.unsplash.com/photo-1559223607-b4d0555ae227?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-                    alt: "Panel discussion with industry experts"
+                    src: "https://images.unsplash.com/photo-1485217988980-11786ced9454?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+                    alt: "Students interacting with club members"
                 },
                 {
-                    src: "https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-                    alt: "Networking session at summit"
+                    src: "https://images.unsplash.com/photo-1528892952291-009c663ce843?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+                    alt: "Stall showcasing creative society projects"
                 },
                 {
-                    src: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-                    alt: "Tech exhibition and demo booths"
+                    src: "https://images.unsplash.com/photo-1475724017904-b712052c192a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+                    alt: "Information booths at society fair"
                 },
                 {
-                    src: "https://images.unsplash.com/photo-1553028826-f4804a6dba3b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-                    alt: "Award ceremony at summit conclusion"
+                    src: "https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+                    alt: "Performance at the fair"
                 }
             ]
         },
         {
             id: 2,
-            title: "Hackathon: Code for Good",
-            date: "February 28, 2024",
-            time: "24 Hours",
-            location: "Computer Science Department",
-            category: "Competition",
-            description: "A successful 24-hour hackathon that focused on developing solutions for social impact. Teams built innovative solutions addressing real-world problems.",
-            date_held: "February 2024",
-            attendees: 142,
+            title: "Orientation 2024",
+            date: "September 1, 2024",
+            time: "9:00 AM - 1:00 PM",
+            location: "Main Auditorium, Thapar University",
+            category: "Orientation",
+            description: "A welcome event for the incoming batch, featuring sessions from faculty, student leaders, and alumni to guide freshers through campus life and academic resources.",
+            date_held: "September 2024",
+            attendees: 450,
             photos: [
                 {
-                    src: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-                    alt: "Teams coding during hackathon"
+                    src: "https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+                    alt: "Freshers seated in auditorium"
                 },
                 {
-                    src: "https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-                    alt: "Brainstorming session during hackathon"
+                    src: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+                    alt: "Speaker addressing orientation attendees"
                 },
                 {
-                    src: "https://images.unsplash.com/photo-1573497161161-c3e73707e25c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-                    alt: "Mentors guiding hackathon participants"
+                    src: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+                    alt: "Student leaders introducing societies"
                 },
                 {
-                    src: "https://images.unsplash.com/photo-1559223607-b4d0555ae227?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-                    alt: "Final project presentations"
+                    src: "https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+                    alt: "Orientation networking break"
                 },
                 {
-                    src: "https://images.unsplash.com/photo-1553028826-f4804a6dba3b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-                    alt: "Winning team celebration"
+                    src: "https://images.unsplash.com/photo-1485217988980-11786ced9454?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+                    alt: "Panel discussion during orientation"
                 }
             ]
         },
         {
             id: 3,
-            title: "AI & Machine Learning Workshop",
-            date: "February 15, 2024",
-            time: "2:00 PM - 5:00 PM",
-            location: "Lab 301, Engineering Block",
-            category: "Workshop",
-            description: "An intensive hands-on workshop covering the fundamentals of AI and ML with practical implementation using Python and TensorFlow. Participants gained valuable insights into modern AI techniques.",
-            date_held: "February 2024",
-            attendees: 48,
+            title: "Playnnovate 2024",
+            date: "November 14, 2024",
+            time: "10:00 AM - 5:00 PM",
+            location: "Innovation Hub, Thapar University",
+            category: "Competition",
+            description: "An exciting blend of playful creativity and innovative challenges where participants engaged in interactive problem-solving games and competitions.",
+            date_held: "November 2024",
+            attendees: 200,
             photos: [
                 {
+                    src: "https://images.unsplash.com/photo-1606761568499-6a21efae2e54?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+                    alt: "Participants engaged in creative game"
+                },
+                {
+                    src: "https://images.unsplash.com/photo-1549924231-f129b911e442?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+                    alt: "Team strategy planning"
+                },
+                {
+                    src: "https://images.unsplash.com/photo-1553028826-f4804a6dba3b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+                    alt: "Winners receiving awards"
+                },
+                {
                     src: "https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-                    alt: "Instructor explaining AI concepts"
-                },
-                {
-                    src: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-                    alt: "Hands-on coding session"
-                },
-                {
-                    src: "https://images.unsplash.com/photo-1573497161161-c3e73707e25c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-                    alt: "Group discussion on ML algorithms"
-                },
-                {
-                    src: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-                    alt: "Certificate distribution ceremony"
+                    alt: "Audience cheering for teams"
                 },
                 {
                     src: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-                    alt: "Neural network visualization demo"
+                    alt: "Creative challenge session"
                 }
             ]
         },
         {
             id: 4,
-            title: "Digital Innovation Expo 2024",
-            date: "January 20-21, 2024",
+            title: "Colloquium 2025",
+            date: "February 17-21, 2025",
             time: "10:00 AM - 8:00 PM",
-            location: "Innovation Hub, Thapar University",
-            category: "Exhibition",
-            description: "A spectacular showcase of digital innovations and emerging technologies featuring interactive demos, startup exhibitions, and industry partnerships.",
-            date_held: "January 2024",
-            attendees: 320,
+            location: "Various Venues, Thapar University",
+            category: "Festival",
+            description: "A multi-day flagship technical fest featuring exciting competitions, workshops, and sub-events attracting talent from across the region.",
+            date_held: "February 2025",
+            attendees: 1000,
             photos: [
                 {
                     src: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-                    alt: "Interactive technology displays"
-                },
-                {
-                    src: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-                    alt: "Startup exhibition booths"
+                    alt: "Crowds at Colloquium main stage"
                 },
                 {
                     src: "https://images.unsplash.com/photo-1592478411213-6153e4ebc696?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-                    alt: "VR/AR demonstration zone"
+                    alt: "Workshop during Colloquium"
                 },
                 {
                     src: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-                    alt: "Robotics showcase area"
+                    alt: "Gaming zone"
                 },
                 {
                     src: "https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-                    alt: "Busy expo floor with visitors"
+                    alt: "Team celebration after winning"
+                },
+                {
+                    src: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+                    alt: "Audience at Colloquium stage"
+                }
+            ],
+            subEvents: [
+                {
+                    title: "Web Vida",
+                    date: "February 17, 2025"
+                },
+                {
+                    title: "Wit Wars",
+                    date: "February 18, 2025"
+                },
+                {
+                    title: "OverThrone",
+                    date: "February 19, 2025"
+                },
+                {
+                    title: "Flag Heist",
+                    date: "February 21, 2025"
+                }
+            ]
+        },
+        {
+            id: 5,
+            title: "Intra Society Hackathon 2025",
+            date: "June 21, 2025",
+            time: "9:00 AM - 9:00 PM",
+            location: "Computer Science Department, Thapar University",
+            category: "Hackathon",
+            description: "An internal hackathon for society members to collaborate, innovate, and build creative solutions in a single day of intense coding.",
+            date_held: "June 2025",
+            attendees: 60,
+            photos: [
+                {
+                    src: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+                    alt: "Hackathon teams coding"
+                },
+                {
+                    src: "https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+                    alt: "Mentor guiding team"
+                },
+                {
+                    src: "https://images.unsplash.com/photo-1573497161161-c3e73707e25c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+                    alt: "Team discussion"
+                },
+                {
+                    src: "https://images.unsplash.com/photo-1559223607-b4d0555ae227?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+                    alt: "Final presentation"
+                },
+                {
+                    src: "https://images.unsplash.com/photo-1553028826-f4804a6dba3b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+                    alt: "Winner announcement"
                 }
             ]
         }
+
     ];
 
     const getCategoryColor = (category) => {
@@ -184,7 +236,7 @@ const EventsPage = () => {
                 <section className={styles.heroSection}>
                     <div className={styles.heroContent}>
                         <h1 className={styles.heroTitle} data-testid="hero-title">
-                            ISTE Thapar Chapter Events
+                            ISTE Events
                         </h1>
                         <p className={styles.heroSubtitle} data-testid="hero-subtitle">
                             Explore the successful events organized by ISTE Thapar Chapter.
@@ -192,16 +244,16 @@ const EventsPage = () => {
                         </p>
                         <div className={styles.heroStats}>
                             <div className={styles.stat}>
-                                <span className={styles.statNumber} data-testid="stat-events">15+</span>
-                                <span className={styles.statLabel}>Events This Year</span>
+                                <span className={styles.statNumber} data-testid="stat-events">10+</span>
+                                <span className={styles.statLabel}>Events Last Year</span>
                             </div>
                             <div className={styles.stat}>
-                                <span className={styles.statNumber} data-testid="stat-participants">500+</span>
+                                <span className={styles.statNumber} data-testid="stat-participants">1000+</span>
                                 <span className={styles.statLabel}>Participants</span>
                             </div>
                             <div className={styles.stat}>
-                                <span className={styles.statNumber} data-testid="stat-speakers">20+</span>
-                                <span className={styles.statLabel}>Speakers</span>
+                                <span className={styles.statNumber} data-testid="stat-speakers">2</span>
+                                <span className={styles.statLabel}>Speaker Sessions</span>
                             </div>
                         </div>
                     </div>
@@ -221,13 +273,13 @@ const EventsPage = () => {
                                         data-testid={`event-image-${event.id}`}
                                     />
                                     <div className={styles.imageOverlay}>
-                                        <div
+                                        {/* <div
                                             className={styles.eventCategoryBadge}
                                             style={{ backgroundColor: getCategoryColor(event.category) }}
                                             data-testid={`event-category-${event.id}`}
                                         >
                                             {event.category}
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </div>
                                 <div className={styles.cardHeader}>

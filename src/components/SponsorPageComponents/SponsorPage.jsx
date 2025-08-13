@@ -6,44 +6,74 @@ import sponsor3 from "../../assets/images/Collage_Image_1.png";
 import sponsor4 from "../../assets/images/Collage_Image_1.png";
 import sponsor5 from "../../assets/images/Collage_Image_1.png";
 import sponsor6 from "../../assets/images/Collage_Image_1.png";
+import sponsor7 from "../../assets/images/Collage_Image_1.png";
+import sponsor8 from "../../assets/images/Collage_Image_1.png";
+import sponsor9 from "../../assets/images/Collage_Image_1.png";
+import sponsor10 from "../../assets/images/Collage_Image_1.png";
+
 
 const sponsorData = [
     {
         img: sponsor1,
-        subheading: "TechNova Inc.",
-        span: "Innovation Partner",
-        desc: "TechNova empowers our hackathons and workshops, providing resources and mentorship to foster creativity and technical growth.",
+        subheading: "Surrey Immigration Consultancy",
+        span: "Title Sponsor",
+        desc: "Surrey Immigration Consultancy leads as our Title Sponsor, supporting our initiatives and helping participants navigate opportunities abroad.",
     },
     {
         img: sponsor2,
-        subheading: "BrightFuture Foundation",
-        span: "Education Sponsor",
-        desc: "BrightFuture supports our outreach programs, helping us bring technology education to underserved communities.",
+        subheading: "PLASMID",
+        span: "Mentorship and Training Partner",
+        desc: "PLASMID provides expert mentorship and training, guiding participants to develop skills and achieve their career goals.",
     },
     {
         img: sponsor3,
-        subheading: "CodeCraft",
-        span: "Coding Partner",
-        desc: "CodeCraft provides tools and platforms for our coding events, enabling students to build and deploy real-world projects.",
+        subheading: "Bakingo",
+        span: "Cake Partner",
+        desc: "Bakingo sweetens our events as the Cake Partner, adding a delicious touch to celebrations and milestones.",
     },
     {
         img: sponsor4,
-        subheading: "InnoSoft",
-        span: "Software Sponsor",
-        desc: "InnoSoft offers premium software licenses and technical support for our student projects and competitions.",
+        subheading: "Oatey",
+        span: "Health and Sustainability Partner",
+        desc: "Oatey supports health and sustainability efforts, ensuring our events promote well-being and eco-conscious practices.",
     },
     {
         img: sponsor5,
-        subheading: "NextGen Hardware",
-        span: "Hardware Partner",
-        desc: "NextGen supplies the latest hardware kits for our robotics and IoT workshops, fueling hands-on learning.",
+        subheading: "HoverRobotix",
+        span: "AI Partner",
+        desc: "HoverRobotix drives innovation as our AI Partner, bringing cutting-edge robotics and automation expertise.",
     },
     {
         img: sponsor6,
-        subheading: "Visionary Ventures",
-        span: "Startup Supporter",
-        desc: "Visionary Ventures mentors our student startups, providing guidance and funding opportunities for budding entrepreneurs.",
+        subheading: "MentorX",
+        span: "Our Mentoring Partner",
+        desc: "MentorX empowers participants through dedicated mentoring, fostering personal growth and career advancement.",
     },
+    {
+        img: sponsor7,
+        subheading: "XYZ",
+        span: "Domain Sponsor",
+        desc: ".XYZ fuels the digital presence of our participants, providing domains to launch their online projects and portfolios.",
+    },
+    {
+        img: sponsor8,
+        subheading: "InterviewBit",
+        span: "Interview Sponsor",
+        desc: "InterviewBit equips participants with interview preparation tools and resources, boosting their career readiness.",
+    },
+    {
+        img: sponsor9,
+        subheading: "Event Partner",
+        span: "Event Partner",
+        desc: "Our Event Partner ensures seamless execution of programs, managing logistics and experiences with precision.",
+    },
+    {
+        img: sponsor10,
+        subheading: "StockEdge",
+        span: "Stock Learning Partner",
+        desc: "StockEdge educates participants on financial markets, empowering them with investment knowledge and skills.",
+    },
+
 ];
 
 const SponsorPage = () => {

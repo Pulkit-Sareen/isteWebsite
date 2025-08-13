@@ -198,7 +198,7 @@ export const Cards = () => {
 
   return (
     <>
-      <section className={styles.cards}>
+      <section id="card" className={styles.cards}>
         <div className={styles.eventCardSection}>
           <h2
             ref={eventHeadingRef}
@@ -224,8 +224,8 @@ export const Cards = () => {
                 Welcome to the ISTE community! During the orientation, new members were introduced to our dynamic organization, delved into exciting projects, and embarked on their tech journeys. They joined us to learn, connect, and innovate, forming valuable connections along the way. Together, we anticipated advancing technology and shaping the future through everyone s unique contributions.
               </p>
               <div className={styles.eventDetails}>
-                <p>24 August 2025</p>
-                <p>LT-101</p>
+                <p>25th August 2025</p>
+                <p>Main Audi</p>
               </div>
               <div className={styles.registerButton}><Link to="/">Register</Link></div>
             </div>
@@ -276,8 +276,8 @@ export const Cards = () => {
             </div>
             <div className={styles.projectCard}>
               <div className={styles.projectCardContent}>
-                <h2>Smart Campus System</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam autem veniam est ab dolorem error.</p>
+                <h2>FinTech</h2>
+                <p>Track spending, income, and expenses; monitor investments with personalized advice; set budgets with alerts; access expert resources; and enjoy an intuitive interface.</p>
 
               </div>
               <FaArrowRight className={styles.projectIcon} />

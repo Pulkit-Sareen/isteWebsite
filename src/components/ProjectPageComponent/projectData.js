@@ -5,53 +5,33 @@ import img3 from '../../assets/images/image3.png';
 const projectData = [
   {
     images: [img1, img2, img3],
-    name: "Name of project",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit...lorem",
-    link: "https://www.youtube.com/" ,
-    Moredesc: "lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit...lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit...lorem This is another project description..Lorem ipsum dolor sit amet, consectetur adipiscing elit...lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+    name: "FairFare",
+    desc: "FairFare is a web platform that lets users compare real-time taxi fares across different cities and services to help choose the most economical and reliable option.",
+    link: "https://www.youtube.com/",
+    Moredesc: "FairFare aggregates data from multiple ride-hailing and taxi services to provide instant price comparisons, estimated travel times, and service ratings—helping users make informed and cost-effective travel decisions."
   },
   {
     images: [img2, img3, img1],
-    name: "Name of project",
-    desc: "This is another project description..Lorem ipsum dolor sit amet, consectetur adipiscing elit...lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit....",
-    link: "https://www.youtube.com/" ,
-    Moredesc: "lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit...lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit...lorem This is another project description..Lorem ipsum dolor sit amet, consectetur adipiscing elit...lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit...Lorem ipsum dolor sit amet, consectetur adipiscing elit...lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit...lorem"
+    name: "Time Capsule",
+    desc: "Time Capsule Messenger – Write messages to yourself or friends that only become viewable after a set period, from days to even years.",
+    link: "https://www.youtube.com/",
+    Moredesc: "Time Capsule allows users to schedule heartfelt messages, reminders, or future predictions for later delivery. Perfect for personal reflection, celebrations, or time-locked surprises."
   },
   {
-    images:[img2, img1, img3],
-    name: "Project 2",
-    desc: "This is another project description...",
-    link: "https://www.youtube.com/" ,
-    Moredesc: "lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit...lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit...lorem This is another project description..Lorem ipsum dolor sit amet, consectetur adipiscing elit...lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit...Lorem ipsum dolor sit amet, consectetur adipiscing elit...lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit...lorem"
-  },
-   {
-    images: [img2, img3, img1],
-    name: "Project 2",
-    desc: "This is another project description...",
-    link: "https://www.youtube.com/" ,
-    Moredesc: "lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit...lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit...lorem This is another project description..Lorem ipsum dolor sit amet, consectetur adipiscing elit...lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit...Lorem ipsum dolor sit amet, consectetur adipiscing elit...lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit...lorem"
-  },
-  {
-    images: [img1, img2, img3],
-    name: "Project 2",
-    desc: "This is another project description...",
-    link: "https://www.youtube.com/" ,
-    Moredesc: "lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit...lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit...lorem This is another project description..Lorem ipsum dolor sit amet, consectetur adipiscing elit...lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit...Lorem ipsum dolor sit amet, consectetur adipiscing elit...lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit...lorem"
+    images: [img2, img1, img3],
+    name: "Society Sphere",
+    desc: "A streamlined web platform that empowers student societies by simplifying event management, announcements, task coordination, and resource sharing.",
+    link: "https://www.youtube.com/",
+    Moredesc: "Society Sphere centralizes communication, event planning, and document management into one intuitive dashboard—reducing administrative hassle and boosting community engagement."
   },
   {
     images: [img3, img2, img1],
-    name: "Name of project",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...lorem ",
-    link: "https://www.youtube.com/" ,
-    Moredesc: "lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit...lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit...lorem This is another project description..Lorem ipsum dolor sit amet, consectetur adipiscing elit...lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit...Lorem ipsum dolor sit amet, consectetur adipiscing elit...lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit...lorem"
-  },
-  {
-    images: [img2, img3, img1],
-    name: "Name of project",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
-    link: "https://www.youtube.com/" ,
-    Moredesc: "lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit...lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit...lorem This is another project description..Lorem ipsum dolor sit amet, consectetur adipiscing elit...lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit...Lorem ipsum dolor sit amet, consectetur adipiscing elit...lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit...lorem"
+    name: "FinTech",
+    desc: "Track spending, income, and expenses; monitor investments with personalized advice; set budgets with alerts; access expert resources; and enjoy an intuitive interface.",
+    link: "https://www.youtube.com/",
+    Moredesc: "Our FinTech solution offers an all-in-one personal finance hub, providing real-time tracking, AI-driven insights, budgeting tools, and educational resources to help users achieve financial goals."
   }
+
  
 ];
 

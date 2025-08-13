@@ -55,7 +55,7 @@ const ContactPage = () => {
                             <div className="contact-image"><MdEmail /></div>
                             <div className="info">
                                 <h3>Email</h3>
-                                <p>iste_thapar@gmail.com</p>
+                                <p>iste@thapar.ed</p>
                             </div>
                         </div>
 
@@ -63,7 +63,7 @@ const ContactPage = () => {
                             <div className="contact-image"><MdPhone /></div>
                             <div className="info">
                                 <h3>Phone</h3>
-                                <p>XXXXXXXXXX</p>
+                                <p>+91 7986790322</p>
                             </div>
                         </div>
 
@@ -80,13 +80,31 @@ const ContactPage = () => {
                         <h2 className="contact-h2">Connect With Us</h2>
                         <div className="links">
                             <div className="contact-image">
+                                <a
+                                    href="https://www.facebook.com/ISTE.Thapar/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
                             <FaFacebook />
+                                </a>
                             </div>
                             <div className="contact-image">
+                                <a
+                                    href="https://www.instagram.com/iste_tiet/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
                             <FaInstagram />
+                                </a>
                             </div>
                             <div className="contact-image">
+                                <a
+                                    href="https://in.linkedin.com/company/iste-thapar"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
                             <FaLinkedin />
+                                </a>
                             </div>
                         </div>
                     </div>

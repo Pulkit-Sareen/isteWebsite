@@ -38,7 +38,7 @@ const executiveCommittee = [
     { name: 'Rishabh Garg', role: 'Media Executive', image: profile.rishabh, github: 'githublink', linkedin: 'linkedinlink' },
     { name: 'Garv Chopra', role: 'Technical Executive', image: profile.garv, github: 'githublink', linkedin: 'linkedinlink' },
     { name: 'Ayush Garg', role: 'Design Executive', image: profile.ayush, github: 'githublink', linkedin: 'linkedinlink' },
-    { name: 'Dixant', role: 'External Secretary', image: profile.dixant, github: 'githublink', linkedin: 'linkedinlink' },
+    { name: 'Dixant', role: 'Marketing Executive', image: profile.dixant, github: 'githublink', linkedin: 'linkedinlink' },
 ];
 
 const coreMembers = [

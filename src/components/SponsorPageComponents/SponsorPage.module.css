@@ -229,12 +229,15 @@
     }
 
     .sponsorCardImg {
-        width: 48px;
-        height: 48px;
+        width: 8rem;
+        height: 10rem;
     }
 
     .description {
         font-size: 1rem;
         padding: 0.7rem 0.5rem;
+    }
+    .sponsorCardContent{
+        align-items: flex-start;
     }
 }

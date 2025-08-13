@@ -62,8 +62,8 @@ const Footer = () => {
           <div className="footerContact">
             <h2>Contact</h2>
             <div className="contacts">
-              <p><FaEnvelope />iste.thapar@gmail.com</p>
-              <p><MdPhone />(123)-456-789</p>
+              <p><FaEnvelope />iste@thapar.ed</p>
+              <p><MdPhone />+91 7986790322</p>
             </div>
           </div>
         </div>
