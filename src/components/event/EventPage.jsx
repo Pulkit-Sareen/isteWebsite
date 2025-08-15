@@ -1,5 +1,36 @@
 import React, { useState } from 'react';
 import styles from "./EventPage.module.css";
+//Society Fair
+import simg1 from "../../assets/Pastevents/sIMG1.png";
+import simg2 from "../../assets/Pastevents/sIMG2.png";
+import simg3 from "../../assets/Pastevents/sIMG3.png";
+import simg4 from "../../assets/Pastevents/sIMG4.png";
+import simg5 from "../../assets/Pastevents/sIMG5.png";
+//colloquium
+import cimg1 from "../../assets/Pastevents/cIMG1.png";
+import cimg2 from "../../assets/Pastevents/cIMG2.png";
+import cimg3 from "../../assets/Pastevents/cIMG3.png";
+import cimg4 from "../../assets/Pastevents/cIMG4.png";
+import cimg5 from "../../assets/Pastevents/cIMG5.png";
+//playnovate
+import pimg1 from "../../assets/Pastevents/pIMG1.png";
+import pimg2 from "../../assets/Pastevents/pIMG2.png";
+import pimg3 from "../../assets/Pastevents/pIMG3.png";
+import pimg4 from "../../assets/Pastevents/pIMG4.png";
+import pimg5 from "../../assets/Pastevents/pIMG5.png";
+//hackathon
+import himg1 from "../../assets/Pastevents/hIMG1.png";
+import himg2 from "../../assets/Pastevents/hIMG2.png";
+import himg3 from "../../assets/Pastevents/hIMG3.png";
+import himg4 from "../../assets/Pastevents/hIMG4.png";
+import himg5 from "../../assets/Pastevents/hIMG5.png";
+//orientation
+import oimg1 from "../../assets/Pastevents/oIMG1.png";
+import oimg2 from "../../assets/Pastevents/oIMG2.png";
+import oimg3 from "../../assets/Pastevents/oIMG3.png";
+import oimg4 from "../../assets/Pastevents/oIMG4.png";
+import oimg5 from "../../assets/Pastevents/oIMG5.png";
+
 
 const EventsPage = () => {
     const [selectedEvent, setSelectedEvent] = useState(null);
@@ -18,24 +49,24 @@ const EventsPage = () => {
             attendees: 5000,
             photos: [
                 {
-                    src: "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-                    alt: "Crowd exploring society stalls"
+                    src: simg1,
+                    alt: "Explore our society stall"
                 },
                 {
-                    src: "https://images.unsplash.com/photo-1485217988980-11786ced9454?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+                    src: simg2,
+                    alt: "Memory chart display"
+                },
+                {
+                    src: simg3,
                     alt: "Students interacting with club members"
                 },
                 {
-                    src: "https://images.unsplash.com/photo-1528892952291-009c663ce843?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-                    alt: "Stall showcasing creative society projects"
-                },
-                {
-                    src: "https://images.unsplash.com/photo-1475724017904-b712052c192a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+                    src: simg4,
                     alt: "Information booths at society fair"
                 },
                 {
-                    src: "https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-                    alt: "Performance at the fair"
+                    src: simg5,
+                    alt: "Stall showcasing creative society projects"
                 }
             ]
         },
@@ -51,23 +82,23 @@ const EventsPage = () => {
             attendees: 450,
             photos: [
                 {
-                    src: "https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-                    alt: "Freshers seated in auditorium"
+                    src: oimg1,
+                    alt: "Our Society Orientation"
                 },
                 {
-                    src: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+                    src: oimg2,
                     alt: "Speaker addressing orientation attendees"
                 },
                 {
-                    src: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-                    alt: "Student leaders introducing societies"
+                    src: oimg3,
+                    alt: "Red bull competition"
                 },
                 {
-                    src: "https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-                    alt: "Orientation networking break"
+                    src: oimg4,
+                    alt: "Students interacting"
                 },
                 {
-                    src: "https://images.unsplash.com/photo-1485217988980-11786ced9454?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+                    src: oimg5,
                     alt: "Panel discussion during orientation"
                 }
             ]
@@ -84,24 +115,24 @@ const EventsPage = () => {
             attendees: 200,
             photos: [
                 {
-                    src: "https://images.unsplash.com/photo-1606761568499-6a21efae2e54?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-                    alt: "Participants engaged in creative game"
+                    src: pimg1,
+                    alt: "Playnnovate->interactive problem-solving games and Competition"
                 },
                 {
-                    src: "https://images.unsplash.com/photo-1549924231-f129b911e442?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+                    src: pimg5,
+                    alt: "Participants engaging in competition"
+                },
+                {
+                    src: pimg3,
                     alt: "Team strategy planning"
                 },
                 {
-                    src: "https://images.unsplash.com/photo-1553028826-f4804a6dba3b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-                    alt: "Winners receiving awards"
+                    src: pimg4,
+                    alt: "Creative Gameplay Begins!"
                 },
                 {
-                    src: "https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-                    alt: "Audience cheering for teams"
-                },
-                {
-                    src: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-                    alt: "Creative challenge session"
+                    src: pimg2,
+                    alt: "ISTE team after event"
                 }
             ]
         },
@@ -117,24 +148,24 @@ const EventsPage = () => {
             attendees: 1000,
             photos: [
                 {
-                    src: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-                    alt: "Crowds at Colloquium main stage"
+                    src: cimg3,
+                    alt: "Colloquium->multi-day flagship technical fest"
                 },
                 {
-                    src: "https://images.unsplash.com/photo-1592478411213-6153e4ebc696?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-                    alt: "Workshop during Colloquium"
+                    src: cimg2,
+                    alt: "Team based competition"
                 },
                 {
-                    src: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+                    src: cimg4,
                     alt: "Gaming zone"
                 },
                 {
-                    src: "https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-                    alt: "Team celebration after winning"
+                    src: cimg5,
+                    alt: "Team strategy planning"
                 },
                 {
-                    src: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-                    alt: "Audience at Colloquium stage"
+                    src: cimg1,
+                    alt: "ISTE team after colloquium"
                 }
             ],
             subEvents: [
@@ -168,23 +199,23 @@ const EventsPage = () => {
             attendees: 60,
             photos: [
                 {
-                    src: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+                    src: himg1,
                     alt: "Hackathon teams coding"
                 },
                 {
-                    src: "https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-                    alt: "Mentor guiding team"
+                    src: himg2,
+                    alt: "Deadline with Timeline"
                 },
                 {
-                    src: "https://images.unsplash.com/photo-1573497161161-c3e73707e25c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-                    alt: "Team discussion"
+                    src: himg3,
+                    alt: "Society Sphere->Best Project"
                 },
                 {
-                    src: "https://images.unsplash.com/photo-1559223607-b4d0555ae227?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-                    alt: "Final presentation"
+                    src: himg4,
+                    alt: "Final Presentation Day"
                 },
                 {
-                    src: "https://images.unsplash.com/photo-1553028826-f4804a6dba3b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+                    src: himg5,
                     alt: "Winner announcement"
                 }
             ]

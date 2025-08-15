@@ -45,6 +45,7 @@ const coreMembers = [
     { name: "Pulkit", role: "Core Member", github: "githublink", linkedin: "linkedinlink", image: profile.pulkit },
     { name: "Prisha Acharya", role: "Core Member", github: "githublink", linkedin: "linkedinlink", image: profile.prishaAcharya },
     { name: "Shaina Gera", role: "Core Member", github: "githublink", linkedin: "linkedinlink", image: profile.shainaGera },
+    { name: "Yuvraj", role: "Core Member", github: "githublink", linkedin: "linkedinlink", image: profile.yuvraj },
     { name: "Mehar Ahuja", role: "Core Member", github: "githublink", linkedin: "linkedinlink", image: profile.meharAhuja },
     { name: "Anshika Rathore", role: "Core Member", github: "githublink", linkedin: "linkedinlink", image: profile.anshikaRathore },
     { name: "Saanvi", role: "Core Member", github: "githublink", linkedin: "linkedinlink", image: profile.saanvi },
@@ -65,8 +66,8 @@ const coreMembers = [
     { name: "Aditya", role: "Core Member", github: "githublink", linkedin: "linkedinlink", image: profile.aditya },
     { name: "Deepak Kumar", role: "Core Member", github: "githublink", linkedin: "linkedinlink", image: profile.deepakKumar },
     { name: "Ashit", role: "Core Member", github: "githublink", linkedin: "linkedinlink", image: profile.ashit },
-    { name: "Udhey", role: "Core Member", github: "githublink", linkedin: "linkedinlink", image: profile.udhey },
-    { name: "Yuvraj", role: "Core Member", github: "githublink", linkedin: "linkedinlink", image: profile.yuvraj }
+    { name: "Udhey", role: "Core Member", github: "githublink", linkedin: "linkedinlink", image: profile.udhey }
+    
 ];
 
 export default function TeamPage() {
