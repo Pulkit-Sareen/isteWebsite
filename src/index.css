@@ -1,0 +1,94 @@
+/* @tailwind base;
+@tailwind components; */
+/* @tailwind utilities; */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.logo {
+  width: 13rem;
+  margin: auto;
+  margin-bottom: 2rem;
+  margin-top: -8rem;
+}
+
+html::-webkit-scrollbar {
+  width: 0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-image: linear-gradient(135deg, #0F2946, #000000, #2F1345);
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+}
+body{
+  /* overflow-x: hidden; */
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: #FFFFFF;
+}
+
+@keyframes fadeInLeft {
+  from {
+    transform: translateX(-2%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    transform: translateX(2%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeInLeftAnimation {
+  animation: fadeInLeft 0.5s forwards;
+}
+
+.fadeInRightAnimation {
+  animation: fadeInRight 0.5s forwards;
+}
+
+.fadeInAnimation {
+  animation: fadeIn 0.55s forwards;
+}
+button{
+  border: none;
+}
+
+html {
+  font-size: 100%;
+}
+
+@media (max-width:768px) {
+  html {
+    font-size: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 80%;
+  }
+}

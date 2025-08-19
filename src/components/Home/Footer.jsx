@@ -2,6 +2,9 @@ import React from "react";
 import "./Footer.css";
 import { Link } from "react-router-dom";
 import { whiteLogo } from "../../assets/images";
+import {FaEnvelope, FaArrowRight } from "react-icons/fa";
+import { MdPhone} from "react-icons/md";
+
 const Footer = () => {
   return (
     <>
@@ -11,17 +14,15 @@ const Footer = () => {
       />
       <footer className="footer">
         <div className="footer-container">
-          <div className="footer-sections">
-            <div className="footer-logo">
+          <div className="footerLogo">
+            <div className="logo-text">
               <img src={whiteLogo} alt="ISTE Logo" />
+              <p>
+                Empowering students through technology, innovation, and
+                community. Join us in building the future and making a lasting
+                impact in the tech world.
+              </p>
             </div>
-            <center className="footer-links">
-              <Link to="/">Home</Link>
-              <Link to="/team">Team</Link>
-              <Link to="/events">Event</Link>
-              <Link to="/alumni">Alumni</Link>
-              <Link to="/contact">Contact us</Link>
-            </center>
             <div className="footer-social">
               <a
                 href="https://www.facebook.com/ISTE.Thapar/"
@@ -44,23 +45,30 @@ const Footer = () => {
               >
                 <i className="fa fa-linkedin"></i>
               </a>
-              {/* <Link
-                href="https://twitter.com/iste_thapar"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fa fa-twitter"></i>
-              </Link> */}
             </div>
           </div>
-          <hr className="footer-divider" />
-          {/* <center className="footer-policy">
-            <Link href="/privacy">Privacy Policy</Link>
-            <Link href="/terms">Terms of Service</Link>
-            <Link href="/cookies">Cookies Settings</Link>
-          </center> */}
-          <p>© 2024 ISTE. All rights reserved.</p>
+
+          <center className="footer-links">
+            <h2>Quick Links</h2>
+            <div className="footerLinks">
+              <Link to="/"><FaArrowRight />Home</Link>
+              <Link to="/team"><FaArrowRight />Team</Link>
+              <Link to="/events"><FaArrowRight />Event</Link>
+              <Link to="/alumni"><FaArrowRight />Alumni</Link>
+              <Link to="/contact"><FaArrowRight />Contact us</Link>
+            </div>
+          </center>
+
+          <div className="footerContact">
+            <h2>Contact</h2>
+            <div className="contacts">
+              <p><FaEnvelope />iste@thapar.ed</p>
+              <p><MdPhone />+91 7986790322</p>
+            </div>
+          </div>
         </div>
+
+        <p className="footerEnd">© 2025 ISTE. All rights reserved.</p>
       </footer>
     </>
   );
