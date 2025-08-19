@@ -3,7 +3,7 @@ import rajesh from "../../assets/president and faculty images/sir.jpg";
 import abhinivesh from "../../assets/EB EC Images/AbhivineshSharma.jpg";
 import ayush from "../../assets/EB EC Images/AYUSHGARG.jpg";
 import bhavya from "../../assets/EB EC Images/Bhavya.jpg";
-import hariyank from "../../assets/EB EC Images/HARYIANKKUMRA.jpg";
+import haryiank from "../../assets/EB EC Images/HARYIANKKUMRA.jpg";
 import ishaan from "../../assets/EB EC Images/IshaanSharma.jpg";
 import ishita from "../../assets/EB EC Images/IshitaOberoi.jpg";
 import kaushik from "../../assets/EB EC Images/KaushikArora.jpg";
@@ -48,7 +48,7 @@ const profile = {
   abhinivesh,
   ayush,
   bhavya,
-  hariyank,
+  haryiank,
   ishaan,
   ishita,
   kaushik,

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./TeamPage.css";
 import profile from './indexImages';
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub,FaGmail, FaLinkedin } from "react-icons/fa";
 
 const facultyMembers = [
     {
@@ -24,11 +24,11 @@ const executiveBoard = [
     { name: 'Lakshita Gupta', role: 'General Secretary', image: profile.lakshita, github: 'githublink', linkedin: 'linkedinlink' },
     { name: 'Kaushik Arora', role: 'General Secretary', image: profile.kaushik, github: 'githublink', linkedin: 'linkedinlink' },
     { name: 'Bhavya', role: 'Finance Secretary', image: profile.bhavya, github: 'githublink', linkedin: 'linkedinlink' },
-    { name: 'Hariyank Kumra', role: 'External Secretary', image: profile.hariyank, github: 'githublink', linkedin: 'linkedinlink' },
+    { name: 'Haryiank Kumra', role: 'External Secretary', image: profile.haryiank, github: 'githublink', linkedin: 'linkedinlink' },
     { name: 'Ishan Pathak', role: 'Technical Secretary', image: profile.ishaanP, github: 'githublink', linkedin: 'linkedinlink' },
+    { name: 'Sakshat Jain', role: 'Joint Secretary', image: profile.sakshat, github: 'githublink', linkedin: 'linkedinlink' },
     { name: 'Abhinivesh Sharma', role: 'Joint Secretary', image: profile.abhinivesh, github: 'githublink', linkedin: 'linkedinlink' },
     { name: 'Ishita Singh Oberoi', role: 'Joint Secretary', image: profile.ishita, github: 'githublink', linkedin: 'linkedinlink' },
-    { name: 'Sakshat Jain', role: 'Joint Secretary', image: profile.sakshat, github: 'githublink', linkedin: 'linkedinlink' },
     { name: 'Ishaan Sharma', role: 'Convener', image: profile.ishaan, github: 'githublink', linkedin: 'linkedinlink' },
 ];
 
