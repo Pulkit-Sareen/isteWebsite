@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./TeamPage.css";
 import profile from './indexImages';
-import { FaGithub,FaGmail, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const facultyMembers = [
     {
