@@ -15,7 +15,7 @@ import tanmay from "../../assets/Alumni images/Tanmay Deshkar.jpg";
 import jigya from "../../assets/Alumni images/JIGYA MUNJAL.jpg";
 
 // 🔥 New imports (from the screenshot you shared)
-import aabharnagupta from "../../assets/Alumni images/AabharnGupta.jpg";
+import aabharnagupta from "../../assets/Alumni images/AabharanGupta.jpg";
 import aakasharora from "../../assets/Alumni images/AakashArora.jpg";
 import abhinavjain from "../../assets/Alumni images/AbhinavJain.jpg";
 import abhyuday from "../../assets/Alumni images/AbhyudayVenkatesh.jpg";
