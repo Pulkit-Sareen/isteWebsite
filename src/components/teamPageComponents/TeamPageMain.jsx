@@ -44,6 +44,7 @@ const executiveCommittee = [
 const coreMembers = [
     { name: "Pulkit", role: "Core Member", github: "githublink", linkedin: "linkedinlink", image: profile.pulkit },
     { name: "Yuvraj", role: "Core Member", github: "githublink", linkedin: "linkedinlink", image: profile.yuvraj },
+    { name: "Arjites", role: "Core Member", github: "githublink", linkedin: "linkedinlink", image: profile.arjites },
     { name: "Prisha Acharya", role: "Core Member", github: "githublink", linkedin: "linkedinlink", image: profile.prishaAcharya },
     { name: "Shaina Gera", role: "Core Member", github: "githublink", linkedin: "linkedinlink", image: profile.shainaGera },
     { name: "Mehar Ahuja", role: "Core Member", github: "githublink", linkedin: "linkedinlink", image: profile.meharAhuja },
@@ -60,7 +61,7 @@ const coreMembers = [
     { name: "Manya", role: "Core Member", github: "githublink", linkedin: "linkedinlink", image: profile.manya },
     { name: "Geetika Parakh", role: "Core Member", github: "githublink", linkedin: "linkedinlink", image: profile.geetikaParakh },
     // { name: "Navjot", role: "Core Member", github: "githublink", linkedin: "linkedinlink", image: profile.navjot },
-    { name: "Arjites", role: "Core Member", github: "githublink", linkedin: "linkedinlink", image: profile.arjites },
+    
     { name: "Nishika", role: "Core Member", github: "githublink", linkedin: "linkedinlink", image: profile.nishika },
     { name: "Molika", role: "Core Member", github: "githublink", linkedin: "linkedinlink", image: profile.molika },
     { name: "Aditya", role: "Core Member", github: "githublink", linkedin: "linkedinlink", image: profile.aditya },
@@ -75,8 +76,8 @@ export default function TeamPage() {
 
     const sections = [
         { key: "Faculty", label: "Faculty" },
-        { key: "Executive Board", label: "Exec Board" },
-        { key: "Executive Committee", label: "Exec Committee" },
+        { key: "Executive Board", label: "EB" },
+        { key: "Executive Committee", label: "EC" },
         { key: "Core", label: "Core" },
     ];
 

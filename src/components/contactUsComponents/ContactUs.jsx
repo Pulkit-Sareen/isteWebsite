@@ -59,13 +59,6 @@ const ContactPage = () => {
                             </div>
                         </div>
 
-                        <div className="contact-content">
-                            <div className="contact-image"><MdPhone /></div>
-                            <div className="info">
-                                <h3>Phone</h3>
-                                <p>+91 7986790322</p>
-                            </div>
-                        </div>
 
                         <div className="contact-content">
                             <div className="contact-image"><MdLocationOn /></div>

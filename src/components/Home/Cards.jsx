@@ -1,7 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import styles from "./Cards.module.css";
-import about from "../../assets/images/orientation2024.jpg";
+//import about from "../../assets/images/orientation2024.jpg";
+import about from "../../assets/Pastevents/oIMG1.png";
 import { FaArrowRight } from "react-icons/fa";
 
 export const Cards = () => {

@@ -88,11 +88,13 @@ const AboutUs = () => {
             <div
                 className={`${styles.descriptionBox} ${descVisible ? styles.descAnimate : ""}`}
             >
-                <h3>Who We Are</h3>
+                {/* style={{ textAlign: "center", width: "100%" }} */}
+                <h3 >Who We Are</h3>
+
                 <p>
                     ISTE is a vibrant student chapter dedicated to fostering innovation, collaboration, and technical excellence. Our mission is to empower students through workshops, events, and hands-on projects, building a strong community of future leaders in technology.
                 </p>
-                <button className={styles.teamButton}>
+                <button className={styles.teamButton} >
                     <Link to="/team">Meet Our Team</Link>
                 </button>
             </div>

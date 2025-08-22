@@ -63,7 +63,6 @@ const Footer = () => {
             <h2>Contact</h2>
             <div className="contacts">
               <p><FaEnvelope />iste@thapar.edu</p>
-              <p><MdPhone />+91 7986790322</p>
             </div>
           </div>
         </div>
