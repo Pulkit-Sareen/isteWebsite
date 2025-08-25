@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import "./TeamPage.css";
 import profile from './indexImages';
 import { FaGithub, FaLinkedin } from "react-icons/fa";
@@ -73,7 +73,24 @@ const coreMembers = [
 
 export default function TeamPage() {
     const [activeSection, setActiveSection] = useState("Faculty");
+    const teamHeadingRef = useRef(null);
+    const [headingVisible, setHeadingVisible] = useState(false);
 
+    useEffect(() => {
+        const handleScroll = () => {
+            const triggerPoint = window.innerHeight * 0.7;
+            if (teamHeadingRef.current && !headingVisible) {
+                const top = teamHeadingRef.current.getBoundingClientRect().top;
+                if (top <= triggerPoint) {
+                    setHeadingVisible(true);
+                }
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        handleScroll(); // run once
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, [headingVisible]);
     const sections = [
         { key: "Faculty", label: "Faculty" },
         { key: "Executive Board", label: "EB" },
@@ -83,7 +100,8 @@ export default function TeamPage() {
 
     return (
         <div className="team-page">
-            <h1 className="team-heading">Meet Our Team</h1>
+            <h1 ref={teamHeadingRef}
+                className={`team-heading ${headingVisible ? "underlineAnimate" : ""}`}>Meet Our Team</h1>
 
             <div className="button-group">
                 {sections.map(sec => (

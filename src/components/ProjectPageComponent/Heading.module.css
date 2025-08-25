@@ -6,7 +6,7 @@
 body{
   background-image: none;
 }
-.heading {
+.header {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,6 +16,42 @@ body{
   padding: 0px 5rem ;
   text-align: center;
   padding-top: 2rem;
+}
+.heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  position: relative;
+  width: fit-content;
+  color: #FFFFFF;
+  letter-spacing: 1px;
+}
+.heading::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  height: 3px;
+  width: 0;
+  opacity: 0;
+  background: linear-gradient(to right, #1066C8, #670C80);
+  border-radius: 2px;
+}
+
+.underlineAnimate::after {
+  animation: underlineExpand 1s ease-out forwards;
+}
+
+@keyframes underlineExpand {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+
+  to {
+    width: 100%;
+    opacity: 1;
+  }
 }
 .heading h1 {
   font-size: 2.2rem;

@@ -84,7 +84,7 @@ function AlumniPage() {
     company: "",
   },
   {
-    dp: profile.naman,
+    dp: profile.namankumar,
     name: "Naman Kumar",
     position: "Member",
     year: "2023-2024",

@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import ReactDOM from 'react-dom';
-
-import { Link } from "react-router-dom";
 import './LearnMoreBox.css';
-import { FaGithub,FaGoogle } from "react-icons/fa";
+import { FaGithub, FaGoogle } from "react-icons/fa";
 
 function LearnMoreBox({ name, Moredesc, images, gitLink, googleLink, onClose }) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -19,6 +17,7 @@ function LearnMoreBox({ name, Moredesc, images, gitLink, googleLink, onClose }) 
     <div className="learnmore">
       <div className="box">
         <button className="button" onClick={onClose}>X</button>
+
         <div className="learnmore-carousel">
           {images.map((image, i) => (
             <img
@@ -29,23 +28,22 @@ function LearnMoreBox({ name, Moredesc, images, gitLink, googleLink, onClose }) 
             />
           ))}
         </div>
+
         <div className="learnmore-content">
-        <h2>{name}</h2>
-        <p>{Moredesc}</p>
+          <h2>{name}</h2>
+          <p>{Moredesc}</p>
 
           <div className="icons">
-        <Link to=
-        {gitLink} className="icon">
-          <FaGithub/>
-        </Link>
-        <Link to=
-        {googleLink} className="icon">
-          <FaGoogle/>
-        </Link>
-
-        {/* <a href={googleLink} target="_blank" rel="noopener noreferrer" className='icon'>
-          <FaGoogle/>
-        </a> */}
+            {gitLink && (
+              <a href={gitLink} target="_blank" rel="noopener noreferrer" className="icon">
+                <FaGithub />
+              </a>
+            )}
+            {googleLink && (
+              <a href={googleLink} target="_blank" rel="noopener noreferrer" className="icon">
+                <FaGoogle />
+              </a>
+            )}
           </div>
         </div>
       </div>

@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './ProjectCard.css';
+import projectData from './projectData';
 import LearnMoreBox from './LearnMoreBox';
 
-function ProjectCard({ name, desc, images, link, Moredesc }) {
+function ProjectCard({ name, desc, images, gitLink,googleLink, Moredesc }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
   const [timerActive, setTimerActive] = useState(false);
@@ -63,9 +64,10 @@ function ProjectCard({ name, desc, images, link, Moredesc }) {
       {showLearnMore && (
         <LearnMoreBox
           name={name}
-          link={link}
           images={images}
           Moredesc={Moredesc}
+          gitLink={gitLink} 
+          googleLink={googleLink} 
           onClose={handleCloseLearnMore}
         />
       )}

@@ -13,8 +13,6 @@ import vedant from "../../assets/Alumni images/Vedant Pramod Gadodia.jpeg";
 import vishnu from "../../assets/Alumni images/VISHNU BATRA.jpeg";
 import tanmay from "../../assets/Alumni images/Tanmay Deshkar.jpg";
 import jigya from "../../assets/Alumni images/JIGYA MUNJAL.jpg";
-
-// 🔥 New imports (from the screenshot you shared)
 import aabharnagupta from "../../assets/Alumni images/AabharanGupta.jpg";
 import aakasharora from "../../assets/Alumni images/AakashArora.jpg";
 import abhinavjain from "../../assets/Alumni images/AbhinavJain.jpg";
@@ -38,9 +36,7 @@ import shreyasingh from "../../assets/Alumni images/ShreyaSingh.jpg";
 import vivek from "../../assets/Alumni images/VivekArora.jpg";
 import yash from "../../assets/Alumni images/YashBhargava.jpg";
 
-// Final export
 const profile = {
-  // Existing
   aadil,
   anushka,
   avirat,
@@ -55,8 +51,6 @@ const profile = {
   vishnu,
   tanmay,
   jigya,
-
-  // New
   aabharnagupta,
   aakasharora,
   abhinavjain,

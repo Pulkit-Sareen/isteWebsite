@@ -104,41 +104,69 @@ export const Cards = () => {
           </p>
 
           <div className={styles.projectCardSection}>
-            <div className={styles.projectCard}>
 
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.projectCard}
+            >
               <div className={styles.projectCardContent}>
                 <h2>Fairfare</h2>
-                <p>FairFare is a web platform that lets users compare real-time taxi fares across different cities and services to help choose the most economical and reliable option.</p>
-
+                <p>
+                  FairFare is a web platform that lets users compare real-time taxi fares across different cities and services to help choose the most economical and reliable option.
+                </p>
               </div>
               <FaArrowRight className={styles.projectIcon} />
-            </div>
+            </a>
 
-            <div className={styles.projectCard}>
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.projectCard}
+            >
               <div className={styles.projectCardContent}>
                 <h2>Time Capsule</h2>
-                <p>Time Capsule Messenger - Write messages to yourself or friends that only become viewable after X days or even next year.</p>
-
+                <p>
+                  Time Capsule Messenger - Write messages to yourself or friends that only become viewable after X days or even next year.
+                </p>
               </div>
               <FaArrowRight className={styles.projectIcon} />
-            </div>
-            <div className={styles.projectCard}>
+            </a>
+
+            <a
+              href="https://society-organiser.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.projectCard}
+            >
               <div className={styles.projectCardContent}>
                 <h2>Society Sphere</h2>
-                <p>Society Sphere is a streamlined web-based platform designed to empower student societies by simplifying event management, announcements, task coordination, and resource sharing.</p>
-
+                <p>
+                  Society Sphere is a streamlined web-based platform designed to empower student societies by simplifying event management, announcements, task coordination, and resource sharing.
+                </p>
               </div>
               <FaArrowRight className={styles.projectIcon} />
-            </div>
-            <div className={styles.projectCard}>
+            </a>
+
+            <a
+              href="https://fintech-psi-three.vercel.app/landingpage.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.projectCard}
+            >
               <div className={styles.projectCardContent}>
                 <h2>FinTech</h2>
-                <p>Track spending, income, and expenses; monitor investments with personalized advice; set budgets with alerts; access expert resources; and enjoy an intuitive interface.</p>
-
+                <p>
+                  Track spending, income, and expenses; monitor investments with personalized advice; set budgets with alerts; access expert resources; and enjoy an intuitive interface.
+                </p>
               </div>
               <FaArrowRight className={styles.projectIcon} />
-            </div>
+            </a>
+
           </div>
+
 
           <button className={styles.projectButton}>
             <Link to="/projects">View More</Link>

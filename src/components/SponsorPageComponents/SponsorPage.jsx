@@ -103,7 +103,7 @@ const SponsorPage = () => {
     // Card fade up animation on scroll (50vh)
     useEffect(() => {
         const handleScroll = () => {
-            const triggerPoint = window.innerHeight * 0.7;
+            const triggerPoint = window.innerHeight * 0.8;
             sponsorData.forEach((_, idx) => {
                 const card = document.getElementById(`sponsor-card-${idx}`);
                 if (card) {

@@ -2,7 +2,6 @@
     text-align: center;
     font-family: Arial, sans-serif;
     padding: 2rem 5rem;
-    background: linear-gradient(159deg, #0F2946 6%, #000000 71%, #2F1345 116%);
 }
 
 /* Hide inactive sections */
@@ -66,12 +65,48 @@
     border: none;
 }
 
+
 .team-heading {
-    font-size: 2.2rem;
-    margin-bottom: 20px;
-    font-weight: 700;
+    margin: auto;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    position: relative;
+    width: fit-content;
+    color: #FFFFFF;
+    letter-spacing: 1px;
 }
 
+.team-heading::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 3px;
+    width: 0;
+    opacity: 0;
+    background: linear-gradient(to right, #1066C8, #670C80);
+    border-radius: 2px;
+    transition: width 1s ease-out, opacity 0.3s ease;
+}
+
+.underlineAnimate::after {
+    width: 100%;
+    opacity: 1;
+    animation: underlineExpand 1s ease-out forwards;
+}
+
+@keyframes underlineExpand {
+    from {
+        width: 0;
+        opacity: 0;
+    }
+
+    to {
+        width: 100%;
+        opacity: 1;
+    }
+}
 .team {
     display: flex;
     gap: 1rem;
@@ -121,7 +156,7 @@
     background: rgba(0, 0, 0, 0.5);
     width: 350px;
     border-radius: 24px;
-    height: 400px;
+    height: 500px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
     display: flex;
@@ -134,8 +169,8 @@
 }
 
 .faculty-card img {
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
 }
 
@@ -165,12 +200,9 @@
 
 .member-card img {
     width: 150px;
+    height: 150px;
     object-fit: cover;
     border-radius: 50%;
-    min-height: 100px;
-        min-width: 100px;
-        max-width: 100px;
-        max-height: 100px;
 }
 
 .member-card .role {
@@ -209,10 +241,6 @@
     height: 150px;
     object-fit: cover;
     border-radius: 50%;
-    max-width: 100px;
-        max-height: 100px;
-    min-height: 100px;
-    min-width: 100px;
 }
 @media (max-width:1200px){
     .team-page{
@@ -262,18 +290,17 @@
     .faculty-card {
         width: 300px;
     }
-
+    .faculty-card img{
+        width: 225px;
+        height: 225px;
+    }
     .member-card,
     .core-card {
         width: 150px;
     }
 
-    .member-card img {
-        width: 100px;
-    }
-
-    .core-card img {
-        height: 100px;
-        width: 100px;
+    .member-card img, .core-card img {
+        height: 125px;
+        width: 125px;
     }
 }

@@ -1,7 +1,6 @@
 .contact {
   text-align: center;
   display: flex;
-  background-image: linear-gradient(134deg, rgba(15, 41, 70, 0.9), rgba(0, 0, 0, 0.9), rgba(47, 19, 69, 0.9));
   align-items: center;
   justify-content: center;
   padding: 5rem;
